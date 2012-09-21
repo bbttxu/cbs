@@ -1,11 +1,10 @@
 %h1 Listing volunteers
 
-- if @volunteer.has_name
-  = form_for @volunteer do |the_person|
-    = the_person.label :email
-    = the_person.text_field :email
+= form_for @volunteer do |the_person|
+  = the_person.label :email
+  = the_person.text_field :email
 
-    = the_person.submit :login
+  = the_person.submit :login
 
 %table
   %tr
