@@ -10,13 +10,13 @@ When /^they visit the website$/ do
 end
 
 When /^they enter their email address$/ do
-  pending # express the regexp above with the code you wish you had
+	fill_in :email, :with => :bbttxu
 end
 
 When /^click "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+	click_on arg1
 end
 
 Then /^they will see "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+	page.has_content arg1
 end

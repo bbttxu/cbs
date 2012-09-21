@@ -3,7 +3,8 @@ class VolunteersController < ApplicationController
   # GET /volunteers.json
   def index
     @volunteers = Volunteer.all
-
+    @volunteer = Volunteer.new
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @volunteers }
