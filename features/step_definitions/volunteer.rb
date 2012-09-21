@@ -1,14 +1,15 @@
 # volunteer.rb
 
-Given /^a new volunteer shows to the shop$/ do
-  pending # express the regexp above with the code you wish you had
+Given /^a volunteer shows to the shop$/ do
+	# for now nothing, but we might logout any existing user
+	true
 end
 
 When /^they visit the website$/ do
-  pending # express the regexp above with the code you wish you had
+	visit "/"
 end
 
-When /^the they enter their email address$/ do
+When /^they enter their email address$/ do
   pending # express the regexp above with the code you wish you had
 end
 
