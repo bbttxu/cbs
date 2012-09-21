@@ -4,7 +4,7 @@ class VolunteersController < ApplicationController
   def index
     @volunteers = Volunteer.all
     @volunteer = Volunteer.new
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @volunteers }
@@ -25,7 +25,7 @@ class VolunteersController < ApplicationController
   # GET /volunteers/new
   # GET /volunteers/new.json
   def new
-    @volunteer = Volunteer.new
+    @volunteer = Volunteer.find_or_create_by_email
 
     respond_to do |format|
       format.html # new.html.erb
