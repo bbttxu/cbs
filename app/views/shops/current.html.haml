@@ -1,0 +1,19 @@
+/ current.html.haml
+- if @shops.empty?
+	%p No shops found. Would you like to start one?
+	= form_for @new_shop do |shop|
+		= hidden_field :shop, :starts_at, :value => Time.now
+		= shop.submit "Yes"
+		= shop.submit "No"
+
+
+- else
+	%h1= "#{pluralize( @shops.count, 'shop' )}"
+	- @shops.each do |shop|
+		%p
+			Shop is scheduled to run from 
+			= shop.starts_at
+			to 
+			= "#{shop.ends_at}."
+		%p
+			= link_to "Join this shop", shop

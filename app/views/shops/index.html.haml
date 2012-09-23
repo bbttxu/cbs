@@ -1,0 +1,23 @@
+%h1 Listing shops
+
+%table
+  %tr
+    %th Starts at
+    %th Ends at
+    %th Location
+    %th
+    %th
+    %th
+
+  - @shops.each do |shop|
+    %tr
+      %td= shop.starts_at
+      %td= shop.ends_at
+      %td= shop.location
+      %td= link_to 'Show', shop
+      %td= link_to 'Edit', edit_shop_path(shop)
+      %td= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Shop', new_shop_path

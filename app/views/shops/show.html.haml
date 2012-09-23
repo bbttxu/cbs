@@ -1,0 +1,24 @@
+%p#notice= notice
+
+.volunteer.signin
+	= form_for @new_volunteer do |the_person|
+		= the_person.label :email, "Volunteer Login"
+		= the_person.text_field :email
+
+		= the_person.submit "By email"
+		= the_person.submit "By Name"
+
+
+%p
+	%b Starts at:
+	= @shop.starts_at
+%p
+	%b Ends at:
+	= @shop.ends_at
+%p
+	%b Location:
+	= @shop.location
+
+= link_to 'Edit', edit_shop_path(@shop)
+\|
+= link_to 'Back', shops_path

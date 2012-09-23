@@ -1,4 +1,16 @@
 class ShopsController < ApplicationController
+  # GET /shops/current
+  # GET /shops/current.json
+  def current
+    @shops = Shop.where("starts_at < ?", Time.now)
+    @new_shop = Shop.new
+
+    respond_to do |format|
+      format.html # current.html.erb
+      format.json { render json: @shops }
+    end
+  end
+
   # GET /shops
   # GET /shops.json
   def index
@@ -15,6 +27,7 @@ class ShopsController < ApplicationController
   def show
     @shop = Shop.find(params[:id])
 
+    @new_volunteer = Volunteer.new
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @shop }
