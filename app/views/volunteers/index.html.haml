@@ -1,11 +1,11 @@
 %h1 Listing volunteers
 
 = form_for @volunteer do |the_person|
-  = the_person.label :email
+  = the_person.label :email, "Login"
   = the_person.text_field :email
 
-  = the_person.submit :login
-
+  = the_person.submit "By email"
+  = the_person.submit "By Name"
 %table
   %tr
     %th First name

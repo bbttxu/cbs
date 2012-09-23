@@ -25,8 +25,13 @@ class VolunteersController < ApplicationController
   # GET /volunteers/new
   # GET /volunteers/new.json
   def new
-    @volunteer = Volunteer.find_or_create_by_email
+    @volunteer = Volunteer.find_by_email(params[:email])
 
+    unless @volunteer.nil?
+      redirect_to @volunteer
+    end
+
+    @volunteer = Volunteer.find_or_create_by_email(params[:email])
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @volunteer }
