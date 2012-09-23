@@ -1,0 +1,24 @@
+%h1 Listing volunteers
+
+= form_for @volunteer do |the_person|
+  = the_person.label :email, "Login"
+  = the_person.text_field :email
+
+  = the_person.submit "By email"
+  = the_person.submit "By Name"
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Email
+    %th
+    %th
+    %th
+
+  - @volunteers.each do |volunteer|
+    %tr
+      %td= volunteer.first_name
+      %td= volunteer.last_name
+      %td= volunteer.email
+      %td= link_to 'Show', volunteer
+      %td= link_to 'Edit', edit_volunteer_path(volunteer)
