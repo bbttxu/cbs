@@ -2,7 +2,7 @@ class ShopsController < ApplicationController
   # GET /shops/current
   # GET /shops/current.json
   def current
-    @shops = Shop.where("starts_at < ?", Time.now + 1.hour).where("ends_at > ?", Time.now - 1.hour)
+    @shops = Shop.where("starts_at < ? and ends_at > ?", Time.now - 1.hour, Time.now + 1.hour)
     @new_shop = Shop.new
 
     respond_to do |format|
@@ -17,7 +17,7 @@ class ShopsController < ApplicationController
     @shops = Shop.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.er
       format.json { render json: @shops }
     end
   end
