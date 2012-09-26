@@ -2,7 +2,7 @@ class ShopsController < ApplicationController
   # GET /shops/current
   # GET /shops/current.json
   def current
-    @shops = Shop.where("starts_at < ?", Time.now)
+    @shops = Shop.where("starts_at < ?", Time.now).where("ends_at > ?", Time.now)
     @new_shop = Shop.new
 
     respond_to do |format|
