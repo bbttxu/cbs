@@ -1,12 +1,12 @@
 %p#notice= notice
 
-.volunteer.signin
-	= form_for @new_volunteer do |the_person|
-		= the_person.label :email, "Volunteer Login"
-		= the_person.text_field :email
+= form_for @new_session do |sess|
+	= sess.hidden_field :shop_id
+	= label :email, "Volunteer Login"
+	= text_field :volunteer, :search
 
-		= the_person.submit "By email"
-		= the_person.submit "By Name"
+	= submit_tag "By email"
+	= submit_tag "By Name"
 
 
 %p
@@ -19,6 +19,10 @@
 	%b Location:
 	= @shop.location
 
+- if @shop.volunteers.count > 0
+
+- else
+	%p no volunteers
 = link_to 'Edit', edit_shop_path(@shop)
 \|
 = link_to 'Back', shops_path

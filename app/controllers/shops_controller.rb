@@ -27,7 +27,10 @@ class ShopsController < ApplicationController
   def show
     @shop = Shop.find(params[:id])
 
-    @new_volunteer = Volunteer.new
+    # @new_volunteer = Volunteer.new
+    @new_session = Session.new
+    @new_session.shop_id = @shop.id
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @shop }

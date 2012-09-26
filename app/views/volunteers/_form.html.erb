@@ -13,12 +13,10 @@
     </div>
 
   <% end %>
-  <% if @volunteer.errors.count == 2 %>
-    <div class="field">
-      <%= f.label :first_name %><br />
-      <%= f.text_field :first_name %>
-    </div>
-  <% end %>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
   <div class="field">
     <%= f.label :last_name %><br />
     <%= f.text_field :last_name %>

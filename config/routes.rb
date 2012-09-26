@@ -1,6 +1,8 @@
 Cbs::Application.routes.draw do
 
 
+  resources :sessions
+
   match 'shops/current' => 'shops#current'
   resources :shops
 
