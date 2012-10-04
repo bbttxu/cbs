@@ -1,3 +1,5 @@
+require 'chronic'
+
 class SessionsController < ApplicationController
   # GET /sessions
   # GET /sessions.json
@@ -40,17 +42,17 @@ class SessionsController < ApplicationController
   # POST /sessions
   # POST /sessions.json
   def create
+    params[:session][:starts_at] = Chronic.parse params[:session][:starts_at]
+    params[:session][:ends_at] = Chronic.parse params[:session][:ends_at]
     @session = Session.new(params[:session])
 
-    @volunteer = Volunteer.find_by_email(params[:volunteer][:search])
+    # @volunteer = Volunteer.find_by_email(params[:volunteer][:search])
 
-    if @volunteer == nil
-      # redirect_to @volunteer
-    else
-      @session.volunteer_id = @volunteer.id
-    end
-
-
+    # if @volunteer == nil
+    #   # redirect_to @volunteer
+    # else
+    #   @session.volunteer_id = @volunteer.id
+    # end
 
     respond_to do |format|
       if @session.save

@@ -1,16 +1,22 @@
 %h1 Listing sessions
 
 %table
-  %tr
-    %th
-    %th
-    %th
+	%tr
+		%th Volunteer
+		%th Shop
+		%th Started
+		%th Finished
+		%th
 
-  - @sessions.each do |session|
-    %tr
-      %td= link_to 'Show', session
-      %td= link_to 'Edit', edit_session_path(session)
-      %td= link_to 'Destroy', session, method: :delete, data: { confirm: 'Are you sure?' }
+	- @sessions.each do |session|
+		%tr
+			%td= session.volunteer.email
+			%td= session.shop.starts_at
+			%td= session.starts_at
+			%td= session.ends_at
+			%td= link_to 'Show', session
+			%td= link_to 'Edit', edit_session_path(session)
+			%td= link_to 'Destroy', session, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 

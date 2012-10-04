@@ -12,15 +12,26 @@
 %p
 	%b Starts at:
 	= @shop.starts_at
-%p
 	%b Ends at:
 	= @shop.ends_at
 %p
 	%b Location:
 	= @shop.location
 
-- if @shop.volunteers.count > 0
-
+- if @shop.sessions.count > 0
+	%table
+		%tr
+			%th Volunteer
+			%th Starting
+			%th Ending
+			%th Hours
+		- @shop.sessions.each do |session|
+			%tr
+				%td= session.volunteer.email
+				%td= session.starts_at
+				%td= session.ends_at
+				%td= session_length session
+				%td= link_to 'modify', edit_session_path(session)
 - else
 	%p no volunteers
 = link_to 'Edit', edit_shop_path(@shop)

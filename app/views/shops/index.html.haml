@@ -5,6 +5,7 @@
     %th Starts at
     %th Ends at
     %th Location
+    %th # Volunteers
     %th
     %th
     %th
@@ -14,6 +15,7 @@
       %td= shop.starts_at
       %td= shop.ends_at
       %td= shop.location
+      %td= shop.volunteers.count
       %td= link_to 'Show', shop
       %td= link_to 'Edit', edit_shop_path(shop)
       %td= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' }
