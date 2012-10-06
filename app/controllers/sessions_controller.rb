@@ -68,6 +68,8 @@ class SessionsController < ApplicationController
   # PUT /sessions/1
   # PUT /sessions/1.json
   def update
+    params[:session][:starts_at] = Chronic.parse params[:session][:starts_at]
+    params[:session][:ends_at] = Chronic.parse params[:session][:ends_at]
     @session = Session.find(params[:id])
 
     respond_to do |format|
