@@ -5,4 +5,11 @@ class Session < ActiveRecord::Base
 
 	belongs_to :volunteer
 	belongs_to :shop
+
+	def hours_worked
+		if self.starts_at and self.ends_at
+			return (self.ends_at - self.starts_at).to_f / 3600
+		end
+		"n/a"
+	end
 end

@@ -1,39 +1,58 @@
-%p#notice= notice
-
-= form_for @new_session do |sess|
-	= sess.hidden_field :shop_id
-	= label :email, "Volunteer Login"
-	= text_field :volunteer, :search
-
-	= submit_tag "By email"
-	= submit_tag "By Name"
 
 
-%p
-	%b Starts at:
-	= @shop.starts_at
-	%b Ends at:
-	= @shop.ends_at
-%p
-	%b Location:
-	= @shop.location
+.row
+	- if notice
+		.twelve.columns
+			.alert-box
+				%p#notice= notice
 
-- if @shop.sessions.count > 0
-	%table
-		%tr
-			%th Volunteer
-			%th Starting
-			%th Ending
-			%th Hours
-		- @shop.sessions.each do |session|
-			%tr
-				%td= session.volunteer.email
-				%td= session.starts_at
-				%td= session.ends_at
-				%td= session_length session
-				%td= link_to 'modify', edit_session_path(session)
-- else
-	%p no volunteers
-= link_to 'Edit', edit_shop_path(@shop)
-\|
-= link_to 'Back', shops_path
+	.columns.eight
+
+		%h2
+			= "Shop \##{@shop.id},"
+			= shop_date @shop
+		%p
+			%b Location:
+			= @shop.location
+
+		.admin
+			%ul
+				%li= link_to 'Edit', edit_shop_path(@shop)
+				%li= link_to 'Back', shops_path
+
+
+	.columns.four
+		= form_for @new_session do |sess|
+			= sess.hidden_field :shop_id
+			= label :email, "Volunteer Login"
+			= text_field :volunteer, :search, :disabled => :disabled
+
+			= submit_tag "By email", :disabled => :disabled
+			= submit_tag "By Name", :disabled => :disabled
+
+
+	%hr
+
+
+	.columns.twelve
+
+		%h3
+			= "#{pluralize(@shop.volunteers.count, 'volunteer')},"
+			= "#{pluralize(@shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
+		- if @shop.sessions.count > 0
+			%table
+				%tr
+					%th Volunteer
+					%th Starting
+					%th Ending
+					%th Hours
+				- @shop.sessions.each do |session|
+					%tr
+						%td= session.volunteer.email
+						%td= session.starts_at
+						%td= session.ends_at
+						%td= session.hours_worked
+						%td= link_to 'modify', edit_session_path(session)
+		- else
+			%p no volunteers
+

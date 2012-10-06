@@ -2,23 +2,17 @@
 
 %table
   %tr
-    %th Starts at
-    %th Ends at
+    %th Shop
     %th Location
     %th # Volunteers
-    %th
-    %th
-    %th
 
   - @shops.each do |shop|
     %tr
-      %td= shop.starts_at
-      %td= shop.ends_at
+      %td= link_to shop_date(shop), shop
       %td= shop.location
-      %td= shop.volunteers.count
-      %td= link_to 'Show', shop
-      %td= link_to 'Edit', edit_shop_path(shop)
-      %td= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' }
+      %td
+        = "#{pluralize(shop.volunteers.count, 'volunteer')},"
+        = "#{pluralize(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
 
 %br
 
