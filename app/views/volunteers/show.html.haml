@@ -1,21 +1,14 @@
 .row
-	.eight.columns
+	.twelve.columns
 		%h2= @volunteer.name
 
 		- if @volunteer.email
 			%p
 				%b Email:
 				= @volunteer.email
-	.four.columns
-		.panel.quick-stats
-			%ul
-				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
-				%li= "#{pluralize(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} total"
-
-
 	.twelve.columns
 		%hr
-
+	.eight.columns
 		- if @volunteer.sessions.count > 0
 			%h3 Sessions worked
 			%table
@@ -32,5 +25,20 @@
 						%td= link_to 'edit', edit_session_path(session)
 		- else
 			%p No worked shops have been recorded
+
+
+	.four.columns
+		.panel.quick-stats
+			%h4 Totals
+			%ul
+				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
+				%li= "#{pluralize(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} total"
+			%h4 Last 90 days
+			%ul
+				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
+				%li= "#{pluralize(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} total"
+
+
+
 //		= link_to 'Edit', edit_volunteer_path(@volunteer)
 //		= link_to 'Back', volunteers_path
