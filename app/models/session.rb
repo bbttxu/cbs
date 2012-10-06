@@ -9,6 +9,6 @@ class Session < ActiveRecord::Base
 	def hours_worked
 		ending_time = self.ends_at ? self.ends_at : Time.now
 
-		return (ending_time - self.starts_at).to_f / 3600
+		return ((ending_time - self.starts_at).to_f / 36).to_i / 100.0 
 	end
 end
