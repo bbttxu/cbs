@@ -1,26 +1,26 @@
-%h1 Listing volunteers
+.row
+  .twelve.columns
 
-= form_for @volunteer do |the_person|
-  = the_person.label :email, "Login"
-  = the_person.text_field :email
+    %h1 Listing volunteers
 
-  = the_person.submit "By email"
-  = the_person.submit "By Name"
-%table
-  %tr
-    %th First name
-    %th Last name
-    %th Email
-    %th
-    %th
-    %th
+    = form_for @volunteer do |the_person|
+      = the_person.label :email, "Login"
+      = the_person.text_field :email, :disabled => :disabled
 
-  - @volunteers.each do |volunteer|
-    %tr
-      %td= volunteer.first_name
-      %td= volunteer.last_name
-      %td= volunteer.email
-      %td= link_to 'Show', volunteer
-      %td= link_to 'Edit', edit_volunteer_path(volunteer)
+      = the_person.submit "By email", :disabled => :disabled
+      = the_person.submit "By Name", :disabled => :disabled
+    %table
+      %tr
+        %th Name
+        %th Email
+        %th Volunteer Time
 
-= link_to 'New Volunteer', new_volunteer_path
+      - @volunteers.each do |volunteer|
+        %tr
+          %td= link_to( volunteer.name, volunteer) 
+          %td= volunteer.email
+          %td
+            = "#{pluralize(volunteer.shops.count, 'shop')},"
+            = "#{pluralize(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
+
+    // = link_to 'New Volunteer', new_volunteer_path

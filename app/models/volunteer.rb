@@ -12,5 +12,10 @@ class Volunteer < ActiveRecord::Base
 	validates :email, :uniqueness => true, :email => true
 
 	has_many :sessions
-	has_many :shows, :through => :sessions
+	has_many :shops, :through => :sessions
+
+
+	def name
+		[self.first_name, self.last_name].reject{|x|x == ""}.join(" ")
+	end
 end

@@ -7,9 +7,8 @@ class Session < ActiveRecord::Base
 	belongs_to :shop
 
 	def hours_worked
-		if self.starts_at and self.ends_at
-			return (self.ends_at - self.starts_at).to_f / 3600
-		end
-		"n/a"
+		ending_time = self.ends_at ? self.ends_at : Time.now
+
+		return (ending_time - self.starts_at).to_f / 3600
 	end
 end
