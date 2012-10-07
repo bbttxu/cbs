@@ -8,10 +8,10 @@
 
   .field
     = f.label :starts_at
-    = f.text_field :starts_at
+    = f.text_field :starts_at, :value => ( @shop.starts_at ? standard_datetime(@shop.starts_at) : "now" )
   .field
     = f.label :ends_at
-    = f.text_field :ends_at
+    = f.text_field :ends_at, :value => ( @shop.ends_at ? standard_datetime(@shop.ends_at) : "" )
   .field
     = f.label :location
     = f.text_field :location

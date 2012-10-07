@@ -21,15 +21,44 @@
 
 		= csrf_meta_tags
 	%body
-		%h1 QCBS
-		%ul#navigation
-			%li
-				%a{ :href=>"/shops/current" } Current
-			%li
-				%a{ :href=>"/shops" } Shops
-			%li
-				%a{ :href=>"/volunteers" } Volunteers
-			%li
-				%a{ :href=>"/sessions"} Sessions
+		#header
+			.row
+				.twelve.columns
+					%h1 QCBS
 
-		= yield
+		#nav
+			.row
+				.twelve.columns
+					%ul#navigation
+						// = li_link_to 'Current', '/shops/current'
+						%li
+							%a{ :href=>"/shops/current" } Current
+						%li
+							%a{ :href=>"/shops" } Shops
+						%li
+							%a{ :href=>"/volunteers" } Volunteers
+						%li
+							%a{ :href=>"/sessions"} Sessions
+
+		#page
+			= yield
+		#footer
+			.row
+				.eight.columns
+					%h4 Querencia Community Bike Shop
+					%p
+						Querencia Community Bike Shop is a
+						%b 503c not-for-profit organization
+						that ... officia deserunt mollit anim id est laborum.
+				.four.columns
+					%h4 QCBS Links
+					%ul.mobile-grid.mobile-two-up
+						%li
+							%span.label Email
+							= mail_to 'info@qcbs.org'
+						%li
+							%span.label Blog
+							= link_to 'http://qcbs.wordpress.com/', 'http://qcbs.wordpress.com/'
+						%li.twitter
+							%span.label Twitter
+							= link_to '@QuerenciaDenton', 'http://twitter.com/QuerenciaDenton'

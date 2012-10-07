@@ -1,6 +1,8 @@
-%p#notice= notice
+.row
+	.twelve.columns
+		%p#notice= notice
 
 
-= link_to 'Edit', edit_session_path(@session)
-\|
-= link_to 'Back', sessions_path
+		= link_to 'Edit', edit_session_path(@session)
+		\|
+		= link_to 'Back', sessions_path

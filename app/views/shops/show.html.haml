@@ -48,7 +48,7 @@
 					%th Hours
 				- @shop.sessions.each do |session|
 					%tr
-						%td= link_to session.volunteer.name, session.volunteers
+						%td= link_to session.volunteer.name, session.volunteer
 						%td= session.starts_at
 						%td= session.ends_at
 						%td= session.hours_worked
