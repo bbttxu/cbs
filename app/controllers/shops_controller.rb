@@ -2,7 +2,7 @@ class ShopsController < ApplicationController
   # GET /shops/current
   # GET /shops/current.json
   def current
-    @shops = Shop.where("starts_at < ? and ends_at > ?", Time.now - 1.hour, Time.now + 1.hour)
+    @shops = Shop.where("starts_at < ?", Time.now - 1.hour)
     @new_shop = Shop.new
 
     respond_to do |format|
@@ -56,6 +56,9 @@ class ShopsController < ApplicationController
   # POST /shops
   # POST /shops.json
   def create
+    params[:shop][:starts_at] = Chronic.parse params[:shop][:starts_at]
+    params[:shop][:ends_at] = Chronic.parse params[:shop][:ends_at]
+
     @shop = Shop.new(params[:shop])
 
     respond_to do |format|

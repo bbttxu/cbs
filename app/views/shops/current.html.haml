@@ -1,19 +1,32 @@
 / current.html.haml
-- if @shops.empty?
-	%p No shops found. Would you like to start one?
-	= form_for @new_shop do |shop|
-		= hidden_field :shop, :starts_at, :value => Time.now
-		= shop.submit "Yes"
-		= shop.submit "No"
+.row
+	.eight.columns
+		%h2 Welcome to Querencia Community Bike Shop!
+		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	.four.columns
+		.panel
+			- if @shops.empty?
+				%p No shops found.
+				= form_for @new_shop do |shop|
+					= hidden_field :shop, :starts_at, :value => "now"
+					= shop.submit "Start a new shop", :class => :button
 
 
-- else
-	%h1= "#{pluralize( @shops.count, 'shop' )}"
-	- @shops.each do |shop|
-		%p
-			Shop is scheduled to run from 
-			= shop.starts_at
-			to 
-			= "#{shop.ends_at}."
-		%p
-			= link_to "Join this shop", shop
+			- else
+				%h1= "#{pluralize( @shops.count, 'shop' )}"
+				- @shops.each do |shop|
+					%p
+						Shop is scheduled to run from 
+						= shop.starts_at
+						to 
+						= "#{shop.ends_at}."
+					%p
+						= link_to "Join this shop", shop
+
+		.panel
+			%h4 We'll teach you to...

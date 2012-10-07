@@ -13,13 +13,18 @@ module ShopsHelper
 			time_start_components = "%I:%M%p"
 		end
 
-		time_end_components = "%I%p"
-		unless shop.ends_at.min == 0
-			time_end_components = "%I:%M%p"
+		if shop.ends_at
+			time_end_components = "%I%p"
+			unless shop.ends_at.min == 0
+				time_end_components = "%I:%M%p"
+			end
+			time_end = shop.ends_at.strftime time_end_components
+		else
+			time_end = " -:--"
 		end
 
+
 		time_start = shop.starts_at.strftime time_start_components
-		time_end = shop.ends_at.strftime time_end_components
 
 		"#{date}, #{time_start}-#{time_end}"
 
