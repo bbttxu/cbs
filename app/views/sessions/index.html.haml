@@ -1,23 +1,24 @@
-%h1 Listing sessions
+.row
+	.eight.columns
+		%h1 Listing sessions
 
-%table
-	%tr
-		%th Volunteer
-		%th Shop
-		%th Started
-		%th Finished
-		%th
+		%table
+			%tr
+				%th Volunteer
+				%th Shop
+				%th Started
+				%th Finished
 
-	- @sessions.each do |session|
-		%tr
-			%td= session.volunteer.email
-			%td= session.shop.starts_at
-			%td= session.starts_at
-			%td= session.ends_at
-			%td= link_to 'Show', session
-			%td= link_to 'Edit', edit_session_path(session)
-			%td= link_to 'Destroy', session, method: :delete, data: { confirm: 'Are you sure?' }
+			- @sessions.each do |session|
+				%tr
+					%td= link_to session.volunteer.name, session
+					%td= shop_date session.shop
+					%td= session.starts_at
+					%td= session.ends_at
 
-%br
+		%br
 
-= link_to 'New Session', new_session_path
+		= link_to 'New Session', new_session_path
+	.four.columns
+		.panel
+			%h4 Community Service
