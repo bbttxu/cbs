@@ -17,8 +17,9 @@
             = "#{pluralize(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
 
     %br
-
-    = link_to 'New Shop', new_shop_path
+    .admin
+      %hr
+      = link_to 'New Shop', new_shop_path
 
   .four.columns
     .panel
