@@ -30,16 +30,11 @@
 			.row
 				.twelve.columns
 					%ul#navigation
-						// = li_link_to 'Current', '/shops/current'
-						%li
-							%a{ :href=>"/shops/current" } Current
-						%li
-							%a{ :href=>"/shops" } Shops
-						%li
-							%a{ :href=>"/volunteers" } Volunteers
-						%li
-							%a{ :href=>"/sessions"} Sessions
-
+						%li= li_active_link_to 'Current', "/shops/current"
+						%li= li_active_link_to 'Shops', "/shops"
+						%li= li_active_link_to 'Volunteers', "/volunteers"
+						%li= li_active_link_to 'Sessions', "/sessions"
+	
 		#page
 			= yield
 		#footer

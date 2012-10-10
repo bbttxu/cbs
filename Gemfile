@@ -21,7 +21,7 @@ group :assets do
   gem 'zurb-foundation', '~> 3.0.9'
 end
 
-
+gem "active_link_to"
 
 gem 'jquery-rails'
 

@@ -1,9 +1,19 @@
+require 'haml'
+
 module ApplicationHelper
-	def li_link_to(text, url, options = nil)
-		link_to_unless_current text, url, options do |text, url, options|
-			Haml::Engine.new("%li.active= link_to(#{text}, #{url}, #{options})").render
+	def li_active_link_to(text, url)
+		if is_active_link?(url, :exclusive)
+			content_tag :li, :class => "active" do
+				link_to text, url
+			end
+		else
+			content_tag :li do
+				link_to text, url
+			end
 		end
 	end
+
+	# content_tag
 
 	# chronic will parse this no problem
 	def standard_datetime( data )
