@@ -1,24 +1,28 @@
 .row
+
 	.eight.columns
-		%h1 Listing sessions
+		- unless @sessions.empty?
+			%h1 Listing sessions
 
-		%table
-			%tr
-				%th Volunteer
-				%th Shop
-				%th Started
-				%th Finished
-
-			- @sessions.each do |session|
+			%table
 				%tr
-					%td= link_to session.volunteer.name, session
-					%td= shop_date session.shop
-					%td= session.starts_at
-					%td= session.ends_at
+					%th Volunteer
+					%th Shop
+					%th Started
+					%th Finished
 
-		.admin
-			%hr
-			= link_to 'New Session', new_session_path
+				- @sessions.each do |session|
+					%tr
+						%td= link_to session.volunteer.name, session
+						%td= shop_date session.shop
+						%td= session.starts_at
+						%td= session.ends_at
+
+			.admin
+				%hr
+				= link_to 'New Session', new_session_path
+		- else
+			%p No sessions found.
 	.four.columns
 		.panel
 			%h4 Community Service

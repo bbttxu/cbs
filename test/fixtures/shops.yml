@@ -15,7 +15,22 @@ three:
   ends_at: 2012-10-27 17:00:00
   location: 215 West Oak Street
 
-four:
-  starts_at: 2012-10-20 14:00:00
-  ends_at: 2012-10-20 17:00:00
+five:
+  starts_at: 2012-11-03 14:00:00
+  ends_at: 2012-11-03 17:00:00
+  location: 215 West Oak Street
+
+six:
+  starts_at: 2012-11-10 14:00:00
+  ends_at: 2012-11-10 17:00:00
+  location: 215 West Oak Street
+
+seven:
+  starts_at: 2012-11-17 14:00:00
+  ends_at: 2012-11-17 17:00:00
+  location: 215 West Oak Street
+
+eight:
+  starts_at: 2012-11-24 14:00:00
+  ends_at: 2012-11-24 17:00:00
   location: 215 West Oak Street
