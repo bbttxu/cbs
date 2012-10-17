@@ -7,7 +7,7 @@ set :scm, :git
 set :branch, "master"
 set :repository_cache, "git_cache"
 set :deploy_via, :remote_cache
-# set :ssh_options, { :forward_agent => true }
+# 	set :ssh_options, { :forward_agent => true }
 set :user, :deploy
 set :deploy_to, "/home/deploy/#{application}"
 
