@@ -15,6 +15,7 @@ class Volunteer < ActiveRecord::Base
 	has_many :shops, :through => :sessions
 
 	default_scope order(:last_name)
+
 	def name
 		[self.first_name, self.last_name].reject{|x|x == ""}.join(" ")
 	end

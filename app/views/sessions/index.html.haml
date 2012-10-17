@@ -14,7 +14,7 @@
 				- @sessions.each do |session|
 					%tr
 						%td= link_to session.volunteer.name, session
-						%td= shop_date session.shop
+						%td= session.shop.shop_date
 						%td= session.starts_at
 						%td= session.ends_at
 

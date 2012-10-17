@@ -19,7 +19,7 @@
 					%th Actions
 				- @volunteer.sessions.each do |session|
 					%tr
-						%td= link_to shop_date(session.shop), session.shop
+						%td= link_to session.shop.shop_date, session.shop
 						%td= shop_date session
 						%td= session.hours_worked
 						%td= link_to 'edit', edit_session_path(session)
