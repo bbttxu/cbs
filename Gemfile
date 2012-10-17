@@ -10,6 +10,10 @@ gem 'sqlite3'
 gem "haml"
 gem "haml-rails"
 
+
+gem 'execjs'
+gem 'therubyracer'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
