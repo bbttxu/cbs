@@ -7,6 +7,8 @@ class Shop < ActiveRecord::Base
 	scope :upcoming, lambda { where("ends_at > ?", DateTime.zone.now) }
 	scope :past, lambda { where("ends_at =< ?", Time.zone.now) }
 
+  after_initialize :init
+
 	def shop_date
 		date_components = ["%b %-d"]
 
@@ -37,5 +39,9 @@ class Shop < ActiveRecord::Base
 		"#{date}, #{time_start}-#{time_end}"
 
 	end
+
+  def init
+    self.location ||= "215 West Oak Street" #let's you set a default association
+  end
 
 end

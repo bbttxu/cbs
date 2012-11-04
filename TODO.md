@@ -32,7 +32,6 @@ join
 nov 4
 _----------
 
-default shop location to 215 W oak
 
 front-page all-in-one page
 
@@ -48,3 +47,4 @@ volunteer login ONLY on front-page, rest is admin only
 ### Done
 
 - colors/fonts from qcbs.org
+- default shop location to 215 W oak
