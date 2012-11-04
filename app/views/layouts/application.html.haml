@@ -13,6 +13,9 @@
 		%meta( name="viewport" content="width=device-width, initial-scale=1.0")
 
 		%title= content_for?(:title) ? yield(:title) : "Untitled"
+		%link( rel='stylesheet' id='droid sans-css'  href='http://fonts.googleapis.com/css?family=Droid+Sans%3A400&#038;ver=3.5-alpha-21989' type='text/css' media='all')
+		%link( rel='stylesheet' id='droid serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400&#038;ver=3.5-alpha-21989' type='text/css' media='all' )
+
 		/ Included CSS Files
 		= stylesheet_link_tag "application"
 
@@ -21,19 +24,23 @@
 
 		= csrf_meta_tags
 	%body
-		#header
-			.row
-				.twelve.columns
-					%h1 QCBS
+		#navigation
+			%nav.nav.top-bar
+				%ul
+					%li.name
+						%h1
+							%a() Querencia Community Bike Shop
+					%li.toggle-topbar
+						%a( href="#" )
 
-		#nav
-			.row
-				.twelve.columns
-					%ul#navigation
-						%li= li_active_link_to 'Current', "/shops/current"
-						%li= li_active_link_to 'Shops', "/shops"
-						%li= li_active_link_to 'Volunteers', "/volunteers"
-						%li= li_active_link_to 'Sessions', "/sessions"
+				%section
+					%ul.right
+						= li_active_link_to 'Current', "/shops/current"
+						= li_active_link_to 'Shops', "/shops"
+						= li_active_link_to 'Volunteers', "/volunteers"
+						= li_active_link_to 'Sessions', "/sessions"
+
+
 	
 		#page
 			= yield
