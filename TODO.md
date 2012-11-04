@@ -26,3 +26,24 @@ join
 
 - end all open volunteer hours
 - logout admin
+
+
+
+nov 4
+_----------
+
+default shop location to 215 W oak
+
+front-page all-in-one page
+
+admin login
+
+colors/fonts from qcbs.org
+
+password toggle for admin login?
+
+admin login
+
+one shared password
+
+volunteer login ONLY on front-page, rest is admin only
