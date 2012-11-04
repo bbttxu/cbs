@@ -8,4 +8,12 @@
 	.four.columns
 		.panel
 			%h4 Help
-			%p use natural language to specify a time
+			%p use natural language to specify a time, or YYYY-MM-DD HH:MM ex.
+			%ul
+				%li next wednesday at 5pm
+				%li today at 2pm
+				%li= standard_datetime DateTime.now
+			%p Enter location, e.g.
+			%ul
+				%li 215 West Oak
+				%li Bike valet, Dans
