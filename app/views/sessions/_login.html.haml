@@ -1,0 +1,16 @@
+/ _login.html.haml
+.row.panel
+	= form_for @new_session do |sess|
+		.eight.columns
+
+			= label :email, "Volunteer Login"
+			= text_field :volunteer, :search
+		/= #collection_select(:session, :shop_id, @shops, :id, :shop_date) unless @shops.empty?
+		 
+		/= sess.hidden_field @shops.first.id if @shops.count == 1
+		- @shops.each do |shop|
+			.twelve.columns
+				= submit_tag "#{shop.location}, #{shop.shop_date}", :class => :button
+
+
+

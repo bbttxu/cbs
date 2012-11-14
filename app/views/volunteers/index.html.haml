@@ -22,15 +22,6 @@
     .admin
       = link_to 'New Volunteer', new_volunteer_path
 
-  .four.columns
-    .panel
-      = form_for @volunteer do |the_person|
-        = the_person.label :email, "Login"
-        = the_person.text_field :email, :disabled => :disabled
-
-        = the_person.submit "By email", :disabled => :disabled
-        = the_person.submit "By Name", :disabled => :disabled
-
 
     .panel
       %h3 QCBS Volunters

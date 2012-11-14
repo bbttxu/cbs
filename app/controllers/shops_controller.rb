@@ -2,8 +2,12 @@ class ShopsController < ApplicationController
   # GET /shops/current
   # GET /shops/current.json
   def current
-    @shops = Shop.where("starts_at < ?", Time.now - 1.hour)
+    @shops = Shop.upcoming
     @new_shop = Shop.new
+
+    # @new_volunteer = Volunteer.new
+    @new_session = Session.new
+    @new_session.shop_id = @new_shop.id
 
     respond_to do |format|
       format.html # current.html.erb

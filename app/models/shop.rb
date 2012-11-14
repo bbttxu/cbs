@@ -4,7 +4,7 @@ class Shop < ActiveRecord::Base
 
 	default_scope order(:starts_at)
 
-	scope :upcoming, lambda { where("ends_at > ?", DateTime.zone.now) }
+	scope :upcoming, lambda { where("ends_at > ?", DateTime.now) }
 	scope :past, lambda { where("ends_at =< ?", Time.zone.now) }
 
   after_initialize :init

@@ -9,28 +9,19 @@
 	.columns.eight
 
 		%h2
-			= "Shop \##{@shop.id},"
+			/ = "Shop \##{@shop.id},"
 			= @shop.shop_date
 		%p
 			%b Location:
 			= @shop.location
-
-		.admin
+		.admin.hide
 			%ul
 				%li= link_to 'Edit', edit_shop_path(@shop)
 				%li= link_to 'Back', shops_path
 
 
-	.columns.four
-		= form_for @new_session do |sess|
-			= sess.hidden_field :shop_id
-			= label :email, "Volunteer Login"
-			= text_field :volunteer, :search, :disabled => :disabled
-
-			= submit_tag "By email", :disabled => :disabled
-			= submit_tag "By Name", :disabled => :disabled
-
-
+	/ .columns.four
+	/ 	= # render :partial => "sessions/login"
 	%hr
 
 
