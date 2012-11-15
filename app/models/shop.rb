@@ -6,6 +6,7 @@ class Shop < ActiveRecord::Base
 
 	scope :upcoming, lambda { where("ends_at > ?", DateTime.now) }
 	scope :past, lambda { where("ends_at =< ?", Time.zone.now) }
+	scope :current, lambda { where("starts_at <= ? AND ends_at >= ? ", Time.zone.now, Time.zone.now) }
 
   after_initialize :init
 

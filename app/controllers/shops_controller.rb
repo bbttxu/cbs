@@ -2,8 +2,10 @@ class ShopsController < ApplicationController
   # GET /shops/current
   # GET /shops/current.json
   def current
-    @shops = Shop.upcoming
+    @shops = Shop.current
     @new_shop = Shop.new
+
+    @volunteers = Volunteer.all
 
     # @new_volunteer = Volunteer.new
     @new_session = Session.new
@@ -14,6 +16,20 @@ class ShopsController < ApplicationController
       format.json { render json: @shops }
     end
   end
+
+  def close
+    @shop = Shop.find(params[:id])
+    @shop.sessions.current.each do |session|
+      session.update_attributes :ends_at => Time.now
+    end
+    @shop.update_attributes :ends_at => Time.zone.now
+  end
+
+
+
+
+
+
 
   # GET /shops
   # GET /shops.json

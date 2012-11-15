@@ -1,16 +1,27 @@
 / _login.html.haml
+
+/ :class => 'search-query ui-autocomplete-input', :placeholder => 'Search', data: {autocomplete_source: @volunteers.map(&:name)}
+
+
 .row.panel
 	= form_for @new_session do |sess|
 		.eight.columns
 
 			= label :email, "Volunteer Login"
-			= text_field :volunteer, :search
-		/= #collection_select(:session, :shop_id, @shops, :id, :shop_date) unless @shops.empty?
-		 
-		/= sess.hidden_field @shops.first.id if @shops.count == 1
-		- @shops.each do |shop|
-			.twelve.columns
-				= submit_tag "#{shop.location}, #{shop.shop_date}", :class => :button
+			= text_field :volunteer, :search, :class => 'search-query ui-autocomplete-input', :placeholder => 'Type name or email', data: {autocomplete_source:  @volunteers.collect{|x| { :value => x.id, :label => ["#{x.first_name} #{x.last_name}","#{x.email}"].reject{|x|x == ""}.join(", ") } }}
+
+			= sess.hidden_field :volunteer_id
 
 
+
+			- if @shops.count > 1
+
+				= collection_select(:session, :shop_id, @shops, :id, :shop_date)
+
+			- if @shops.count == 1
+				%p.success= "Shop time: #{@shops.first.shop_date}"
+				= sess.hidden_field :shop_id, :value => @shops.first.id
+	
+			= sess.hidden_field :starts_at, :value => "now"
+			= submit_tag "Login", :class => :button
 

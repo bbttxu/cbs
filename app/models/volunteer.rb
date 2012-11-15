@@ -19,4 +19,8 @@ class Volunteer < ActiveRecord::Base
 	def name
 		[self.first_name, self.last_name].reject{|x|x == ""}.join(" ")
 	end
+
+	def open_sessions
+		sessions.where("ends_at" => nil)
+	end
 end

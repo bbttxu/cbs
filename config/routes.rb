@@ -4,6 +4,7 @@ Cbs::Application.routes.draw do
   resources :sessions
 
   match 'shops/current' => 'shops#current'
+  match 'shops/close' => 'shops#close'
   resources :shops
 
   resources :volunteers

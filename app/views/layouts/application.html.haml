@@ -29,16 +29,18 @@
 				%ul
 					%li.name
 						%h1
-							%a() Querencia Community Bike Shop
+							%a( href="/") Querencia Community Bike Shop
 					%li.toggle-topbar
 						%a( href="#" )
 
 				%section
-					%ul.right
-						= li_active_link_to 'Current', "/shops/current"
-						= li_active_link_to 'Shops', "/shops"
-						= li_active_link_to 'Volunteers', "/volunteers"
-						= li_active_link_to 'Sessions', "/sessions"
+					%ul.left
+						%li= link_to Time.now.strftime('%c'), '/'
+					/ %ul.right
+					/ 	= li_active_link_to 'Current', "/shops/current"
+					/ 	= li_active_link_to 'Shops', "/shops"
+					/ 	= li_active_link_to 'Volunteers', "/volunteers"
+					/ 	= li_active_link_to 'Sessions', "/sessions"
 
 
 

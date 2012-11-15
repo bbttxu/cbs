@@ -42,11 +42,20 @@ class SessionsController < ApplicationController
   # POST /sessions
   # POST /sessions.json
   def create
-    params[:session][:starts_at] = Chronic.parse params[:session][:starts_at]
-    params[:session][:ends_at] = Chronic.parse params[:session][:ends_at]
+    params[:session][:starts_at] = Chronic.parse params[:session][:starts_at] if params[:session][:starts_at]
+    params[:session][:ends_at] = Chronic.parse params[:session][:ends_at] if params[:session][:ends_at]
     @session = Session.new(params[:session])
 
-    # @volunteer = Volunteer.find_by_email(params[:volunteer][:search])
+    puts params[:session][:volunteer_id]
+
+    @volunteer = Volunteer.find( params[:session][:volunteer_id] )
+    @volunteer.open_sessions.each do |session|
+      # puts session
+
+      session.update_attributes :ends_at => Time.now
+      # session.save
+    end
+
 
     # if @volunteer == nil
     #   # redirect_to @volunteer

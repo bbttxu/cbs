@@ -7,17 +7,11 @@
 			%table
 				%tr
 					%th Volunteer
-					%th Shop
-					%th Started
-					%th Finished
+					%th Work times
+					%th Actions
 
-				- @sessions.each do |session|
-					%tr
-						%td= link_to session.volunteer.name, session
-						%td= session.shop.shop_date
-						%td= session.starts_at
-						%td= session.ends_at
 
+				= render :partial => "tr", :collection => @sessions, :as => "sesh"
 			.admin
 				%hr
 				= link_to 'New Session', new_session_path

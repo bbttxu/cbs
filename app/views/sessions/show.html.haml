@@ -3,6 +3,14 @@
 		%p#notice= notice
 
 
-		= link_to 'Edit', edit_session_path(@session)
-		\|
-		= link_to 'Back', sessions_path
+
+		%p.info 	
+			= @session.volunteer.name
+			signed into 
+			= link_to "the shop", @session.shop 
+			= time_ago_in_words @session.starts_at
+			ago.
+		= link_to 'Back', @session.shop
+
+		%pre
+			= debug @session.volunteer

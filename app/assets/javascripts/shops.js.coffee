@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 
-$ = jQuery
+# $ = jQuery
 
-$.getJSON "/volunteers.json", (data)->
-	console.log data
+# $.getJSON "/volunteers.json", (data)->
+# 	console.log data

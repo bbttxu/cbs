@@ -2,6 +2,8 @@
 .row
 	.eight.columns
 		= render "sessions/login", :locals => { :shops => @shops }
+		= render @shops
+
 	.four.columns
 		.panel
 			- if @shops.empty?
@@ -13,6 +15,7 @@
 
 			- else
 				%h1= "#{pluralize( @shops.count, 'shop' )}"
+
 				- @shops.each do |shop|
 					%p
 						Shop is scheduled to run from
