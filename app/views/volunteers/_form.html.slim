@@ -9,19 +9,20 @@
 					ul
 						- @volunteer.errors.full_messages.each do |msg|
 							li= msg
-			.field.four.columns.mobile-one
+			br
+			.field.three.columns.mobile-one
 				= f.label :first_name, :class => [ :right, :inline ]
-			.field.eight.columns.mobile-three
+			.field.seven.columns.mobile-three
 				= f.text_field :first_name, :placeholder => "first name"
-			.field.four.columns.mobile-one
+			.field.three.columns.mobile-one
 				= f.label :last_name, :class => [ :right, :inline, :required ]
-			.field.eight.columns.mobile-three
+			.field.seven.columns.mobile-three
 				= f.text_field :last_name, :placeholder => "last name"
-			.field.four.columns.mobile-one
+			.field.three.columns.mobile-one
 				= f.label :email, :class => [ :right, :inline ]
-			.field.eight.columns.mobile-three
+			.field.seven.columns.mobile-three
 				= f.text_field :email, :placeholder => "optional"
-			.actions.eight.columns
+			.actions.nine.columns
 				= f.submit
 				== "&nbsp;"
 				= link_to "Cancel", "/", :class => "button alert small"
