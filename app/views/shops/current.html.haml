@@ -8,9 +8,11 @@
 		.panel
 			- if @shops.empty?
 				%p No shops found.
-				= form_for @new_shop do |shop|
-					= hidden_field :shop, :starts_at, :value => "now"
-					= shop.submit "Start a new shop", :class => :button
+				%p
+					= link_to 'Start a new shop', new_shop_path, :class => "button"
+				/ = form_for @new_shop do |shop|
+				/ 	= hidden_field :shop, :starts_at, :value => "now"
+				/ 	= shop.submit "Start a new shop", :class => :button
 
 
 			- else
