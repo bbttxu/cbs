@@ -32,7 +32,7 @@ class VolunteersController < ApplicationController
       #   redirect_to @volunteer
       # end
 
-    @volunteer = Volunteer.find_or_create_by_email(params[:email])
+    # @volunteer = Volunteer.find_or_create_by_email(params[:email])
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @volunteer }

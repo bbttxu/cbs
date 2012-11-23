@@ -1,0 +1,27 @@
+/ _form.html.slim
+.row
+	.twelve.columns
+		= form_for(@volunteer) do |f|
+			- if @volunteer.errors.any?
+				#error_explanation.alert-box.alert
+					p= "#{pluralize(@volunteer.errors.count, "error")} prohibited this volunteer from being saved:"
+
+					ul
+						- @volunteer.errors.full_messages.each do |msg|
+							li= msg
+			.field.four.columns.mobile-one
+				= f.label :first_name, :class => [ :right, :inline ]
+			.field.eight.columns.mobile-three
+				= f.text_field :first_name, :placeholder => "first name"
+			.field.four.columns.mobile-one
+				= f.label :last_name, :class => [ :right, :inline, :required ]
+			.field.eight.columns.mobile-three
+				= f.text_field :last_name, :placeholder => "last name"
+			.field.four.columns.mobile-one
+				= f.label :email, :class => [ :right, :inline ]
+			.field.eight.columns.mobile-three
+				= f.text_field :email, :placeholder => "optional"
+			.actions.eight.columns
+				= f.submit
+				== "&nbsp;"
+				= link_to "Cancel", "/", :class => "button alert small"

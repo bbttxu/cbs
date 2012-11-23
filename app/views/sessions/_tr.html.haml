@@ -1,21 +1,24 @@
 / _tr.html.haml
 / %pre= debug sesh
 %tr
-	%td= link_to sesh.volunteer.name, sesh.volunteer
+	%td
+		= link_to sesh.volunteer.name, sesh.volunteer
+		%br
+		= sesh.volunteer.email if sesh.volunteer.email
 
 	- if sesh.ends_at.nil?
 		%td
 			= link_to sesh.shop.shop_date, sesh.shop
 			%br
-			= "started #{time_ago_in_words sesh.starts_at} ago" 
+			= "started #{time_ago_in_words sesh.starts_at} ago"
 		%td
 			= form_for sesh do |sess|
 				= sess.hidden_field :starts_at, :value => sesh.starts_at
 				= sess.hidden_field :ends_at, :value => "now"
 				= submit_tag "logout", :class => "small radius alert button"
 			/ = link_to 'log off', edit_session_path(sesh), :class => "small radius alert button"
-	
-	- else 
+
+	- else
 		%td
 			= link_to sesh.shop.shop_date, sesh.shop
 			%br
