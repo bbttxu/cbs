@@ -3,6 +3,7 @@ $ = jQuery
 
 $ ->  
 	$(document).foundationTopBar()
+	$(document).foundationTabs();
 
 $ ->  
 	# $.getJSON "/volunteers.json", (data)->

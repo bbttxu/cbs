@@ -46,22 +46,17 @@ class SessionsController < ApplicationController
     params[:session][:ends_at] = Chronic.parse params[:session][:ends_at] if params[:session][:ends_at]
     @session = Session.new(params[:session])
 
-    puts params[:session][:volunteer_id]
-
-    @volunteer = Volunteer.find( params[:session][:volunteer_id] )
-    @volunteer.open_sessions.each do |session|
-      # puts session
-
-      session.update_attributes :ends_at => Time.now
-      # session.save
-    end
-
-
-    # if @volunteer == nil
-    #   # redirect_to @volunteer
-    # else
-    #   @session.volunteer_id = @volunteer.id
+    # if params[:session][:volunteer_id].to_s == "0"
+    #   redirect_to new_volunteer_path
     # end
+
+    @volunteer = Volunteer.find_by_id( params[:session][:volunteer_id] )
+
+    redirect_to new_volunteer_path, :notice => 'You must sign in to add an item to your cart.' if @volunteer == nil
+
+    @volunteer.open_sessions.each do |session|
+      session.update_attributes :ends_at => Time.now
+    end
 
     respond_to do |format|
       if @session.save

@@ -47,6 +47,9 @@ class ShopsController < ApplicationController
   def show
     @shop = Shop.find(params[:id])
 
+
+    @volunteers = Volunteer.all
+
     # @new_volunteer = Volunteer.new
     @new_session = Session.new
     @new_session.shop_id = @shop.id

@@ -25,11 +25,12 @@ class VolunteersController < ApplicationController
   # GET /volunteers/new
   # GET /volunteers/new.json
   def new
-    @volunteer = Volunteer.find_by_email(params[:email])
+      # @volunteer = Volunteer.find_by_email(params[:email])
+      @volunteer = Volunteer.new
 
-    unless @volunteer.nil?
-      redirect_to @volunteer
-    end
+      # unless @volunteer.nil?
+      #   redirect_to @volunteer
+      # end
 
     @volunteer = Volunteer.find_or_create_by_email(params[:email])
     respond_to do |format|

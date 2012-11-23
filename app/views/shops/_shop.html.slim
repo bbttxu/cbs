@@ -1,6 +1,4 @@
 / _shop.html.slim
-/ pre= debug shop
-
 - has_open_sessions = false
 - shop.sessions.each do |session|
 	/ = puts sesssion.class
@@ -11,19 +9,22 @@
 			.alert-box
 				p#notice= notice
 
-	.columns.eight
+	.columns.four.push-eight
+		= render :partial => "sessions/login", :locals => { :this_shop => shop }
+
+
+	.columns.eight.pull-four
 
 		h3
 			= link_to shop.shop_date, shop
 		p
-			b Location:
+			b= "Location: "
 			= shop.location
 		.admin.hide
 			ul
 				li= link_to 'Edit', edit_shop_path(shop)
 				li= link_to 'Back', shops_path
 
-	.columns.twelve
 
 		h4
 			= "#{pluralize(shop.volunteers.uniq.count, 'volunteer')}, "
@@ -39,7 +40,6 @@
 			p no volunteers
 
 
-	.twelve.columns	
 		- if has_open_sessions
 			p Closing the shop will log out the active volunteers and set the end time to the current time
 			p

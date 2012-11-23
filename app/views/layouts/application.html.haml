@@ -34,10 +34,11 @@
 						%a( href="#" )
 
 				%section
-					%ul.left
-						%li= link_to Time.now.strftime('%c'), '/'
-					/ %ul.right
-					/ 	= li_active_link_to 'Current', "/shops/current"
+					/ %ul.left
+					/ 	%li= link_to Time.now.strftime('%c'), '/'
+					%ul.right
+						= li_active_link_to 'Current Shops', "/shops/current"
+						= li_active_link_to 'New Volunteer', "/volunteers/new"
 					/ 	= li_active_link_to 'Shops', "/shops"
 					/ 	= li_active_link_to 'Volunteers', "/volunteers"
 					/ 	= li_active_link_to 'Sessions', "/sessions"

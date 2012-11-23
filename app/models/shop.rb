@@ -2,6 +2,9 @@ class Shop < ActiveRecord::Base
 	has_many :sessions
 	has_many :volunteers, :through => :sessions
 
+	validates :starts_at, presence: true
+	validates :ends_at, presence: true
+
 	default_scope order(:starts_at)
 
 	scope :upcoming, lambda { where("ends_at > ?", DateTime.now) }
