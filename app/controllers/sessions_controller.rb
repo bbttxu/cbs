@@ -52,7 +52,7 @@ class SessionsController < ApplicationController
 
     @volunteer = Volunteer.find_by_id( params[:session][:volunteer_id] )
 
-    redirect_to new_volunteer_path, :notice => 'You must sign in to add an item to your cart.' if @volunteer == nil
+    # redirect_to new_volunteer_path, :notice => 'You must sign in to add an item to your cart.' if @volunteer == nil
 
     @volunteer.open_sessions.each do |session|
       session.update_attributes :ends_at => Time.now
@@ -60,7 +60,7 @@ class SessionsController < ApplicationController
 
     respond_to do |format|
       if @session.save
-        format.html { redirect_to @session, notice: 'Session was successfully created.' }
+        format.html { redirect_to "/", notice: 'Session was successfully created.' }
         format.json { render json: @session, status: :created, location: @session }
       else
         format.html { render action: "new" }
