@@ -41,9 +41,10 @@
 
 
 		- if has_open_sessions
-			p Closing the shop will log out the active volunteers and set the end time to the current time
 			p
 				= form_for shop, :action => "close" do |f|
 					= f.submit "Close", :class =>  "button alert"
 				/ = link_to 'Close shop', close_shop_path(shop), :class =>  "button alert"
-	hr
+			p Closing the shop will log out the active volunteers and set the end time to the current time
+
+			hr

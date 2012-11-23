@@ -1,8 +1,8 @@
 <div class="row">
   <%= form_for(@volunteer) do |f| %>
     <% if @volunteer.errors.any? %>
-      <div id="error_explanation alert" class="alert-box">
-        <h2><%= pluralize(@volunteer.errors.count, "error") %> prohibited this volunteer from being saved:</h2>
+      <div id="error_explanation" class="alert-box alert">
+        <p><%= pluralize(@volunteer.errors.count, "error") %> prohibited this volunteer from being saved:</p>
 
         <ul>
         <% @volunteer.errors.full_messages.each do |msg| %>
@@ -14,9 +14,7 @@
     <% end %>
     <div class="field four columns">
       <%= f.label :first_name %><br />
-      <%= f.text_field :first_name, :class => :six %>
-    </div>
-    <div class="field four columns">
+      <%= f.text_field :first_name %>
       <%= f.label :last_name %><br />
       <%= f.text_field :last_name  %>
     </div>
@@ -25,7 +23,7 @@
       <%= f.label :email %><br />
       <%= f.text_field :email %>
     </div>
-    <div class="actions">
+    <div class="actions four columns">
       <%= f.submit %>
     </div>
   <% end %>
