@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, "hours.qcbs.org"
 set :repository,  "git@github.com:bbttxu/cbs.git"
 
@@ -20,6 +22,9 @@ role :db,  "50.56.195.123", :primary => true # This is where Rails migrations wi
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
+after 'deploy:update', 'bundle:install'
+after 'deploy:update', 'foreman:export'
+after 'deploy:update', 'foreman:restart'
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
@@ -32,3 +37,25 @@ after "deploy:restart", "deploy:cleanup"
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 # end
+
+namespace :foreman do
+  desc "Export the Procfile to Ubuntu's upstart scripts"
+  task :export, :roles => :app do
+    run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u hours_qcbs -l #{deploy_to}/log"
+  end
+
+  desc "Start the application services"
+  task :start, :roles => :app do
+    sudo "start hours_qcbs"
+  end
+
+  desc "Stop the application services"
+  task :stop, :roles => :app do
+    sudo "stop hours_qcbs"
+  end
+
+  desc "Restart the application services"
+  task :restart, :roles => :app do
+    run "sudo start hours_qcbs || sudo restart hours_qcbs"
+  end
+end

@@ -36,6 +36,7 @@ gem 'jquery-rails'
 gem 'chronic'
 
 gem 'capistrano'
+gem 'foreman'
 
 gem 'execjs'
 gem 'therubyracer'
