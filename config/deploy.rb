@@ -41,7 +41,7 @@ after 'deploy:update', 'foreman:restart'
 namespace :foreman do
   desc "Export the Procfile to Ubuntu's upstart scripts"
   task :export, :roles => :app do
-    run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u hours_qcbs -l #{deploy_to}/log"
+    run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u #{user} -l #{deploy_to}/current/log"
   end
 
   desc "Start the application services"
