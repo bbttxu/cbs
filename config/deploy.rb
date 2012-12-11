@@ -3,6 +3,8 @@ set :repository,  "git@github.com:bbttxu/cbs.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+default_run_options[:pty] = true  # Must be set for the password prompt
+ssh_options[:forward_agent] = true
 
 set :branch, "master"
 set :repository_cache, "git_cache"
@@ -11,9 +13,9 @@ set :deploy_via, :remote_cache
 set :user, :deploy
 set :deploy_to, "/home/deploy/#{application}"
 
-role :web, "198.101.253.31"                          # Your HTTP server, Apache/etc
-role :app, "198.101.253.31"                          # This may be the same as your `Web` server
-role :db,  "198.101.253.31", :primary => true # This is where Rails migrations will run
+role :web, "50.56.195.123"                          # Your HTTP server, Apache/etc
+role :app, "50.56.195.123"                          # This may be the same as your `Web` server
+role :db,  "50.56.195.123", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
