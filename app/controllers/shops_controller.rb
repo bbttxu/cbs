@@ -25,12 +25,6 @@ class ShopsController < ApplicationController
     @shop.update_attributes :ends_at => Time.zone.now
   end
 
-
-
-
-
-
-
   # GET /shops
   # GET /shops.json
   def index
