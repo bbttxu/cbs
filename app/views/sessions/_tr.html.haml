@@ -22,7 +22,7 @@
 		%td
 			= link_to sesh.shop.shop_date, sesh.shop
 			%br
-			= sesh.hours_worked
+			= number_with_precision sesh.hours_worked, :precision => 1
 			hours, finished
 			= time_ago_in_words sesh.ends_at
 			ago

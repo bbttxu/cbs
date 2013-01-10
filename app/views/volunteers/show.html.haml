@@ -34,11 +34,11 @@
 			%h4 Totals
 			%ul
 				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
-				%li= "#{pluralize(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} total"
+				%li= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')} total"
 			%h4 Last 90 days
 			%ul
 				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
-				%li= "#{pluralize(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} total"
+				%li= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x },:precision => 1), 'hour')} total"
 
 
 

@@ -14,7 +14,7 @@
           %td= shop.location
           %td
             = "#{pluralize(shop.volunteers.count, 'volunteer')},"
-            = "#{pluralize(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
+            = "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1) , 'hour')} worked"
 
     %br
     .admin
