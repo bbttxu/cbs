@@ -5,7 +5,7 @@ class Shop < ActiveRecord::Base
 	validates :starts_at, presence: true
 	validates :ends_at, presence: true
 
-	default_scope order(:starts_at)
+	default_scope order("starts_at DESC")
 
 	scope :upcoming, lambda { where("ends_at > ?", DateTime.now) }
 	scope :past, lambda { where("ends_at =< ?", Time.zone.now) }
