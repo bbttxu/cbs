@@ -1,8 +1,7 @@
-.row
-	.twelve.columns
-
+.row.volunteers
+	.twelve.columns.show-for-large-up
 		%h1 Listing volunteers
-	.one.columns.mobile-one
+	.one.columns.mobile-one#scrollbar2
 		%dl.vertical.tabs
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter}"
