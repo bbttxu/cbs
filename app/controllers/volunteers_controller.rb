@@ -2,7 +2,7 @@ class VolunteersController < ApplicationController
   # GET /volunteers
   # GET /volunteers.json
   def index
-    @volunteers = Volunteer.all
+    @volunteers = Volunteer.all.group_by{ |u| u.last_name[0].upcase }.sort
     @volunteer = Volunteer.new
 
     respond_to do |format|

@@ -1,34 +1,42 @@
 .row
-  .eight.columns
+	.twelve.columns
 
-    %h1 Listing volunteers
+		%h1 Listing volunteers
+	.twelve.columns
+		%dl.tabs
+			- @volunteers.each do |letter, volunteers|
+				%dd= link_to "#{letter}", "\##{letter}"
 
-    %table.volunteers
-      %tr
-        %th Name
-        %th Volunteer Time
+	.twelve.columns.mobile-three
+		%ul.tabs-content
+			- @volunteers.each do |letter, volunteers|
+				%li( id="#{letter}Tab" )
+					%a( name="letter" )
+					%table.volunteers
+						%tr
+							%th Name
+							%th Volunteer Time
+						- volunteers.each do |volunteer|
+							%tr
+								%td
+									%span.name= link_to( volunteer.name, volunteer)
+									%br
+									= volunteer.email
+								%td
+									%span.n_shops= "#{pluralize(volunteer.shops.count, 'shop')}"
+									%br
+									= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+			%hr
+		.admin
+			= link_to 'New Volunteer', new_volunteer_path
 
-      - @volunteers.each do |volunteer|
-        %tr
-          %td
-            %span.name= link_to( volunteer.name, volunteer)
-            %br
-            = volunteer.email
-          %td
-            %span.n_shops= "#{pluralize(volunteer.shops.count, 'shop')}"
-            %br
-            = "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
-    %hr
-    .admin
-      = link_to 'New Volunteer', new_volunteer_path
 
+		.panel
+			%h3 QCBS Volunters
+			%p
+				qcbs is an
+				%b all-volunteer
+				community bike shop. We depend on your help to keep the shop running and contributing back to the vibrant community.
 
-    .panel
-      %h3 QCBS Volunters
-      %p
-        qcbs is an
-        %b all-volunteer
-        community bike shop. We depend on your help to keep the shop running and contributing back to the vibrant community.
-
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
