@@ -2,12 +2,12 @@
 	.twelve.columns
 
 		%h1 Listing volunteers
-	.twelve.columns.mobile-one
+	.one.columns.mobile-one
 		%dl.vertical.tabs
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter}"
 
-	.twelve.columns.mobile-three
+	.eleven.columns.mobile-three
 		%ul.tabs-content
 			- @volunteers.each do |letter, volunteers|
 				%li( id="#{letter}Tab" )

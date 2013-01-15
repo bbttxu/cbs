@@ -1,9 +1,9 @@
 .row
-	.twelve.columns
-		%ul.breadcrumbs
-			%li= link_to "All Shops", "/shops"
-			%li
-				%span= @shop.shop_date
+	/ .twelve.columns
+	/ 	%ul.breadcrumbs
+	/ 		%li= link_to "All Shops", "/shops"
+	/ 		%li
+	/ 			%span= @shop.shop_date
 
 
 = render :partial => "shop", :locals => { :shop => @shop }
