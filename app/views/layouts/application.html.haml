@@ -34,18 +34,12 @@
 						%a( href="#" )
 
 				%section
-					/ %ul.left
-					/ 	%li= link_to Time.now.strftime('%c'), '/'
 					%ul.right
 						= li_active_link_to 'New Shop', "/shops/new"
 						= li_active_link_to 'All Shops', "/shops"
 						= li_active_link_to 'Current Shops', "/shops/current"
 						= li_active_link_to 'All Volunteers', "/volunteers"
 						= li_active_link_to 'New Volunteer', "/volunteers/new"
-					/ 	= li_active_link_to 'Volunteers', "/volunteers"
-					/ 	= li_active_link_to 'Sessions', "/sessions"
-
-
 
 		#page
 			= yield
