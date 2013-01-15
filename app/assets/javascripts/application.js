@@ -10,3 +10,4 @@
 //= require foundation
 //= require app
 //= require shops
+//= require volunteers

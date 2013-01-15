@@ -20,22 +20,39 @@
 		p
 			b= "Location: "
 			= shop.location
-		.admin.hide
+		.admin
 			ul
 				li= link_to 'Edit', edit_shop_path(shop)
-				li= link_to 'Back', shops_path
 
 
 		h4
 			= "#{pluralize(shop.volunteers.uniq.count, 'volunteer')}, "
-			= "#{pluralize(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')} worked"
+			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')} worked"
 		- if shop.sessions.count > 0
 			table
 				tr
 					th Volunteer
 					th Work time
 					th Actions
-				= render :partial => "sessions/tr", :collection => shop.sessions, :as => "sesh"
+				- shop.sessions.each do |sesh|
+					tr
+						td
+							= link_to sesh.volunteer.name, sesh.volunteer
+
+						- if sesh.ends_at.nil?
+							td= "started #{time_ago_in_words sesh.starts_at} ago"
+							td
+								= form_for sesh do |sess|
+									= sess.hidden_field :starts_at, :value => sesh.starts_at
+									= sess.hidden_field :ends_at, :value => "now"
+									= submit_tag "logout", :class => "small radius alert button"
+
+						- else
+							td
+								= pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )
+
+							td
+								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
 		- else
 			p no volunteers
 
