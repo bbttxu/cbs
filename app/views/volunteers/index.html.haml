@@ -17,7 +17,7 @@
           %td
             %span.n_shops= "#{pluralize(volunteer.shops.count, 'shop')}"
             %br
-            = "#{pluralize(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, 'hour')}"
+            = "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
     %hr
     .admin
       = link_to 'New Volunteer', new_volunteer_path
