@@ -2,8 +2,8 @@
 	.twelve.columns
 
 		%h1 Listing volunteers
-	.twelve.columns
-		%dl.tabs
+	.twelve.columns.mobile-one
+		%dl.vertical.tabs
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter}"
 
