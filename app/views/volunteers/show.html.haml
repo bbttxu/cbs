@@ -2,13 +2,28 @@
 	.twelve.columns
 		%h2= @volunteer.name
 
-		- if @volunteer.email
+		- unless @volunteer.email
 			%p
 				%b Email:
 				= @volunteer.email
-	.twelve.columns
+		- unless @volunteer.phone_number
+			%p
+				%b Phone Number:
+				= @volunteer.phone_number
+
+		%p= link_to 'Edit', edit_volunteer_path(@volunteer), :class => :button
 		%hr
-	.eight.columns
+	.twelve.columns
+		%h3 Volunteer hours
+		%p 
+			%b= @volunteer.name
+			has worked 
+			%b= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+			during
+			%b= "#{pluralize(@volunteer.shops.count, 'shop')}."
+
+			- unless @volunteer.sessions.count > 0
+				As such, no worked shops have been recorded.
 		- if @volunteer.sessions.count > 0
 			%h3 Sessions worked
 			%table
@@ -18,29 +33,3 @@
 					%th Hours worked
 					%th Actions
 				= render :partial => "sessions/tr", :collection => @volunteer.sessions, :as => "sesh"
-
-				/ - @volunteer.sessions.each do |session|
-				/ 	%tr
-				/ 		%td= link_to session.shop.shop_date, session.shop
-				/ 		%td= shop_date session
-				/ 		%td= session.hours_worked
-				/ 		%td= link_to 'edit', edit_session_path(session)
-		- else
-			%p No worked shops have been recorded
-
-
-	.four.columns
-		.panel.quick-stats
-			%h4 Totals
-			%ul
-				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
-				%li= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')} total"
-			%h4 Last 90 days
-			%ul
-				%li= "#{pluralize(@volunteer.shops.count, 'shop')} worked"
-				%li= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x },:precision => 1), 'hour')} total"
-
-
-
-//		= link_to 'Edit', edit_volunteer_path(@volunteer)
-//		= link_to 'Back', volunteers_path
