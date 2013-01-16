@@ -18,3 +18,5 @@
 		= f.text_field :ends_at, :value => ( @session.ends_at ? standard_datetime(@session.ends_at) : "" )
 	.actions
 		= f.submit 'Save'
+		&nbsp;
+		= link_to "Cancel", shop_url(@session.shop), :class => "button alert small"

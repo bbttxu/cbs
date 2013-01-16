@@ -6,7 +6,7 @@
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter}"
 
-	.eleven.columns.mobile-three
+	.seven.columns.mobile-three.pull-four
 		%ul.tabs-content
 			- @volunteers.each do |letter, volunteers|
 				%li( id="#{letter}Tab" )
@@ -26,9 +26,6 @@
 									%br
 									= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
 			%hr
-		.admin
-			= link_to 'New Volunteer', new_volunteer_path
-
 
 		.panel
 			%h3 QCBS Volunters

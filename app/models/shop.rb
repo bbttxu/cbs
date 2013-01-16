@@ -1,5 +1,5 @@
 class Shop < ActiveRecord::Base
-	has_many :sessions
+	has_many :sessions, :order => 'starts_at ASC'
 	has_many :volunteers, :through => :sessions
 
 	validates :starts_at, presence: true

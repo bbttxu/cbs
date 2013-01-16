@@ -19,10 +19,11 @@ class ShopsController < ApplicationController
 
   def close
     @shop = Shop.find(params[:id])
-    @shop.sessions.current.each do |session|
-      session.update_attributes :ends_at => Time.now
+    @shop.sessions.current.each do |sesh|
+      sesh.update_attributes :ends_at => Time.zone.now
     end
     @shop.update_attributes :ends_at => Time.zone.now
+    redirect_to @shop
   end
 
   # GET /shops

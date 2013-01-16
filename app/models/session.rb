@@ -7,8 +7,8 @@ class Session < ActiveRecord::Base
 	belongs_to :shop
 
 
-	default_scope order("ends_at asc")
-	scope :current, where("ends_at = ?", nil )
+	default_scope order("starts_at DESC, ends_at DESC")
+	scope :current, where(:ends_at => nil )
 
 	def hours_worked
 		ending_time = self.ends_at ? self.ends_at : Time.now

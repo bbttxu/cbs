@@ -1,7 +1,6 @@
 / _shop.html.slim
 - has_open_sessions = false
 - shop.sessions.each do |session|
-	/ = puts sesssion.class
 	- has_open_sessions = true if session and session.ends_at == nil
 .row
 	- if notice
@@ -27,18 +26,22 @@
 
 		h4
 			= "#{pluralize(shop.volunteers.uniq.count, 'volunteer')}, "
-			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')} worked"
+			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
 		- if shop.sessions.count > 0
-			table
+			table( width="100%" )
 				tr
 					th Volunteer
+					th Start
+					th End
 					th Work time
 					th Actions
 				- shop.sessions.each do |sesh|
 					tr
 						td
 							= link_to sesh.volunteer.name, sesh.volunteer
-
+						td= Time.zone.at(sesh.starts_at).strftime("%I:%M")
+						td
+							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
 						- if sesh.ends_at.nil?
 							td= "started #{time_ago_in_words sesh.starts_at} ago"
 							td
@@ -59,9 +62,7 @@
 
 		- if has_open_sessions
 			p
-				= form_for shop, :action => "close" do |f|
-					= f.submit "Close", :class =>  "button alert"
-				/ = link_to 'Close shop', close_shop_path(shop), :class =>  "button alert"
+				= link_to 'Close shop', "/shops/#{shop.id}/close", :class =>  "button alert"
 			p Closing the shop will log out the active volunteers and set the end time to the current time
 
 			hr

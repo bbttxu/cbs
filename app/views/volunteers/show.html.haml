@@ -1,6 +1,15 @@
 .row
 	.twelve.columns
 		%h2= @volunteer.name
+		%p 
+			%b= @volunteer.name
+			has worked 
+			%b= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+			during
+			%b= "#{pluralize(@volunteer.shops.count, 'shop')}."
+
+			- unless @volunteer.sessions.count > 0
+				As such, no worked shops have been recorded.
 
 		- unless @volunteer.email
 			%p
@@ -12,21 +21,12 @@
 				= @volunteer.phone_number
 
 		%p= link_to 'Edit', edit_volunteer_path(@volunteer), :class => :button
-		%hr
-	.twelve.columns
-		%h3 Volunteer hours
-		%p 
-			%b= @volunteer.name
-			has worked 
-			%b= "#{pluralize(number_with_precision(@volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
-			during
-			%b= "#{pluralize(@volunteer.shops.count, 'shop')}."
 
-			- unless @volunteer.sessions.count > 0
-				As such, no worked shops have been recorded.
-		- if @volunteer.sessions.count > 0
-			%h3 Sessions worked
-			%table
+	- if @volunteer.sessions.count > 0
+		%hr
+		.twelve.columns
+			%h3 Volunteer hours
+			%table( width="100%" )
 				%tr
 					%th Volunteer
 					%th Hours worked

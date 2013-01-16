@@ -15,7 +15,8 @@
 	- else
 		%td
 			= number_with_precision sesh.hours_worked, :precision => 1
-			hours
+			hours,
+			= Time.at(sesh.shop.starts_at).strftime("%Y %b %-d")
 
 		%td
 			= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
