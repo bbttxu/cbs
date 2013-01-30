@@ -1,32 +1,25 @@
-.row.volunteers
+.row.volunteers.alphabet
 	.twelve.columns.show-for-large-up
 		%h1 Listing volunteers
-	.one.columns.mobile-one#scrollbar2
-		%dl.vertical.tabs
+	.one.columns.mobile-one#scrollbar2.push-three-mobile	
+		%dl.index
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter}"
 
-	.seven.columns.mobile-three.pull-four
-		%ul.tabs-content
+	.seven.columns.mobile-three.pull-one-mobile#scrollbar1
+		%ul.tabs-contents.disc
 			- @volunteers.each do |letter, volunteers|
-				%li( id="#{letter}Tab" )
-					%a( name="letter" )
-					%table.volunteers
-						%tr
-							%th Name
-							%th Volunteer Time
-						- volunteers.each do |volunteer|
-							%tr
-								%td
-									%span.name= link_to( volunteer.name, volunteer)
-									%br
-									= volunteer.email
-								%td
-									%span.n_shops= "#{pluralize(volunteer.shops.count, 'shop')}"
-									%br
-									= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+				%li.divider( id="#{letter}" )
+					%a( name="letter" )= letter
+				- volunteers.each do |volunteer|
+					%li.volunteer
+						%span.name= link_to( volunteer.name, volunteer)
+						%span.shops
+							= "#{pluralize(volunteer.shops.count, 'shop')}"
+						%span.hours
+							= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
 			%hr
-
+	.four.columns.mobile-four
 		.panel
 			%h3 QCBS Volunters
 			%p

@@ -6,13 +6,11 @@ $ = jQuery
 
 
 
-# $.fn.foo = (options) ->
-# 	console.log this
-# 	boo = (event) ->
-# 		console.log this
-# 		console.log event
-# 	$(this).scroll boo
-# 	this
+activate_index = (event) ->
+	# $('#scrollbar2').scrollTop(300)
+	$('#scrollbar2 dd.active').removeClass "active"
+	$(this).parent('dd').toggleClass "active"
+	# console.log event
 
-# $(document).ready () ->
-# 	$('#scrollbar2').foo()
+$(document).ready ()->
+	$('#scrollbar2 a').click activate_index

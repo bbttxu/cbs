@@ -2,18 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-table.volunteers
-	width: 100%
-	tr
-		td
-			color: #999
 
-			span.name
-				font:
-					size: 1.5em
-					color: black
+div.row.volunteers.alphabet
+	span.shops, span.hours
+		padding: 
+			left: 1ex
+		text-align: right
+		float: right
+		display: inline-block
+	li
+		clear: right
+	li.volunteer:nth-child(odd)
+		background-color: white
 
-			span.n_shops
-				font:
-					size: 1.2em
-					color: black
+	li.divider
+		background:
+			color: lightblue !important
+
+
+#scrollbar1
+	padding: 0
+	ul
+		margin: 0
+
+	li 
+		disc-style: none
+		padding: .2em 2ex
+
+#scrollbar2
+	dd.active
+		background: 
+			color: lightblue
+
+#scrollbar2, #scrollbar1
+	overflow: auto
+	-webkit-overflow-scrolling: touch
+	height: 300px
+	dd
+		text:
+			align: center
+		a 
+			padding: 4px 5px
