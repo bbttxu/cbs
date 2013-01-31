@@ -4,13 +4,13 @@
 	.one.columns.mobile-one#scrollbar2.push-three-mobile	
 		%dl.index
 			- @volunteers.each do |letter, volunteers|
-				%dd= link_to "#{letter}", "\##{letter}"
+				%dd= link_to "#{letter}", "\##{letter.downcase}", :id => "index_#{letter.downcase}"
 
 	.seven.columns.mobile-three.pull-one-mobile#scrollbar1
 		%ul.tabs-contents.disc
 			- @volunteers.each do |letter, volunteers|
-				%li.divider( id="#{letter}" )
-					%a( name="letter" )= letter
+				%li.divider( id="#{letter.downcase}" id="#{letter.downcase}" )
+					%a( name="#{letter.downcase}" )= letter
 				- volunteers.each do |volunteer|
 					%li.volunteer
 						%span.name= link_to( volunteer.name, volunteer)
