@@ -74,3 +74,5 @@ group :test do
   gem 'rb-fsevent'
   gem 'growl'
 end
+
+gem 'newrelic_rpm'
