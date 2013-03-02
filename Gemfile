@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.3'
+gem 'rails', '~> 3.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -11,7 +11,7 @@ gem "haml"
 gem "haml-rails"
 
 gem 'sass'
-gem 'sass-rails',   '~> 3.1.5'
+gem 'sass-rails', '~> 3.1.5'
 
 gem "slim"
 gem "slim-rails"
