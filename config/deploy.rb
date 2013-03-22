@@ -15,9 +15,9 @@ set :deploy_via, :remote_cache
 set :user, :deploy
 set :deploy_to, "/home/deploy/#{application}"
 
-role :web, "50.56.195.123"                          # Your HTTP server, Apache/etc
-role :app, "50.56.195.123"                          # This may be the same as your `Web` server
-role :db,  "50.56.195.123", :primary => true # This is where Rails migrations will run
+role :web, "50.56.196.115"                          # Your HTTP server, Apache/etc
+role :app, "50.56.196.115"                          # This may be the same as your `Web` server
+role :db,  "50.56.196.115", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
