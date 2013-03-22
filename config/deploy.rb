@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+load "deploy/assets"
 
 set :application, "hours.qcbs.org"
 set :repository,  "git@github.com:bbttxu/cbs.git"
@@ -14,17 +15,18 @@ set :deploy_via, :remote_cache
 # 	set :ssh_options, { :forward_agent => true }
 set :user, :deploy
 set :deploy_to, "/home/deploy/#{application}"
+set :use_sudo, false
 
-role :web, "50.56.196.115"                          # Your HTTP server, Apache/etc
-role :app, "50.56.196.115"                          # This may be the same as your `Web` server
-role :db,  "50.56.196.115", :primary => true # This is where Rails migrations will run
+role :web, "50.56.247.244"                          # Your HTTP server, Apache/etc
+role :app, "50.56.247.244"                          # This may be the same as your `Web` server
+role :db,  "50.56.247.244", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
 after 'deploy:update', 'bundle:install'
-after 'deploy:update', 'foreman:export'
-after 'deploy:update', 'foreman:restart'
+# after 'deploy:update', 'foreman:export'
+# after 'deploy:update', 'foreman:restart'
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
@@ -38,24 +40,24 @@ after 'deploy:update', 'foreman:restart'
 #   end
 # end
 
-namespace :foreman do
-  desc "Export the Procfile to Ubuntu's upstart scripts"
-  task :export, :roles => :app do
-    run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u #{user} -l #{deploy_to}/current/log"
-  end
+# namespace :foreman do
+#   desc "Export the Procfile to Ubuntu's upstart scripts"
+#   task :export, :roles => :app do
+#     run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u #{user} -l #{deploy_to}/current/log"
+#   end
 
-  desc "Start the application services"
-  task :start, :roles => :app do
-    sudo "start hours_qcbs"
-  end
+#   desc "Start the application services"
+#   task :start, :roles => :app do
+#     sudo "start hours_qcbs"
+#   end
 
-  desc "Stop the application services"
-  task :stop, :roles => :app do
-    sudo "stop hours_qcbs"
-  end
+#   desc "Stop the application services"
+#   task :stop, :roles => :app do
+#     sudo "stop hours_qcbs"
+#   end
 
-  desc "Restart the application services"
-  task :restart, :roles => :app do
-    run "sudo start hours_qcbs || sudo restart hours_qcbs"
-  end
-end
+#   desc "Restart the application services"
+#   task :restart, :roles => :app do
+#     run "sudo start hours_qcbs || sudo restart hours_qcbs"
+#   end
+# end
