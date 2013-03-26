@@ -25,7 +25,7 @@ gem 'therubyracer'
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'compass-rails', '~> 1.0.3'
+  gem 'compass-rails', '~> 1.0'
   gem 'zurb-foundation', '~> 3.2'
   gem 'jquery-ui-rails'
 end
