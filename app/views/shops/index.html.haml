@@ -2,21 +2,31 @@
   .twelve.columns
     %h1 Listing shops
 
-    %table
-      %tr
-        %th Shop
-        %th Location
-        %th # Volunteers
+.row.shops.alphabet
+  .twelve.columns.show-for-large-up
+    %h1 Listing shops
+  .two.columns.mobile-one#scrollbar2.push-three-mobile
+    %dl.index
+      - @shops.each do |letter, shops|
+        %dd= link_to "#{letter}", "\##{letter.downcase}", :id => "index_#{letter.downcase}"
 
-      - @shops.each do |shop|
-        %tr
-          %td= link_to shop_date(shop), shop
-          %td= shop.location
-          %td
-            = "#{pluralize(shop.volunteers.count, 'volunteer')},"
-            = "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1) , 'hour')} worked"
+  .six.columns.mobile-three.pull-one-mobile#scrollbar1
+    %ul.tabs-contents.disc
+      - @shops.each do |letter, month_shops|
+        %li.divider( id="#{letter.downcase}" id="#{letter.downcase}" )
+          %a( name="#{letter.downcase}" )= letter
+        - month_shops.each do |shop|
+          %li.shop
+            %span.name= link_to( shop_date(shop), shop)
+            %span.hours= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
+            %span.shops= "#{pluralize(shop.volunteers.uniq.count, 'volunteer')}, "
 
-    %br
-    .admin
-      %hr
-      = link_to 'New Shop', new_shop_path
+  .four.columns.mobile-four
+    .panel
+      %h3 QCBS Shops
+      %p
+        qcbs is an
+        %b all-volunteer
+        community bike shop. We depend on your help to keep the shop running and contributing back to the vibrant community.
+
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

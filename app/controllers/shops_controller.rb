@@ -29,7 +29,8 @@ class ShopsController < ApplicationController
   # GET /shops
   # GET /shops.json
   def index
-    @shops = Shop.all
+    @shops = Shop.all.group_by{ |u| Time.at(u.starts_at).strftime("%Y-%m") }.sort.reverse
+
 
     respond_to do |format|
       format.html # index.html.er
@@ -48,7 +49,7 @@ class ShopsController < ApplicationController
     # @new_volunteer = Volunteer.new
     @new_session = Session.new
     @new_session.shop_id = @shop.id
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @shop }
