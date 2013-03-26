@@ -1,0 +1,32 @@
+@import "foundation_and_overrides"
+// @import "jquery.ui.all.css"
+@import "volunteers"
+
+div.admin
+  a
+    @extend .button
+
+
+
+
+div.actions
+  input
+    @extend .button
+
+
+@import "page"
+@import "navigation"
+@import "footer"
+
+@import "shops"
+@import "volunteers"
+
+label
+  content:
+    after: ":"
+
+
+dl.tabs
+  dd
+    a
+      color: $txtColor

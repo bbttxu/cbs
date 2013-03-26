@@ -10,6 +10,8 @@ gem 'sqlite3'
 gem "haml"
 gem "haml-rails"
 
+gem "compass"
+
 gem 'sass'
 gem 'sass-rails', '~> 3.1.5'
 
@@ -25,10 +27,10 @@ gem 'therubyracer'
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'compass-rails', '~> 1.0'
-  gem 'zurb-foundation', '~> 3.2'
   gem 'jquery-ui-rails'
 end
+gem 'compass-rails', '~> 1.0'
+gem 'zurb-foundation', '~> 3.2'
 
 gem "active_link_to"
 
