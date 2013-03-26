@@ -8,7 +8,7 @@
 
 
 .row
-	= form_for @new_session do |sess|
+	= form_for @new_session, :html => { :id => "#{('a'..'z').to_a.shuffle[0,8].join}" } do |sess|
 		.twelve.columns.panel
 
 			= label :email, "Volunteer Login"
@@ -16,11 +16,11 @@
 
 			/ .alert-box.success
 			%p
-				%b Shop time: 
-				= this_shop.shop_date                               
-			= sess.hidden_field :volunteer_id, :value => 0
+				%b Shop time:
+				= this_shop.shop_date
+			= sess.hidden_field :volunteer_id, :value => 0, :class => 'volunteer-id'
 			= sess.hidden_field :shop_id, :value => this_shop.id
-	
+
 			= sess.hidden_field :starts_at, :value => "now"
 			= submit_tag "Login", :class => :button
 
