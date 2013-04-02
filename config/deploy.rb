@@ -25,8 +25,10 @@ role :db,  "50.56.247.244", :primary => true # This is where Rails migrations wi
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
 after 'deploy:update', 'bundle:install'
-# after 'deploy:update', 'foreman:export'
-# after 'deploy:update', 'foreman:restart'
+after 'deploy:update', 'foreman:export'
+after 'deploy:update', 'foreman:restart'
+
+after "deploy:update_code", "deploy:migrate"
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
@@ -40,24 +42,24 @@ after 'deploy:update', 'bundle:install'
 #   end
 # end
 
-# namespace :foreman do
-#   desc "Export the Procfile to Ubuntu's upstart scripts"
-#   task :export, :roles => :app do
-#     run "cd #{deploy_to}/current && sudo bundle exec foreman export upstart /etc/init -a hours_qcbs -u #{user} -l #{deploy_to}/current/log"
-#   end
+namespace :foreman do
+  desc "Export the Procfile to Ubuntu's upstart scripts"
+  task :export, :roles => :app do
+    run "cd #{deploy_to}/current && sudo bundle exec foreman export bluepill /etc/bluepill -a qcbs -u #{user} -l #{deploy_to}/current/log"
+  end
 
-#   desc "Start the application services"
-#   task :start, :roles => :app do
-#     sudo "start hours_qcbs"
-#   end
+  desc "Start the application services"
+  task :start, :roles => :app do
+    sudo "sudo bluepill load /etc/bluepill/qcbs.pill"
+  end
 
-#   desc "Stop the application services"
-#   task :stop, :roles => :app do
-#     sudo "stop hours_qcbs"
-#   end
+  desc "Stop the application services"
+  task :stop, :roles => :app do
+    sudo "sudo bluepill qcbs stop"
+  end
 
-#   desc "Restart the application services"
-#   task :restart, :roles => :app do
-#     run "sudo start hours_qcbs || sudo restart hours_qcbs"
-#   end
-# end
+  desc "Restart the application services"
+  task :restart, :roles => :app do
+    run "sudo bluepill qcbs stop || sudo bluepill load /etc/bluepill/qcbs.pill"
+  end
+end
