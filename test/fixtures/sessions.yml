@@ -1118,20 +1118,21 @@ session186:
   shop: shop673
   volunteer: volunteer4536
   starts_at: "2012-01-14 15:02:52"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-01-14 19:45:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
+
 session187:
   shop: shop673
   volunteer: volunteer4579
   starts_at: "2012-01-14 15:03:19"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: " 2012-01-14 19:45:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session188:
   shop: shop673
   volunteer: volunteer4625
   starts_at: "2012-01-14 15:05:56"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: " 2012-01-14 19:45:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session189:
   shop: shop673
   volunteer: volunteer4542
@@ -1142,8 +1143,8 @@ session190:
   shop: shop673
   volunteer: volunteer4553
   starts_at: "2012-01-14 15:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: " 2012-01-14 19:45:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session191:
   shop: shop673
   volunteer: volunteer4626
@@ -1328,14 +1329,14 @@ session221:
   shop: shop678
   volunteer: volunteer4536
   starts_at: "2012-02-01 18:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-01 18:00:00"
+
 session222:
   shop: shop678
   volunteer: volunteer4552
   starts_at: "2012-02-01 18:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-01 18:00:00"
+
 session223:
   shop: shop679
   volunteer: volunteer4571
@@ -1394,188 +1395,171 @@ session232:
   shop: shop680
   volunteer: volunteer4574
   starts_at: "2012-02-11 14:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-11 16:00:00"
+  notes: Ending time of session is unknown, and shop hours don't match up—arbitrarily marking as two hours.
 session233:
   shop: shop680
   volunteer: volunteer4536
   starts_at: "2012-02-11 14:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-11 16:00:00"
+  notes: Ending time of session is unknown, and shop hours don't match up—arbitrarily marking as two hours.
 session234:
   shop: shop680
   volunteer: volunteer4534
   starts_at: "2012-02-11 15:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-11 17:00:00"
+  notes: Ending time of session is unknown, and shop hours don't match up—arbitrarily marking as two hours.
 session235:
   shop: shop680
   volunteer: volunteer4643
   starts_at: "2012-02-11 14:30:00"
-  ends_at: "2012-02-11 15:45:00
-"
+  ends_at: "2012-02-11 15:45:00"
 session236:
   shop: shop680
   volunteer: volunteer4553
   starts_at: "2012-02-11 16:30:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-11 18:30:00"
+  notes: Ending time of session is unknown, and shop hours don't match up—arbitrarily marking as two hours.
 session237:
   shop: shop680
   volunteer: volunteer4570
   starts_at: "2012-02-11 15:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-11 17:00:00"
+  notes: Ending time of session is unknown, and shop hours don't match up—arbitrarily marking as two hours.
 session238:
   shop: shop681
   volunteer: volunteer4536
   starts_at: "2012-02-22 17:14:22"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-22 19:45:00"
 session239:
   shop: shop681
   volunteer: volunteer4579
   starts_at: "2012-02-22 17:14:57"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-22 19:45:00"
 session240:
   shop: shop681
   volunteer: volunteer4628
   starts_at: "2012-02-22 17:31:33"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-22 19:45:00"
 session241:
   shop: shop681
   volunteer: volunteer4552
   starts_at: "2012-02-22 18:14:18"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-22 19:45:00"
 session242:
   shop: shop681
   volunteer: volunteer4571
   starts_at: "2012-02-22 18:16:24"
-  ends_at: "2012-02-22 19:45:00
-"
+  ends_at: "2012-02-22 19:45:00"
 session243:
   shop: shop682
   volunteer: volunteer4570
   starts_at: "2012-02-25 14:15:00"
-  ends_at: "2012-02-25 18:12:04
-"
+  ends_at: "2012-02-25 18:12:04"
 session244:
   shop: shop682
   volunteer: volunteer4536
   starts_at: "2012-02-25 14:00:00"
-  ends_at: "2012-02-25 17:00:00
-"
+  ends_at: "2012-02-25 17:00:00"
 session245:
   shop: shop682
   volunteer: volunteer4645
   starts_at: "2012-02-25 15:15:00"
-  ends_at: "2012-02-25 18:19:47
-"
+  ends_at: "2012-02-25 18:19:47"
 session246:
   shop: shop682
   volunteer: volunteer4646
   starts_at: "2012-02-25 15:15:00"
-  ends_at: "2012-02-25 18:06:36
-"
+  ends_at: "2012-02-25 18:06:36"
 session247:
   shop: shop682
   volunteer: volunteer4552
   starts_at: "2012-02-25 15:15:00"
-  ends_at: "2012-02-25 18:11:06
-"
+  ends_at: "2012-02-25 18:11:06"
 session248:
   shop: shop682
   volunteer: volunteer4638
   starts_at: "2012-02-25 15:35:41"
-  ends_at: "2012-02-25 18:19:45
-"
+  ends_at: "2012-02-25 18:19:45"
 session249:
   shop: shop682
   volunteer: volunteer4648
   starts_at: "2012-02-25 15:30:00"
-  ends_at: "2012-02-25 17:45:00
-"
+  ends_at: "2012-02-25 17:45:00"
 session250:
   shop: shop682
   volunteer: volunteer4649
   starts_at: "2012-02-25 15:45:00"
-  ends_at: "2012-02-25 17:45:00
-"
+  ends_at: "2012-02-25 17:45:00"
 session251:
   shop: shop682
   volunteer: volunteer4622
   starts_at: "2012-02-25 15:15:00"
-  ends_at: "2012-02-25 18:11:29
-"
+  ends_at: "2012-02-25 18:19:47"
 session252:
   shop: shop683
   volunteer: volunteer4571
   starts_at: "2012-02-29 16:52:46"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session253:
   shop: shop683
   volunteer: volunteer4628
   starts_at: "2012-02-29 17:32:19"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session254:
   shop: shop683
   volunteer: volunteer4536
   starts_at: "2012-02-29 18:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session255:
   shop: shop683
   volunteer: volunteer4552
   starts_at: "2012-02-29 18:38:49"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session256:
   shop: shop683
   volunteer: volunteer4534
   starts_at: "2012-02-29 18:39:11"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session257:
   shop: shop683
   volunteer: volunteer4646
   starts_at: "2012-02-29 17:45:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session258:
   shop: shop683
   volunteer: volunteer4654
   starts_at: "2012-02-29 19:04:38"
-  ends_at: "2012-02-29 19:49:39
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session259:
   shop: shop683
   volunteer: volunteer4534
   starts_at: "2012-02-29 18:15:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session260:
   shop: shop683
   volunteer: volunteer4634
   starts_at: "2012-02-29 20:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-02-29 20:00:00"
+  notes: No time was recorded for the end of this visit, using the ending time of the shop.
 session261:
   shop: shop684
   volunteer: volunteer4534
   starts_at: "2012-03-03 14:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-03 17:39:45"
 session262:
   shop: shop684
   volunteer: volunteer4574
   starts_at: "2012-03-03 14:15:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-03 17:39:45"
 session263:
   shop: shop684
   volunteer: volunteer4579
@@ -1664,44 +1648,37 @@ session277:
   shop: shop689
   volunteer: volunteer4574
   starts_at: "2012-03-31 14:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session278:
   shop: shop689
   volunteer: volunteer4659
   starts_at: "2012-03-31 14:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session279:
   shop: shop689
   volunteer: volunteer4660
   starts_at: "2012-03-31 15:00:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session280:
   shop: shop689
   volunteer: volunteer4661
   starts_at: "2012-03-31 15:15:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session281:
   shop: shop689
   volunteer: volunteer4665
   starts_at: "2012-03-31 15:51:32"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session282:
   shop: shop689
   volunteer: volunteer4576
   starts_at: "2012-03-31 15:15:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session283:
   shop: shop689
   volunteer: volunteer4534
   starts_at: "2012-03-31 13:30:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-03-31 15:51:32"
 session284:
   shop: shop690
   volunteer: volunteer4571
@@ -2618,32 +2595,28 @@ session436:
   shop: shop716
   volunteer: volunteer4726
   starts_at: "2012-07-21 13:45:00"
-  ends_at: "0000-00-00 00:00:00
+  ends_at: "2012-07-21 17:38:45
 "
 session437:
   shop: shop717
   volunteer: volunteer4646
   starts_at: "2012-07-23 20:17:55"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-07-23 20:18:02"
 session438:
   shop: shop717
   volunteer: volunteer4542
   starts_at: "2012-07-23 20:18:02"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-07-23 20:18:02"
 session439:
   shop: shop718
   volunteer: volunteer4553
   starts_at: "2012-07-28 14:15:00"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-07-28 16:19:42"
 session440:
   shop: shop718
   volunteer: volunteer4666
   starts_at: "2012-07-28 14:23:08"
-  ends_at: "0000-00-00 00:00:00
-"
+  ends_at: "2012-07-28 16:19:42"
 session441:
   shop: shop718
   volunteer: volunteer4713
@@ -2694,519 +2667,519 @@ session448:
 
 
 session721:
-  volunteer_id: volunteer4740
-  shop_id: shop720
+  volunteer: volunteer4740
+  shop: shop720
   starts_at: '2012-09-29 14:15:00'
   ends_at: '2012-09-29 15:30:00'
   reason_for_visit: flat
   notes: 03:30:00 PM
 session722:
-  volunteer_id: volunteer4741
-  shop_id: shop720
+  volunteer: volunteer4741
+  shop: shop720
   starts_at: '2012-09-29 14:15:00'
   ends_at: '2012-09-29 15:30:00'
   reason_for_visit: cables and brakes
   notes: 03:30:00 PM
 session723:
-  volunteer_id: volunteer4670
-  shop_id: shop720
+  volunteer: volunteer4670
+  shop: shop720
   starts_at: '2012-09-29 15:40:00'
   ends_at: '2012-09-29 12:00:00'
   reason_for_visit: New bike
   notes: ''
 session724:
-  volunteer_id: volunteer4743
-  shop_id: shop720
+  volunteer: volunteer4743
+  shop: shop720
   starts_at: '2012-09-29 14:30:00'
   ends_at: '2012-09-29 17:00:00'
   reason_for_visit: polo bike brakes/headset
   notes: 05:00:00 PM
 session728:
-  volunteer_id: volunteer4741
-  shop_id: shop727
+  volunteer: volunteer4741
+  shop: shop727
   starts_at: '2012-10-06 14:15:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: flat tires
   notes: ''
 session729:
-  volunteer_id: volunteer4740
-  shop_id: shop727
+  volunteer: volunteer4740
+  shop: shop727
   starts_at: '2012-10-06 14:15:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: flat tires
   notes: ''
 session730:
-  volunteer_id: volunteer4701
-  shop_id: shop727
+  volunteer: volunteer4701
+  shop: shop727
   starts_at: '2012-10-06 15:35:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: flat front tire
   notes: ''
 session731:
-  volunteer_id: volunteer4750
-  shop_id: shop727
+  volunteer: volunteer4750
+  shop: shop727
   starts_at: '2012-10-06 15:36:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: flat back tire/rusted gears
   notes: ''
 session732:
-  volunteer_id: volunteer4743
-  shop_id: shop727
+  volunteer: volunteer4743
+  shop: shop727
   starts_at: '2012-10-06 12:00:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: stuff
   notes: ''
 session733:
-  volunteer_id: volunteer4752
-  shop_id: shop727
+  volunteer: volunteer4752
+  shop: shop727
   starts_at: '2012-10-06 03:40:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: maint
   notes: ''
 session734:
-  volunteer_id: volunteer4666
-  shop_id: shop727
+  volunteer: volunteer4666
+  shop: shop727
   starts_at: '2012-10-06 14:15:00'
   ends_at: '2012-10-06 12:00:00'
   reason_for_visit: coordinator
   notes: ''
 session736:
-  volunteer_id: volunteer4605
-  shop_id: shop735
+  volunteer: volunteer4605
+  shop: shop735
   starts_at: '2012-10-13 14:00:00'
   ends_at: '2012-10-13 17:00:00'
   reason_for_visit: volunteer
   notes: 05:00:00 PM
 session737:
-  volunteer_id: volunteer4757
-  shop_id: shop735
+  volunteer: volunteer4757
+  shop: shop735
   starts_at: '2012-10-13 14:00:00'
   ends_at: '2012-10-13 16:00:00'
   reason_for_visit: switching out cassette
   notes: 04:00:00 PM
 session738:
-  volunteer_id: volunteer4666
-  shop_id: shop735
+  volunteer: volunteer4666
+  shop: shop735
   starts_at: '2012-10-13 14:00:00'
   ends_at: '2012-10-13 12:00:00'
   reason_for_visit: coordinator
   notes: ''
 session739:
-  volunteer_id: volunteer4759
-  shop_id: shop735
+  volunteer: volunteer4759
+  shop: shop735
   starts_at: '2012-10-13 15:04:00'
   ends_at: '2012-10-13 12:00:00'
   reason_for_visit: volunteer
   notes: ''
 session740:
-  volunteer_id: volunteer4736
-  shop_id: shop735
+  volunteer: volunteer4736
+  shop: shop735
   starts_at: '2012-10-13 15:28:00'
   ends_at: '2012-10-13 12:00:00'
   reason_for_visit: swith out drivetrain
   notes: ''
 session741:
-  volunteer_id: volunteer4761
-  shop_id: shop735
+  volunteer: volunteer4761
+  shop: shop735
   starts_at: '1969-12-31 18:00:00'
   ends_at: '2012-10-13 16:59:00'
   reason_for_visit: bottom brace of crank squeaking
   notes: 04:59:00 PM
 session743:
-  volunteer_id: volunteer4666
-  shop_id: shop742
+  volunteer: volunteer4666
+  shop: shop742
   starts_at: '2012-10-17 18:00:00'
   ends_at: '2012-10-17 12:00:00'
   reason_for_visit: coordinator
   notes: ''
 session744:
-  volunteer_id: volunteer4605
-  shop_id: shop742
+  volunteer: volunteer4605
+  shop: shop742
   starts_at: '2012-10-17 18:00:00'
   ends_at: '2012-10-17 12:00:00'
   reason_for_visit: volunteer
   notes: ''
 session745:
-  volunteer_id: volunteer4562
-  shop_id: shop742
+  volunteer: volunteer4562
+  shop: shop742
   starts_at: '1969-12-31 18:00:00'
   ends_at: '2012-10-17 12:00:00'
   reason_for_visit: volunteer
   notes: ''
 session752:
-  volunteer_id: volunteer4777
-  shop_id: shop751
+  volunteer: volunteer4777
+  shop: shop751
   starts_at: '2012-10-20 14:10:00'
   ends_at: '2012-10-20 16:55:00'
   reason_for_visit: volunteer
   notes: 04:55:00 PM
 session753:
-  volunteer_id: volunteer4757
-  shop_id: shop751
+  volunteer: volunteer4757
+  shop: shop751
   starts_at: '2012-10-20 14:30:00'
   ends_at: '2012-10-20 17:00:00'
   reason_for_visit: ''
   notes: 05:00:00 PM
 session754:
-  volunteer_id: volunteer4779
-  shop_id: shop751
+  volunteer: volunteer4779
+  shop: shop751
   starts_at: '2012-10-20 14:35:00'
   ends_at: '2012-10-20 17:00:00'
   reason_for_visit: brakes
   notes: 05:00:00 PM
 session755:
-  volunteer_id: volunteer4761
-  shop_id: shop751
+  volunteer: volunteer4761
+  shop: shop751
   starts_at: '2012-10-20 15:29:00'
   ends_at: '2012-10-20 17:50:00'
   reason_for_visit: '"back wheel'
   notes: ' cones ?"'
 session756:
-  volunteer_id: volunteer4562
-  shop_id: shop751
+  volunteer: volunteer4562
+  shop: shop751
   starts_at: '2012-10-20 04:00:00'
   ends_at: '2012-10-20 17:50:00'
   reason_for_visit: volunteer
   notes: 05:50:00 PM
 session757:
-  volunteer_id: volunteer4743
-  shop_id: shop751
+  volunteer: volunteer4743
+  shop: shop751
   starts_at: '2012-10-20 03:00:00'
   ends_at: '2012-10-20 17:30:00'
   reason_for_visit: chain
   notes: 05:30:00 PM
 session758:
-  volunteer_id: volunteer4783
-  shop_id: shop751
+  volunteer: volunteer4783
+  shop: shop751
   starts_at: '2012-10-20 14:30:00'
   ends_at: '2012-10-20 17:30:00'
   reason_for_visit: freewheel replacement
   notes: 05:30:00 PM
 session759:
-  volunteer_id: volunteer4784
-  shop_id: shop751
+  volunteer: volunteer4784
+  shop: shop751
   starts_at: '2012-10-20 14:30:00'
   ends_at: '2012-10-20 17:30:00'
   reason_for_visit: brake adjustment
   notes: 05:30:00 PM
 session760:
-  volunteer_id: volunteer4785
-  shop_id: shop751
+  volunteer: volunteer4785
+  shop: shop751
   starts_at: '2012-10-20 04:30:00'
   ends_at: '2012-10-20 17:51:00'
   reason_for_visit: brakes
   notes: 05:51:00 PM
 session761:
-  volunteer_id: volunteer4786
-  shop_id: shop751
+  volunteer: volunteer4786
+  shop: shop751
   starts_at: '2012-10-20 16:30:00'
   ends_at: '2012-10-20 17:30:00'
   reason_for_visit: brakes
   notes: 05:30:00 PM
 session762:
-  volunteer_id: volunteer4605
-  shop_id: shop751
+  volunteer: volunteer4605
+  shop: shop751
   starts_at: '2012-10-20 14:00:00'
   ends_at: '2012-10-20 17:40:00'
   reason_for_visit: volunteer
   notes: 05:40:00 PM
 session764:
-  volunteer_id: volunteer4726
-  shop_id: shop763
+  volunteer: volunteer4726
+  shop: shop763
   starts_at: '2012-12-08 10:00:00'
   ends_at: '2012-12-08 12:00:00'
   reason_for_visit: coordinator
   notes: ''
 session766:
-  volunteer_id: volunteer4666
-  shop_id: shop763
+  volunteer: volunteer4666
+  shop: shop763
   starts_at: '2012-12-08 13:30:00'
   ends_at: '2012-12-08 12:00:00'
   reason_for_visit: mechanic extraordinaire
   notes: ''
 session769:
-  volunteer_id: volunteer4794
-  shop_id: shop763
+  volunteer: volunteer4794
+  shop: shop763
   starts_at: '2012-12-08 14:00:00'
   ends_at: '2012-12-08 17:00:00'
   reason_for_visit: greeter
   notes: 05:00:00 PM
 session770:
-  volunteer_id: volunteer4795
-  shop_id: shop763
+  volunteer: volunteer4795
+  shop: shop763
   starts_at: '2012-12-08 14:11:00'
   ends_at: '2012-12-08 16:19:00'
   reason_for_visit: coordinator
   notes: 04:19:00 PM
 session772:
-  volunteer_id: volunteer4797
-  shop_id: shop763
+  volunteer: volunteer4797
+  shop: shop763
   starts_at: '2012-12-08 14:36:00'
   ends_at: '2012-12-08 14:42:00'
   reason_for_visit: bike donation
   notes: 02:42:00 PM
 session773:
-  volunteer_id: volunteer4605
-  shop_id: shop763
+  volunteer: volunteer4605
+  shop: shop763
   starts_at: '2012-12-08 14:44:00'
   ends_at: '2012-12-08 17:45:00'
   reason_for_visit: volunteer
   notes: 05:45:00 PM
 session774:
-  volunteer_id: volunteer4799
-  shop_id: shop763
+  volunteer: volunteer4799
+  shop: shop763
   starts_at: '2012-12-08 14:50:00'
   ends_at: '2012-12-08 15:46:00'
   reason_for_visit: fixing flat tire
   notes: 03:46:00 PM
 session775:
-  volunteer_id: volunteer4800
-  shop_id: shop763
+  volunteer: volunteer4800
+  shop: shop763
   starts_at: '2012-12-08 15:13:00'
   ends_at: '2012-12-08 17:00:00'
   reason_for_visit: '"bent seat'
   notes: ' new grips"'
 session776:
-  volunteer_id: volunteer4801
-  shop_id: shop763
+  volunteer: volunteer4801
+  shop: shop763
   starts_at: '2012-12-08 15:15:00'
   ends_at: '2012-12-08 17:00:00'
   reason_for_visit: helping son with bike
   notes: 05:00:00 PM
 session777:
-  volunteer_id: volunteer4802
-  shop_id: shop763
+  volunteer: volunteer4802
+  shop: shop763
   starts_at: '2012-12-08 15:27:00'
   ends_at: '2012-12-08 16:06:00'
   reason_for_visit: buying frame
   notes: 04:06:00 PM
 session778:
-  volunteer_id: volunteer4803
-  shop_id: shop763
+  volunteer: volunteer4803
+  shop: shop763
   starts_at: '2012-12-08 15:27:00'
   ends_at: '2012-12-08 16:06:00'
   reason_for_visit: buying frame
   notes: 04:06:00 PM
 session779:
-  volunteer_id: volunteer4804
-  shop_id: shop763
+  volunteer: volunteer4804
+  shop: shop763
   starts_at: '2012-12-08 15:43:00'
   ends_at: '2012-12-08 16:19:00'
   reason_for_visit: volunteer
   notes: 04:19:00 PM
 session780:
-  volunteer_id: volunteer4562
-  shop_id: shop763
+  volunteer: volunteer4562
+  shop: shop763
   starts_at: '2012-12-08 15:48:00'
   ends_at: '2012-12-08 17:10:00'
   reason_for_visit: volunteer
   notes: 05:10:00 PM
 session781:
-  volunteer_id: volunteer4674
-  shop_id: shop763
+  volunteer: volunteer4674
+  shop: shop763
   starts_at: '2012-12-08 16:03:00'
   ends_at: '2012-12-08 17:10:00'
   reason_for_visit: changing out crank
   notes: 05:10:00 PM
 session782:
-  volunteer_id: volunteer4807
-  shop_id: shop763
+  volunteer: volunteer4807
+  shop: shop763
   starts_at: '2012-12-08 16:09:00'
   ends_at: '2012-12-08 16:42:00'
   reason_for_visit: bearings fixed
   notes: 04:42:00 PM
 session785:
-  volunteer_id: volunteer4586
-  shop_id: shop784
+  volunteer: volunteer4586
+  shop: shop784
   starts_at: '2012-12-15 14:14:00'
   ends_at: '2012-12-15 15:15:00'
   reason_for_visit: looking at bikes in shop
   notes: 03:15:00 PM
 session786:
-  volunteer_id: volunteer4812
-  shop_id: shop784
+  volunteer: volunteer4812
+  shop: shop784
   starts_at: '2012-12-15 14:12:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: checking out shop
   notes: 07:00:00 PM
 session787:
-  volunteer_id: volunteer4795
-  shop_id: shop784
+  volunteer: volunteer4795
+  shop: shop784
   starts_at: '2012-12-15 14:00:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer coordinator
   notes: 07:00:00 PM
 session788:
-  volunteer_id: volunteer4726
-  shop_id: shop784
+  volunteer: volunteer4726
+  shop: shop784
   starts_at: '2012-12-15 14:00:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: shop manager
   notes: 07:00:00 PM
 session789:
-  volunteer_id: volunteer4794
-  shop_id: shop784
+  volunteer: volunteer4794
+  shop: shop784
   starts_at: '2012-12-15 14:10:00'
   ends_at: '2012-12-15 17:00:00'
   reason_for_visit: greeter
   notes: 05:00:00 PM
 session790:
-  volunteer_id: volunteer4799
-  shop_id: shop784
+  volunteer: volunteer4799
+  shop: shop784
   starts_at: '2012-12-15 14:20:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: trade
   notes: 07:00:00 PM
 session791:
-  volunteer_id: volunteer4579
-  shop_id: shop784
+  volunteer: volunteer4579
+  shop: shop784
   starts_at: '2012-12-15 14:10:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer/work on bike
   notes: 07:00:00 PM
 session792:
-  volunteer_id: volunteer4562
-  shop_id: shop784
+  volunteer: volunteer4562
+  shop: shop784
   starts_at: '2012-12-15 14:29:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer
   notes: 07:00:00 PM
 session795:
-  volunteer_id: volunteer4743
-  shop_id: shop784
+  volunteer: volunteer4743
+  shop: shop784
   starts_at: '2012-12-15 14:44:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer/building up bike
   notes: 07:00:00 PM
 session797:
-  volunteer_id: volunteer4823
-  shop_id: shop784
+  volunteer: volunteer4823
+  shop: shop784
   starts_at: '2012-12-15 15:00:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer coordinator
   notes: 07:00:00 PM
 session798:
-  volunteer_id: volunteer4824
-  shop_id: shop784
+  volunteer: volunteer4824
+  shop: shop784
   starts_at: '2012-12-15 15:26:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer
   notes: 07:00:00 PM
 session799:
-  volunteer_id: volunteer4825
-  shop_id: shop784
+  volunteer: volunteer4825
+  shop: shop784
   starts_at: '2012-12-15 15:30:00'
   ends_at: '2012-12-15 15:45:00'
   reason_for_visit: spring or derailer
   notes: 03:45:00 PM
 session800:
-  volunteer_id: volunteer4605
-  shop_id: shop784
+  volunteer: volunteer4605
+  shop: shop784
   starts_at: '2012-12-15 15:36:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer
   notes: 07:00:00 PM
 session801:
-  volunteer_id: volunteer4827
-  shop_id: shop784
+  volunteer: volunteer4827
+  shop: shop784
   starts_at: '2012-12-15 15:36:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: volunteer
   notes: 07:00:00 PM
 session802:
-  volunteer_id: volunteer4828
-  shop_id: shop784
+  volunteer: volunteer4828
+  shop: shop784
   starts_at: '2012-12-15 16:48:00'
   ends_at: '2012-12-15 16:49:00'
   reason_for_visit: volunteer
   notes: 04:49:00 PM
 session803:
-  volunteer_id: volunteer4829
-  shop_id: shop784
+  volunteer: volunteer4829
+  shop: shop784
   starts_at: '2012-12-15 16:50:00'
   ends_at: '2012-12-15 19:00:00'
   reason_for_visit: 'pedals '
   notes: 07:00:00 PM
 session804:
-  volunteer_id: volunteer4724
-  shop_id: shop784
+  volunteer: volunteer4724
+  shop: shop784
   starts_at: '2012-12-15 16:56:00'
   ends_at: '2012-12-15 16:59:00'
   reason_for_visit: looking for bike
   notes: 04:59:00 PM
 session806:
-  volunteer_id: volunteer4834
-  shop_id: shop805
+  volunteer: volunteer4834
+  shop: shop805
   starts_at: '2012-12-22 14:00:00'
   ends_at: '2012-12-22 12:00:00'
   reason_for_visit: tightening bottom bracket
   notes: ''
 session807:
-  volunteer_id: volunteer4757
-  shop_id: shop805
+  volunteer: volunteer4757
+  shop: shop805
   starts_at: '2012-12-22 14:00:00'
   ends_at: '2012-12-22 12:00:00'
   reason_for_visit: tightening bottom bracket
   notes: ''
 session808:
-  volunteer_id: volunteer4836
-  shop_id: shop805
+  volunteer: volunteer4836
+  shop: shop805
   starts_at: '2012-12-22 02:30:00'
   ends_at: '2012-12-22 15:00:00'
   reason_for_visit: tire tube installation
   notes: 03:00:00 PM
 session809:
-  volunteer_id: volunteer4837
-  shop_id: shop805
+  volunteer: volunteer4837
+  shop: shop805
   starts_at: '2012-12-22 12:00:00'
   ends_at: '2012-12-22 12:00:00'
   reason_for_visit: slow leak in recent purchase bike
   notes: ''
 session810:
-  volunteer_id: volunteer4824
-  shop_id: shop805
+  volunteer: volunteer4824
+  shop: shop805
   starts_at: '2012-12-22 15:30:00'
   ends_at: '2012-12-22 18:30:00'
   reason_for_visit: volunteer
   notes: 06:30:00 PM
 session811:
-  volunteer_id: volunteer4839
-  shop_id: shop805
+  volunteer: volunteer4839
+  shop: shop805
   starts_at: '2012-12-22 16:16:00'
   ends_at: '2012-12-22 16:45:00'
   reason_for_visit: adusting gears issue
   notes: 04:45:00 PM
 session812:
-  volunteer_id: volunteer4605
-  shop_id: shop805
+  volunteer: volunteer4605
+  shop: shop805
   starts_at: '2012-12-22 15:00:00'
   ends_at: '2012-12-22 17:50:00'
   reason_for_visit: volunteer
   notes: 05:50:00 PM
 session813:
-  volunteer_id: volunteer4827
-  shop_id: shop805
+  volunteer: volunteer4827
+  shop: shop805
   starts_at: '2012-12-22 15:00:00'
   ends_at: '2012-12-22 17:50:00'
   reason_for_visit: volunteer
   notes: 05:50:00 PM
 session814:
-  volunteer_id: volunteer4842
-  shop_id: shop805
+  volunteer: volunteer4842
+  shop: shop805
   starts_at: '2012-12-22 14:00:00'
   ends_at: '2012-12-22 18:30:00'
   reason_for_visit: coordinator
   notes: 06:30:00 PM
 session815:
-  volunteer_id: volunteer4553
-  shop_id: shop805
+  volunteer: volunteer4553
+  shop: shop805
   starts_at: '2012-12-22 12:45:00'
   ends_at: '2012-12-22 18:30:00'
   reason_for_visit: coordinator
   notes: 06:30:00 PM
 session816:
-  volunteer_id: volunteer4726
-  shop_id: shop805
+  volunteer: volunteer4726
+  shop: shop805
   starts_at: '2012-12-22 12:00:00'
   ends_at: '2012-12-22 18:30:00'
   reason_for_visit: shop manager
