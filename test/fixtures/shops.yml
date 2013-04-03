@@ -109,7 +109,7 @@ shop672:
 shop673:
   location: RGRS
   starts_at: 2012-01-14 15:00:00
-  ends_at: 2012-01-14 19:45:00
+  ends_at:s
 shop674:
   location: RGRS
   starts_at: 2012-01-08 13:00:00

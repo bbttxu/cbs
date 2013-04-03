@@ -4,16 +4,20 @@
 
 #navigation
 	@extend .row
-	
 
 
-	.top-bar
+	// FIXME these rules are a hack, color can probably be set via foundation sass variables
+	nav.top-bar
+		background: $txtColor
 		// @extend .twelve
 		// @extend .columns
 		// @extend .top-bar
 
-		margin: 0
+		// margin: 0
+		ul
+			display: inline
 
 	a.active
 		li &
 			@extend .active
+
