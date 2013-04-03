@@ -1,15 +1,3213 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+session0:
+  shop: shop645
+  volunteer: volunteer4534
+  starts_at: "2011-08-20 16:00:42"
+  ends_at: "2011-08-20 16:30:00
+"
+session1:
+  shop: shop647
+  volunteer: volunteer4536
+  starts_at: "2011-09-03 14:45:00"
+  ends_at: "2011-09-03 17:30:00
+"
+session2:
+  shop: shop648
+  volunteer: volunteer4534
+  starts_at: "2011-09-10 18:47:58"
+  ends_at: "2011-09-10 20:17:49
+"
+session3:
+  shop: shop649
+  volunteer: volunteer4536
+  starts_at: "2011-09-14 18:00:00"
+  ends_at: "2011-09-14 20:15:00
+"
+session4:
+  shop: shop649
+  volunteer: volunteer4542
+  starts_at: "2011-09-14 18:00:00"
+  ends_at: "2011-09-14 20:15:00
+"
+session5:
+  shop: shop649
+  volunteer: volunteer4547
+  starts_at: "2011-09-14 18:30:00"
+  ends_at: "2011-09-14 19:52:14
+"
+session6:
+  shop: shop649
+  volunteer: volunteer4548
+  starts_at: "2011-09-14 19:30:00"
+  ends_at: "2011-09-14 20:00:00
+"
+session7:
+  shop: shop649
+  volunteer: volunteer4549
+  starts_at: "2011-09-14 18:00:00"
+  ends_at: "2011-09-14 20:00:00
+"
+session8:
+  shop: shop649
+  volunteer: volunteer4534
+  starts_at: "2011-09-14 19:00:00"
+  ends_at: "2011-09-14 20:15:00
+"
+session9:
+  shop: shop650
+  volunteer: volunteer4536
+  starts_at: "2011-09-24 15:08:36"
+  ends_at: "2011-09-24 17:15:19
+"
+session10:
+  shop: shop650
+  volunteer: volunteer4552
+  starts_at: "2011-09-24 15:15:00"
+  ends_at: "2011-09-24 17:14:38
+"
+session11:
+  shop: shop650
+  volunteer: volunteer4553
+  starts_at: "2011-09-24 15:12:50"
+  ends_at: "2011-09-24 17:12:08
+"
+session12:
+  shop: shop650
+  volunteer: volunteer4554
+  starts_at: "2011-09-24 15:16:06"
+  ends_at: "2011-09-24 17:11:53
+"
+session13:
+  shop: shop650
+  volunteer: volunteer4555
+  starts_at: "2011-09-24 15:18:05"
+  ends_at: "2011-09-24 16:46:08
+"
+session14:
+  shop: shop650
+  volunteer: volunteer4556
+  starts_at: "2011-09-24 15:21:16"
+  ends_at: "2011-09-24 16:25:56
+"
+session15:
+  shop: shop650
+  volunteer: volunteer4549
+  starts_at: "2011-09-24 15:21:35"
+  ends_at: "2011-09-24 17:11:50
+"
+session16:
+  shop: shop650
+  volunteer: volunteer4557
+  starts_at: "2011-09-24 15:24:02"
+  ends_at: "2011-09-24 16:40:02
+"
+session17:
+  shop: shop650
+  volunteer: volunteer4558
+  starts_at: "2011-09-24 15:30:00"
+  ends_at: "2011-09-24 16:38:20
+"
+session18:
+  shop: shop650
+  volunteer: volunteer4542
+  starts_at: "2011-09-24 15:15:00"
+  ends_at: "2011-09-24 17:14:48
+"
+session19:
+  shop: shop650
+  volunteer: volunteer4559
+  starts_at: "2011-09-24 15:40:21"
+  ends_at: "2011-09-24 16:45:57
+"
+session20:
+  shop: shop650
+  volunteer: volunteer4560
+  starts_at: "2011-09-24 15:45:00"
+  ends_at: "2011-09-24 16:45:55
+"
+session21:
+  shop: shop650
+  volunteer: volunteer4561
+  starts_at: "2011-09-24 16:03:46"
+  ends_at: "2011-09-24 16:31:13
+"
+session22:
+  shop: shop650
+  volunteer: volunteer4562
+  starts_at: "2011-09-24 16:08:42"
+  ends_at: "2011-09-24 16:08:50
+"
+session23:
+  shop: shop650
+  volunteer: volunteer4563
+  starts_at: "2011-09-24 16:15:22"
+  ends_at: "2011-09-24 17:12:30
+"
+session24:
+  shop: shop651
+  volunteer: volunteer4536
+  starts_at: "2011-09-28 18:03:33"
+  ends_at: "2011-09-28 19:50:35
+"
+session25:
+  shop: shop651
+  volunteer: volunteer4554
+  starts_at: "2011-09-28 18:03:50"
+  ends_at: "2011-09-28 19:50:31
+"
+session26:
+  shop: shop651
+  volunteer: volunteer4564
+  starts_at: "2011-09-28 18:06:14"
+  ends_at: "2011-09-28 19:46:11
+"
+session27:
+  shop: shop651
+  volunteer: volunteer4565
+  starts_at: "2011-09-28 18:07:55"
+  ends_at: "2011-09-28 18:59:42
+"
+session28:
+  shop: shop651
+  volunteer: volunteer4559
+  starts_at: "2011-09-28 18:15:00"
+  ends_at: "2011-09-28 19:22:40
+"
+session29:
+  shop: shop651
+  volunteer: volunteer4566
+  starts_at: "2011-09-28 18:11:55"
+  ends_at: "2011-09-28 18:36:50
+"
+session30:
+  shop: shop651
+  volunteer: volunteer4567
+  starts_at: "2011-09-28 18:20:20"
+  ends_at: "2011-09-28 19:43:18
+"
+session31:
+  shop: shop651
+  volunteer: volunteer4552
+  starts_at: "2011-09-28 18:40:12"
+  ends_at: "2011-09-28 19:50:33
+"
+session32:
+  shop: shop652
+  volunteer: volunteer4563
+  starts_at: "2011-10-01 15:00:00"
+  ends_at: "2011-10-01 17:37:09
+"
+session33:
+  shop: shop652
+  volunteer: volunteer4542
+  starts_at: "2011-10-01 14:45:00"
+  ends_at: "2011-10-01 15:15:00
+"
+session34:
+  shop: shop652
+  volunteer: volunteer4553
+  starts_at: "2011-10-01 15:06:32"
+  ends_at: "2011-10-01 17:33:34
+"
+session35:
+  shop: shop652
+  volunteer: volunteer4570
+  starts_at: "2011-10-01 15:00:00"
+  ends_at: "2011-10-01 17:21:42
+"
+session36:
+  shop: shop652
+  volunteer: volunteer4571
+  starts_at: "2011-10-01 15:53:27"
+  ends_at: "2011-10-01 17:24:42
+"
+session37:
+  shop: shop652
+  volunteer: volunteer4572
+  starts_at: "2011-10-01 15:00:00"
+  ends_at: "2011-10-01 16:57:26
+"
+session38:
+  shop: shop652
+  volunteer: volunteer4573
+  starts_at: "2011-10-01 15:00:00"
+  ends_at: "2011-10-01 17:00:00
+"
+session39:
+  shop: shop652
+  volunteer: volunteer4534
+  starts_at: "2011-10-01 16:00:00"
+  ends_at: "2011-10-01 17:34:44
+"
+session40:
+  shop: shop652
+  volunteer: volunteer4574
+  starts_at: "2011-10-01 16:00:00"
+  ends_at: "2011-10-01 17:37:06
+"
+session41:
+  shop: shop653
+  volunteer: volunteer4542
+  starts_at: "2011-10-05 18:00:00"
+  ends_at: "2011-10-05 20:25:31
+"
+session42:
+  shop: shop653
+  volunteer: volunteer4575
+  starts_at: "2011-10-05 18:00:00"
+  ends_at: "2011-10-05 20:00:00
+"
+session43:
+  shop: shop653
+  volunteer: volunteer4576
+  starts_at: "2011-10-05 18:00:00"
+  ends_at: "2011-10-05 20:00:00
+"
+session44:
+  shop: shop653
+  volunteer: volunteer4577
+  starts_at: "2011-10-05 18:15:00"
+  ends_at: "2011-10-05 19:35:44
+"
+session45:
+  shop: shop653
+  volunteer: volunteer4578
+  starts_at: "2011-10-05 18:30:00"
+  ends_at: "2011-10-05 19:37:41
+"
+session46:
+  shop: shop653
+  volunteer: volunteer4579
+  starts_at: "2011-10-05 18:00:00"
+  ends_at: "2011-10-05 20:14:05
+"
+session47:
+  shop: shop654
+  volunteer: volunteer4536
+  starts_at: "2011-10-08 15:00:16"
+  ends_at: "2011-10-08 17:08:33
+"
+session48:
+  shop: shop654
+  volunteer: volunteer4580
+  starts_at: "2011-10-08 15:02:14"
+  ends_at: "2011-10-08 17:08:31
+"
+session49:
+  shop: shop654
+  volunteer: volunteer4554
+  starts_at: "2011-10-08 15:02:37"
+  ends_at: "2011-10-08 17:08:29
+"
+session50:
+  shop: shop654
+  volunteer: volunteer4572
+  starts_at: "2011-10-08 15:03:11"
+  ends_at: "2011-10-08 17:08:27
+"
+session51:
+  shop: shop654
+  volunteer: volunteer4542
+  starts_at: "2011-10-08 15:35:09"
+  ends_at: "2011-10-08 17:08:25
+"
+session52:
+  shop: shop654
+  volunteer: volunteer4541
+  starts_at: "2011-10-08 15:52:42"
+  ends_at: "2011-10-08 17:04:33
+"
+session53:
+  shop: shop654
+  volunteer: volunteer4585
+  starts_at: "2011-10-08 16:34:43"
+  ends_at: "2011-10-08 17:08:20
+"
+session54:
+  shop: shop654
+  volunteer: volunteer4552
+  starts_at: "2011-10-08 16:44:27"
+  ends_at: "2011-10-08 17:08:13
+"
+session55:
+  shop: shop654
+  volunteer: volunteer4588
+  starts_at: "2011-10-08 16:30:00"
+  ends_at: "2011-10-08 17:08:23
+"
+session56:
+  shop: shop655
+  volunteer: volunteer4542
+  starts_at: "2011-10-12 17:45:00"
+  ends_at: "2011-10-12 20:17:08
+"
+session57:
+  shop: shop655
+  volunteer: volunteer4589
+  starts_at: "2011-10-12 18:03:46"
+  ends_at: "2011-10-12 20:10:34
+"
+session58:
+  shop: shop655
+  volunteer: volunteer4554
+  starts_at: "2011-10-12 18:06:17"
+  ends_at: "2011-10-12 20:17:06
+"
+session59:
+  shop: shop655
+  volunteer: volunteer4536
+  starts_at: "2011-10-12 18:06:35"
+  ends_at: "2011-10-12 20:17:05
+"
+session60:
+  shop: shop655
+  volunteer: volunteer4559
+  starts_at: "2011-10-12 18:15:00"
+  ends_at: "2011-10-12 19:08:01
+"
+session61:
+  shop: shop655
+  volunteer: volunteer4590
+  starts_at: "2011-10-12 18:24:13"
+  ends_at: "2011-10-12 20:17:03
+"
+session62:
+  shop: shop655
+  volunteer: volunteer4591
+  starts_at: "2011-10-12 18:25:51"
+  ends_at: "2011-10-12 20:17:01
+"
+session63:
+  shop: shop655
+  volunteer: volunteer4592
+  starts_at: "2011-10-12 18:33:18"
+  ends_at: "2011-10-12 20:16:59
+"
+session64:
+  shop: shop655
+  volunteer: volunteer4593
+  starts_at: "2011-10-12 18:42:23"
+  ends_at: "2011-10-12 20:16:58
+"
+session65:
+  shop: shop656
+  volunteer: volunteer4542
+  starts_at: "2011-10-15 15:00:00"
+  ends_at: "2011-10-15 17:26:31
+"
+session66:
+  shop: shop656
+  volunteer: volunteer4541
+  starts_at: "2011-10-15 15:14:26"
+  ends_at: "2011-10-15 17:26:24
+"
+session67:
+  shop: shop656
+  volunteer: volunteer4572
+  starts_at: "2011-10-15 15:00:00"
+  ends_at: "2011-10-15 17:26:33
+"
+session68:
+  shop: shop656
+  volunteer: volunteer4576
+  starts_at: "2011-10-15 15:29:10"
+  ends_at: "2011-10-15 17:26:21
+"
+session69:
+  shop: shop656
+  volunteer: volunteer4575
+  starts_at: "2011-10-15 15:00:00"
+  ends_at: "2011-10-15 17:26:36
+"
+session70:
+  shop: shop656
+  volunteer: volunteer4553
+  starts_at: "2011-10-15 15:30:08"
+  ends_at: "2011-10-15 17:26:15
+"
+session71:
+  shop: shop657
+  volunteer: volunteer4536
+  starts_at: "2011-10-19 17:45:00"
+  ends_at: "2011-10-19 20:08:32
+"
+session72:
+  shop: shop657
+  volunteer: volunteer4558
+  starts_at: "2011-10-19 18:08:35"
+  ends_at: "2011-10-19 18:48:40
+"
+session73:
+  shop: shop657
+  volunteer: volunteer4577
+  starts_at: "2011-10-19 18:18:13"
+  ends_at: "2011-10-19 19:37:51
+"
+session74:
+  shop: shop657
+  volunteer: volunteer4590
+  starts_at: "2011-10-19 18:35:30"
+  ends_at: "2011-10-19 19:41:05
+"
+session75:
+  shop: shop657
+  volunteer: volunteer4591
+  starts_at: "2011-10-19 18:35:42"
+  ends_at: "2011-10-19 19:41:03
+"
+session76:
+  shop: shop657
+  volunteer: volunteer4560
+  starts_at: "2011-10-19 18:55:06"
+  ends_at: "2011-10-19 19:00:30
+"
+session77:
+  shop: shop657
+  volunteer: volunteer4598
+  starts_at: "2011-10-19 18:00:00"
+  ends_at: "2011-10-19 19:56:58
+"
+session78:
+  shop: shop657
+  volunteer: volunteer4577
+  starts_at: "2011-10-19 18:00:00"
+  ends_at: "2011-10-19 19:40:42
+"
+session79:
+  shop: shop657
+  volunteer: volunteer4596
+  starts_at: "2011-10-19 18:00:00"
+  ends_at: "2011-10-19 19:48:40
+"
+session80:
+  shop: shop657
+  volunteer: volunteer4542
+  starts_at: "2011-10-19 18:00:00"
+  ends_at: "2011-10-19 20:00:00
+"
+session81:
+  shop: shop658
+  volunteer: volunteer4536
+  starts_at: "2011-10-22 13:00:00"
+  ends_at: "2011-10-22 17:56:56
+"
+session82:
+  shop: shop658
+  volunteer: volunteer4599
+  starts_at: "2011-10-22 14:08:45"
+  ends_at: "2011-10-22 16:00:00
+"
+session83:
+  shop: shop658
+  volunteer: volunteer4577
+  starts_at: "2011-10-22 14:30:51"
+  ends_at: "2011-10-22 17:56:54
+"
+session84:
+  shop: shop658
+  volunteer: volunteer4600
+  starts_at: "2011-10-22 15:45:00"
+  ends_at: "2011-10-22 16:00:00
+"
+session85:
+  shop: shop658
+  volunteer: volunteer4601
+  starts_at: "2011-10-22 14:30:00"
+  ends_at: "2011-10-22 17:56:53
+"
+session86:
+  shop: shop658
+  volunteer: volunteer4602
+  starts_at: "2011-10-22 15:30:00"
+  ends_at: "2011-10-22 17:53:31
+"
+session87:
+  shop: shop658
+  volunteer: volunteer4603
+  starts_at: "2011-10-22 15:30:00"
+  ends_at: "2011-10-22 17:13:07
+"
+session88:
+  shop: shop658
+  volunteer: volunteer4599
+  starts_at: "2011-10-22 16:00:00"
+  ends_at: "2011-10-22 17:00:00
+"
+session89:
+  shop: shop658
+  volunteer: volunteer4584
+  starts_at: "2011-10-22 15:45:00"
+  ends_at: "2011-10-22 17:16:45
+"
+session90:
+  shop: shop658
+  volunteer: volunteer4604
+  starts_at: "2011-10-22 15:30:00"
+  ends_at: "2011-10-22 17:53:20
+"
+session91:
+  shop: shop658
+  volunteer: volunteer4570
+  starts_at: "2011-10-22 14:30:00"
+  ends_at: "2011-10-22 17:45:00
+"
+session92:
+  shop: shop658
+  volunteer: volunteer4554
+  starts_at: "2011-10-22 15:00:00"
+  ends_at: "2011-10-22 17:30:00
+"
+session93:
+  shop: shop658
+  volunteer: volunteer4584
+  starts_at: "2011-10-22 14:45:00"
+  ends_at: "2011-10-22 15:45:00
+"
+session94:
+  shop: shop659
+  volunteer: volunteer4536
+  starts_at: "2011-10-26 18:03:48"
+  ends_at: "2011-10-26 20:17:35
+"
+session95:
+  shop: shop659
+  volunteer: volunteer4554
+  starts_at: "2011-10-26 18:04:05"
+  ends_at: "2011-10-26 20:17:25
+"
+session96:
+  shop: shop659
+  volunteer: volunteer4602
+  starts_at: "2011-10-26 18:15:00"
+  ends_at: "2011-10-26 20:15:00
+"
+session97:
+  shop: shop659
+  volunteer: volunteer4604
+  starts_at: "2011-10-26 18:15:00"
+  ends_at: "2011-10-26 20:15:00
+"
+session98:
+  shop: shop659
+  volunteer: volunteer4571
+  starts_at: "2011-10-26 18:09:25"
+  ends_at: "2011-10-26 20:08:19
+"
+session99:
+  shop: shop659
+  volunteer: volunteer4605
+  starts_at: "2011-10-26 18:12:52"
+  ends_at: "2011-10-26 20:15:53
+"
+session100:
+  shop: shop659
+  volunteer: volunteer4576
+  starts_at: "2011-10-26 18:22:05"
+  ends_at: "2011-10-26 19:15:00
+"
+session101:
+  shop: shop659
+  volunteer: volunteer4576
+  starts_at: "2011-10-26 18:22:13"
+  ends_at: "2011-10-26 18:22:18
+"
+session102:
+  shop: shop659
+  volunteer: volunteer4606
+  starts_at: "2011-10-26 18:30:00"
+  ends_at: "2011-10-26 18:45:00
+"
+session103:
+  shop: shop659
+  volunteer: volunteer4577
+  starts_at: "2011-10-26 18:31:00"
+  ends_at: "2011-10-26 20:16:23
+"
+session104:
+  shop: shop659
+  volunteer: volunteer4548
+  starts_at: "2011-10-26 18:57:15"
+  ends_at: "2011-10-26 20:13:41
+"
+session105:
+  shop: shop659
+  volunteer: volunteer4534
+  starts_at: "2011-10-26 19:15:00"
+  ends_at: "2011-10-26 20:15:35
+"
+session106:
+  shop: shop660
+  volunteer: volunteer4572
+  starts_at: "2011-10-29 15:00:33"
+  ends_at: "2011-10-29 17:14:45
+"
+session107:
+  shop: shop660
+  volunteer: volunteer4554
+  starts_at: "2011-10-29 15:01:47"
+  ends_at: "2011-10-29 18:02:11
+"
+session108:
+  shop: shop660
+  volunteer: volunteer4607
+  starts_at: "2011-10-29 15:02:50"
+  ends_at: "2011-10-29 17:58:01
+"
+session109:
+  shop: shop660
+  volunteer: volunteer4553
+  starts_at: "2011-10-29 15:07:52"
+  ends_at: "2011-10-29 18:02:08
+"
+session110:
+  shop: shop660
+  volunteer: volunteer4600
+  starts_at: "2011-10-29 15:15:44"
+  ends_at: "2011-10-29 17:46:31
+"
+session111:
+  shop: shop660
+  volunteer: volunteer4576
+  starts_at: "2011-10-29 15:16:38"
+  ends_at: "2011-10-29 17:04:43
+"
+session112:
+  shop: shop660
+  volunteer: volunteer4608
+  starts_at: "2011-10-29 15:32:23"
+  ends_at: "2011-10-29 16:08:06
+"
+session113:
+  shop: shop660
+  volunteer: volunteer4609
+  starts_at: "2011-10-29 15:30:00"
+  ends_at: "2011-10-29 17:15:00
+"
+session114:
+  shop: shop660
+  volunteer: volunteer4563
+  starts_at: "2011-10-29 15:49:50"
+  ends_at: "2011-10-29 17:11:28
+"
+session115:
+  shop: shop660
+  volunteer: volunteer4610
+  starts_at: "2011-10-29 15:58:08"
+  ends_at: "2011-10-29 18:01:42
+"
+session116:
+  shop: shop660
+  volunteer: volunteer4552
+  starts_at: "2011-10-29 16:05:29"
+  ends_at: "2011-10-29 18:01:37
+"
+session117:
+  shop: shop660
+  volunteer: volunteer4536
+  starts_at: "2011-10-29 16:21:19"
+  ends_at: "2011-10-29 18:01:40
+"
+session118:
+  shop: shop661
+  volunteer: volunteer4553
+  starts_at: "2011-11-05 15:10:50"
+  ends_at: "2011-11-05 16:46:25
+"
+session119:
+  shop: shop661
+  volunteer: volunteer4559
+  starts_at: "2011-11-05 15:15:00"
+  ends_at: "2011-11-05 15:30:00
+"
+session120:
+  shop: shop661
+  volunteer: volunteer4570
+  starts_at: "2011-11-05 14:15:00"
+  ends_at: "2011-11-05 16:55:54
+"
+session121:
+  shop: shop661
+  volunteer: volunteer4574
+  starts_at: "2011-11-05 15:15:00"
+  ends_at: "2011-11-05 17:28:55
+"
+session122:
+  shop: shop661
+  volunteer: volunteer4611
+  starts_at: "2011-11-05 15:15:00"
+  ends_at: "2011-11-05 17:00:00
+"
+session123:
+  shop: shop661
+  volunteer: volunteer4609
+  starts_at: "2011-11-05 14:00:00"
+  ends_at: "2011-11-05 17:15:00
+"
+session124:
+  shop: shop662
+  volunteer: volunteer4536
+  starts_at: "2011-11-09 17:32:44"
+  ends_at: "2011-11-09 20:55:01
+"
+session125:
+  shop: shop662
+  volunteer: volunteer4612
+  starts_at: "2011-11-09 17:34:42"
+  ends_at: "2011-11-09 19:00:35
+"
+session126:
+  shop: shop662
+  volunteer: volunteer4613
+  starts_at: "2011-11-09 17:36:32"
+  ends_at: "2011-11-09 19:00:37
+"
+session127:
+  shop: shop662
+  volunteer: volunteer4607
+  starts_at: "2011-11-09 17:58:14"
+  ends_at: "2011-11-09 19:45:16
+"
+session128:
+  shop: shop662
+  volunteer: volunteer4591
+  starts_at: "2011-11-09 18:37:12"
+  ends_at: "2011-11-09 20:01:06
+"
+session129:
+  shop: shop662
+  volunteer: volunteer4590
+  starts_at: "2011-11-09 18:37:25"
+  ends_at: "2011-11-09 20:01:04
+"
+session130:
+  shop: shop662
+  volunteer: volunteer4606
+  starts_at: "2011-11-09 18:15:00"
+  ends_at: "2011-11-09 18:45:00
+"
+session131:
+  shop: shop662
+  volunteer: volunteer4560
+  starts_at: "2011-11-09 19:06:13"
+  ends_at: "2011-11-09 19:20:05
+"
+session132:
+  shop: shop663
+  volunteer: volunteer4536
+  starts_at: "2011-11-12 15:01:27"
+  ends_at: "2011-11-12 17:00:00
+"
+session133:
+  shop: shop663
+  volunteer: volunteer4576
+  starts_at: "2011-11-12 15:01:53"
+  ends_at: "2011-11-12 17:07:50
+"
+session134:
+  shop: shop663
+  volunteer: volunteer4609
+  starts_at: "2011-11-12 15:02:48"
+  ends_at: "2011-11-12 17:00:00
+"
+session135:
+  shop: shop663
+  volunteer: volunteer4614
+  starts_at: "2011-11-12 15:35:21"
+  ends_at: "2011-11-12 16:05:33
+"
+session136:
+  shop: shop663
+  volunteer: volunteer4607
+  starts_at: "2011-11-12 15:39:36"
+  ends_at: "2011-11-12 16:46:03
+"
+session137:
+  shop: shop663
+  volunteer: volunteer4554
+  starts_at: "2011-11-12 15:42:13"
+  ends_at: "2011-11-12 17:00:00
+"
+session138:
+  shop: shop663
+  volunteer: volunteer4616
+  starts_at: "2011-11-12 15:47:28"
+  ends_at: "2011-11-12 16:53:53
+"
+session139:
+  shop: shop663
+  volunteer: volunteer4577
+  starts_at: "2011-11-12 15:49:02"
+  ends_at: "2011-11-12 17:00:00
+"
+session140:
+  shop: shop663
+  volunteer: volunteer4603
+  starts_at: "2011-11-12 16:30:00"
+  ends_at: "2011-11-12 17:12:36
+"
+session141:
+  shop: shop664
+  volunteer: volunteer4577
+  starts_at: "2011-11-16 17:55:10"
+  ends_at: "2011-11-16 19:30:52
+"
+session142:
+  shop: shop664
+  volunteer: volunteer4534
+  starts_at: "2011-11-16 17:55:24"
+  ends_at: "2011-11-16 20:05:25
+"
+session143:
+  shop: shop664
+  volunteer: volunteer4536
+  starts_at: "2011-11-16 17:55:43"
+  ends_at: "2011-11-16 20:05:23
+"
+session144:
+  shop: shop664
+  volunteer: volunteer4606
+  starts_at: "2011-11-16 18:00:00"
+  ends_at: "2011-11-16 20:05:19
+"
+session145:
+  shop: shop664
+  volunteer: volunteer4571
+  starts_at: "2011-11-16 18:10:16"
+  ends_at: "2011-11-16 20:01:17
+"
+session146:
+  shop: shop664
+  volunteer: volunteer4617
+  starts_at: "2011-11-16 18:30:34"
+  ends_at: "2011-11-16 18:54:06
+"
+session147:
+  shop: shop664
+  volunteer: volunteer4542
+  starts_at: "2011-11-16 18:30:00"
+  ends_at: "2011-11-16 20:05:17
+"
+session148:
+  shop: shop665
+  volunteer: volunteer4536
+  starts_at: "2011-11-19 12:19:00"
+  ends_at: "2011-11-19 17:18:11
+"
+session149:
+  shop: shop665
+  volunteer: volunteer4617
+  starts_at: "2011-11-19 14:12:31"
+  ends_at: "2011-11-19 17:05:53
+"
+session150:
+  shop: shop665
+  volunteer: volunteer4560
+  starts_at: "2011-11-19 13:00:00"
+  ends_at: "2011-11-19 15:00:00
+"
+session151:
+  shop: shop665
+  volunteer: volunteer4560
+  starts_at: "2011-11-19 15:17:51"
+  ends_at: "2011-11-19 16:59:02
+"
+session152:
+  shop: shop665
+  volunteer: volunteer4553
+  starts_at: "2011-11-19 15:00:00"
+  ends_at: "2011-11-19 17:18:09
+"
+session153:
+  shop: shop665
+  volunteer: volunteer4594
+  starts_at: "2011-11-19 15:00:00"
+  ends_at: "2011-11-19 17:17:56
+"
+session154:
+  shop: shop666
+  volunteer: volunteer4574
+  starts_at: "2011-11-26 15:00:00"
+  ends_at: "2011-11-26 16:30:00
+"
+session155:
+  shop: shop666
+  volunteer: volunteer4536
+  starts_at: "2011-11-26 15:00:00"
+  ends_at: "2011-11-26 16:30:00
+"
+session156:
+  shop: shop667
+  volunteer: volunteer4571
+  starts_at: "2011-11-30 18:00:00"
+  ends_at: "2011-11-30 18:59:13
+"
+session157:
+  shop: shop667
+  volunteer: volunteer4617
+  starts_at: "2011-11-30 18:06:20"
+  ends_at: "2011-11-30 19:17:17
+"
+session158:
+  shop: shop667
+  volunteer: volunteer4536
+  starts_at: "2011-11-30 18:12:42"
+  ends_at: "2011-11-30 20:12:44
+"
+session159:
+  shop: shop667
+  volunteer: volunteer4542
+  starts_at: "2011-11-30 18:13:30"
+  ends_at: "2011-11-30 20:12:42
+"
+session160:
+  shop: shop668
+  volunteer: volunteer4571
+  starts_at: "2011-11-23 18:00:00"
+  ends_at: "2011-11-23 19:45:00
+"
+session161:
+  shop: shop668
+  volunteer: volunteer4542
+  starts_at: "2011-11-23 18:00:00"
+  ends_at: "2011-11-23 19:45:00
+"
+session162:
+  shop: shop667
+  volunteer: volunteer4618
+  starts_at: "2011-11-30 18:15:00"
+  ends_at: "2011-11-30 20:07:25
+"
+session163:
+  shop: shop669
+  volunteer: volunteer4571
+  starts_at: "2011-12-07 18:00:00"
+  ends_at: "2011-12-07 19:56:01
+"
+session164:
+  shop: shop669
+  volunteer: volunteer4619
+  starts_at: "2011-12-07 18:00:00"
+  ends_at: "2011-12-07 19:56:02
+"
+session165:
+  shop: shop669
+  volunteer: volunteer4536
+  starts_at: "2011-12-07 18:22:17"
+  ends_at: "2011-12-07 19:56:00
+"
+session166:
+  shop: shop669
+  volunteer: volunteer4542
+  starts_at: "2011-12-07 18:30:44"
+  ends_at: "2011-12-07 19:55:58
+"
+session167:
+  shop: shop670
+  volunteer: volunteer4576
+  starts_at: "2011-12-10 13:05:53"
+  ends_at: "2011-12-10 14:54:51
+"
+session168:
+  shop: shop670
+  volunteer: volunteer4536
+  starts_at: "2011-12-10 13:06:18"
+  ends_at: "2011-12-10 17:10:22
+"
+session169:
+  shop: shop670
+  volunteer: volunteer4594
+  starts_at: "2011-12-10 13:06:29"
+  ends_at: "2011-12-10 17:10:15
+"
+session170:
+  shop: shop670
+  volunteer: volunteer4542
+  starts_at: "2011-12-10 14:54:43"
+  ends_at: "2011-12-10 17:10:21
+"
+session171:
+  shop: shop670
+  volunteer: volunteer4576
+  starts_at: "2011-12-10 14:55:07"
+  ends_at: "2011-12-10 16:32:48
+"
+session172:
+  shop: shop670
+  volunteer: volunteer4553
+  starts_at: "2011-12-10 15:05:40"
+  ends_at: "2011-12-10 16:35:30
+"
+session173:
+  shop: shop670
+  volunteer: volunteer4615
+  starts_at: "2011-12-10 15:00:00"
+  ends_at: "2011-12-10 17:09:57
+"
+session174:
+  shop: shop670
+  volunteer: volunteer4575
+  starts_at: "2011-12-10 15:20:24"
+  ends_at: "2011-12-10 16:14:17
+"
+session175:
+  shop: shop670
+  volunteer: volunteer4622
+  starts_at: "2011-12-10 15:00:00"
+  ends_at: "2011-12-10 16:48:46
+"
+session176:
+  shop: shop670
+  volunteer: volunteer4570
+  starts_at: "2011-12-10 15:15:00"
+  ends_at: "2011-12-10 17:10:19
+"
+session177:
+  shop: shop670
+  volunteer: volunteer4554
+  starts_at: "2011-12-10 15:00:00"
+  ends_at: "2011-12-10 17:10:02
+"
+session178:
+  shop: shop671
+  volunteer: volunteer4570
+  starts_at: "2011-12-17 14:30:00"
+  ends_at: "2011-12-17 16:00:00
+"
+session179:
+  shop: shop671
+  volunteer: volunteer4623
+  starts_at: "2011-12-17 15:15:00"
+  ends_at: "2011-12-17 16:00:00
+"
+session180:
+  shop: shop672
+  volunteer: volunteer4542
+  starts_at: "2012-01-11 17:45:00"
+  ends_at: "2012-01-11 20:03:38
+"
+session181:
+  shop: shop672
+  volunteer: volunteer4541
+  starts_at: "2012-01-11 19:05:29"
+  ends_at: "2012-01-11 21:08:09
+"
+session182:
+  shop: shop672
+  volunteer: volunteer4536
+  starts_at: "2012-01-11 17:30:00"
+  ends_at: "2012-01-11 21:09:12
+"
+session183:
+  shop: shop672
+  volunteer: volunteer4534
+  starts_at: "2012-01-11 19:06:55"
+  ends_at: "2012-01-11 21:09:09
+"
+session184:
+  shop: shop672
+  volunteer: volunteer4574
+  starts_at: "2012-01-11 19:07:08"
+  ends_at: "2012-01-11 21:09:04
+"
+session185:
+  shop: shop672
+  volunteer: volunteer4571
+  starts_at: "2012-01-11 19:26:44"
+  ends_at: "2012-01-12 02:30:00
+"
+session186:
+  shop: shop673
+  volunteer: volunteer4536
+  starts_at: "2012-01-14 15:02:52"
+  ends_at: "0000-00-00 00:00:00
+"
+session187:
+  shop: shop673
+  volunteer: volunteer4579
+  starts_at: "2012-01-14 15:03:19"
+  ends_at: "0000-00-00 00:00:00
+"
+session188:
+  shop: shop673
+  volunteer: volunteer4625
+  starts_at: "2012-01-14 15:05:56"
+  ends_at: "0000-00-00 00:00:00
+"
+session189:
+  shop: shop673
+  volunteer: volunteer4542
+  starts_at: "2012-01-14 15:30:00"
+  ends_at: "2012-01-14 17:35:24
+"
+session190:
+  shop: shop673
+  volunteer: volunteer4553
+  starts_at: "2012-01-14 15:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session191:
+  shop: shop673
+  volunteer: volunteer4626
+  starts_at: "2012-01-14 15:45:00"
+  ends_at: "2012-01-14 17:04:56
+"
+session192:
+  shop: shop673
+  volunteer: volunteer4552
+  starts_at: "2012-01-14 15:55:13"
+  ends_at: "2012-01-14 19:45:00
+"
+session193:
+  shop: shop673
+  volunteer: volunteer4571
+  starts_at: "2012-01-14 16:02:14"
+  ends_at: "2012-01-14 17:58:20
+"
+session194:
+  shop: shop674
+  volunteer: volunteer4574
+  starts_at: "2012-01-08 13:00:00"
+  ends_at: "2012-01-08 19:00:00
+"
+session195:
+  shop: shop673
+  volunteer: volunteer4574
+  starts_at: "2012-01-14 17:45:00"
+  ends_at: "2012-01-14 19:45:00
+"
+session196:
+  shop: shop675
+  volunteer: volunteer4571
+  starts_at: "2012-01-18 17:13:28"
+  ends_at: "2012-01-18 19:23:09
+"
+session197:
+  shop: shop675
+  volunteer: volunteer4536
+  starts_at: "2012-01-18 17:45:00"
+  ends_at: "2012-01-18 20:02:14
+"
+session198:
+  shop: shop675
+  volunteer: volunteer4627
+  starts_at: "2012-01-18 17:15:00"
+  ends_at: "2012-01-18 19:30:35
+"
+session199:
+  shop: shop675
+  volunteer: volunteer4628
+  starts_at: "2012-01-18 17:19:01"
+  ends_at: "2012-01-18 20:02:17
+"
+session200:
+  shop: shop675
+  volunteer: volunteer4536
+  starts_at: "2012-01-18 17:00:00"
+  ends_at: "2012-01-18 17:42:00
+"
+session201:
+  shop: shop675
+  volunteer: volunteer4630
+  starts_at: "2012-01-18 18:00:00"
+  ends_at: "2012-01-18 19:15:00
+"
+session202:
+  shop: shop675
+  volunteer: volunteer4631
+  starts_at: "2012-01-18 18:00:00"
+  ends_at: "2012-01-18 20:02:09
+"
+session203:
+  shop: shop675
+  volunteer: volunteer4626
+  starts_at: "2012-01-18 18:03:33"
+  ends_at: "2012-01-18 19:38:17
+"
+session204:
+  shop: shop675
+  volunteer: volunteer4632
+  starts_at: "2012-01-18 18:11:33"
+  ends_at: "2012-01-18 19:17:54
+"
+session205:
+  shop: shop675
+  volunteer: volunteer4554
+  starts_at: "2012-01-18 18:15:00"
+  ends_at: "2012-01-18 20:02:03
+"
+session206:
+  shop: shop675
+  volunteer: volunteer4600
+  starts_at: "2012-01-18 18:43:18"
+  ends_at: "2012-01-18 18:53:25
+"
+session207:
+  shop: shop676
+  volunteer: volunteer4570
+  starts_at: "2012-01-21 13:00:00"
+  ends_at: "2012-01-21 18:15:23
+"
+session208:
+  shop: shop676
+  volunteer: volunteer4634
+  starts_at: "2012-01-21 16:15:00"
+  ends_at: "2012-01-21 17:00:00
+"
+session209:
+  shop: shop676
+  volunteer: volunteer4536
+  starts_at: "2012-01-21 13:00:00"
+  ends_at: "2012-01-21 14:00:00
+"
+session210:
+  shop: shop676
+  volunteer: volunteer4571
+  starts_at: "2012-01-21 14:30:00"
+  ends_at: "2012-01-21 16:18:47
+"
+session211:
+  shop: shop676
+  volunteer: volunteer4534
+  starts_at: "2012-01-21 14:30:00"
+  ends_at: "2012-01-21 18:15:26
+"
+session212:
+  shop: shop676
+  volunteer: volunteer4576
+  starts_at: "2012-01-21 15:15:00"
+  ends_at: "2012-01-21 17:25:17
+"
+session213:
+  shop: shop676
+  volunteer: volunteer4635
+  starts_at: "2012-01-21 15:15:00"
+  ends_at: "2012-01-21 17:25:19
+"
+session214:
+  shop: shop676
+  volunteer: volunteer4636
+  starts_at: "2012-01-21 17:01:44"
+  ends_at: "2012-01-21 18:03:56
+"
+session215:
+  shop: shop676
+  volunteer: volunteer4553
+  starts_at: "2012-01-21 15:30:00"
+  ends_at: "2012-01-21 17:56:32
+"
+session216:
+  shop: shop677
+  volunteer: volunteer4542
+  starts_at: "2012-01-25 18:26:00"
+  ends_at: "2012-01-25 21:08:31
+"
+session217:
+  shop: shop677
+  volunteer: volunteer4606
+  starts_at: "2012-01-25 18:45:00"
+  ends_at: "2012-01-25 19:30:00
+"
+session218:
+  shop: shop677
+  volunteer: volunteer4637
+  starts_at: "2012-01-25 19:14:41"
+  ends_at: "2012-01-25 19:19:34
+"
+session219:
+  shop: shop677
+  volunteer: volunteer4630
+  starts_at: "2012-01-25 17:30:00"
+  ends_at: "2012-01-25 20:00:00
+"
+session220:
+  shop: shop677
+  volunteer: volunteer4534
+  starts_at: "2012-01-25 19:45:00"
+  ends_at: "2012-01-25 21:09:18
+"
+session221:
+  shop: shop678
+  volunteer: volunteer4536
+  starts_at: "2012-02-01 18:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session222:
+  shop: shop678
+  volunteer: volunteer4552
+  starts_at: "2012-02-01 18:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session223:
+  shop: shop679
+  volunteer: volunteer4571
+  starts_at: "2012-02-04 13:46:58"
+  ends_at: "2012-02-04 16:07:49
+"
+session224:
+  shop: shop679
+  volunteer: volunteer4574
+  starts_at: "2012-02-04 14:00:00"
+  ends_at: "2012-02-04 18:22:46
+"
+session225:
+  shop: shop679
+  volunteer: volunteer4542
+  starts_at: "2012-02-04 14:30:00"
+  ends_at: "2012-02-04 18:22:52
+"
+session226:
+  shop: shop679
+  volunteer: volunteer4553
+  starts_at: "2012-02-04 14:15:00"
+  ends_at: "2012-02-04 17:15:20
+"
+session227:
+  shop: shop679
+  volunteer: volunteer4582
+  starts_at: "2012-02-04 16:15:00"
+  ends_at: "2012-02-04 16:57:32
+"
+session228:
+  shop: shop679
+  volunteer: volunteer4597
+  starts_at: "2012-02-04 17:16:05"
+  ends_at: "2012-02-04 18:08:33
+"
+session229:
+  shop: shop679
+  volunteer: volunteer4640
+  starts_at: "2012-02-04 17:00:00"
+  ends_at: "2012-02-04 18:22:41
+"
+session230:
+  shop: shop679
+  volunteer: volunteer4641
+  starts_at: "2012-02-04 17:00:00"
+  ends_at: "2012-02-04 18:22:44
+"
+session231:
+  shop: shop679
+  volunteer: volunteer4642
+  starts_at: "2012-02-04 14:45:00"
+  ends_at: "2012-02-04 18:25:50
+"
+session232:
+  shop: shop680
+  volunteer: volunteer4574
+  starts_at: "2012-02-11 14:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session233:
+  shop: shop680
+  volunteer: volunteer4536
+  starts_at: "2012-02-11 14:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session234:
+  shop: shop680
+  volunteer: volunteer4534
+  starts_at: "2012-02-11 15:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session235:
+  shop: shop680
+  volunteer: volunteer4643
+  starts_at: "2012-02-11 14:30:00"
+  ends_at: "2012-02-11 15:45:00
+"
+session236:
+  shop: shop680
+  volunteer: volunteer4553
+  starts_at: "2012-02-11 16:30:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session237:
+  shop: shop680
+  volunteer: volunteer4570
+  starts_at: "2012-02-11 15:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session238:
+  shop: shop681
+  volunteer: volunteer4536
+  starts_at: "2012-02-22 17:14:22"
+  ends_at: "0000-00-00 00:00:00
+"
+session239:
+  shop: shop681
+  volunteer: volunteer4579
+  starts_at: "2012-02-22 17:14:57"
+  ends_at: "0000-00-00 00:00:00
+"
+session240:
+  shop: shop681
+  volunteer: volunteer4628
+  starts_at: "2012-02-22 17:31:33"
+  ends_at: "0000-00-00 00:00:00
+"
+session241:
+  shop: shop681
+  volunteer: volunteer4552
+  starts_at: "2012-02-22 18:14:18"
+  ends_at: "0000-00-00 00:00:00
+"
+session242:
+  shop: shop681
+  volunteer: volunteer4571
+  starts_at: "2012-02-22 18:16:24"
+  ends_at: "2012-02-22 19:45:00
+"
+session243:
+  shop: shop682
+  volunteer: volunteer4570
+  starts_at: "2012-02-25 14:15:00"
+  ends_at: "2012-02-25 18:12:04
+"
+session244:
+  shop: shop682
+  volunteer: volunteer4536
+  starts_at: "2012-02-25 14:00:00"
+  ends_at: "2012-02-25 17:00:00
+"
+session245:
+  shop: shop682
+  volunteer: volunteer4645
+  starts_at: "2012-02-25 15:15:00"
+  ends_at: "2012-02-25 18:19:47
+"
+session246:
+  shop: shop682
+  volunteer: volunteer4646
+  starts_at: "2012-02-25 15:15:00"
+  ends_at: "2012-02-25 18:06:36
+"
+session247:
+  shop: shop682
+  volunteer: volunteer4552
+  starts_at: "2012-02-25 15:15:00"
+  ends_at: "2012-02-25 18:11:06
+"
+session248:
+  shop: shop682
+  volunteer: volunteer4638
+  starts_at: "2012-02-25 15:35:41"
+  ends_at: "2012-02-25 18:19:45
+"
+session249:
+  shop: shop682
+  volunteer: volunteer4648
+  starts_at: "2012-02-25 15:30:00"
+  ends_at: "2012-02-25 17:45:00
+"
+session250:
+  shop: shop682
+  volunteer: volunteer4649
+  starts_at: "2012-02-25 15:45:00"
+  ends_at: "2012-02-25 17:45:00
+"
+session251:
+  shop: shop682
+  volunteer: volunteer4622
+  starts_at: "2012-02-25 15:15:00"
+  ends_at: "2012-02-25 18:11:29
+"
+session252:
+  shop: shop683
+  volunteer: volunteer4571
+  starts_at: "2012-02-29 16:52:46"
+  ends_at: "0000-00-00 00:00:00
+"
+session253:
+  shop: shop683
+  volunteer: volunteer4628
+  starts_at: "2012-02-29 17:32:19"
+  ends_at: "0000-00-00 00:00:00
+"
+session254:
+  shop: shop683
+  volunteer: volunteer4536
+  starts_at: "2012-02-29 18:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session255:
+  shop: shop683
+  volunteer: volunteer4552
+  starts_at: "2012-02-29 18:38:49"
+  ends_at: "0000-00-00 00:00:00
+"
+session256:
+  shop: shop683
+  volunteer: volunteer4534
+  starts_at: "2012-02-29 18:39:11"
+  ends_at: "0000-00-00 00:00:00
+"
+session257:
+  shop: shop683
+  volunteer: volunteer4646
+  starts_at: "2012-02-29 17:45:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session258:
+  shop: shop683
+  volunteer: volunteer4654
+  starts_at: "2012-02-29 19:04:38"
+  ends_at: "2012-02-29 19:49:39
+"
+session259:
+  shop: shop683
+  volunteer: volunteer4534
+  starts_at: "2012-02-29 18:15:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session260:
+  shop: shop683
+  volunteer: volunteer4634
+  starts_at: "2012-02-29 20:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session261:
+  shop: shop684
+  volunteer: volunteer4534
+  starts_at: "2012-03-03 14:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session262:
+  shop: shop684
+  volunteer: volunteer4574
+  starts_at: "2012-03-03 14:15:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session263:
+  shop: shop684
+  volunteer: volunteer4579
+  starts_at: "2012-03-03 15:00:00"
+  ends_at: "2012-03-03 16:45:00
+"
+session264:
+  shop: shop684
+  volunteer: volunteer4576
+  starts_at: "2012-03-03 15:30:00"
+  ends_at: "2012-03-03 17:31:01
+"
+session265:
+  shop: shop684
+  volunteer: volunteer4635
+  starts_at: "2012-03-03 15:30:00"
+  ends_at: "2012-03-03 17:31:05
+"
+session266:
+  shop: shop684
+  volunteer: volunteer4652
+  starts_at: "2012-03-03 16:30:00"
+  ends_at: "2012-03-03 17:39:45
+"
+session267:
+  shop: shop685
+  volunteer: volunteer4609
+  starts_at: "2012-03-17 14:15:00"
+  ends_at: "2012-03-17 17:36:52
+"
+session268:
+  shop: shop685
+  volunteer: volunteer4534
+  starts_at: "2012-03-17 14:00:00"
+  ends_at: "2012-03-17 17:37:15
+"
+session269:
+  shop: shop686
+  volunteer: volunteer4542
+  starts_at: "2012-03-21 17:43:29"
+  ends_at: "2012-03-21 20:07:57
+"
+session270:
+  shop: shop686
+  volunteer: volunteer4628
+  starts_at: "2012-03-21 17:44:10"
+  ends_at: "2012-03-21 20:08:07
+"
+session271:
+  shop: shop687
+  volunteer: volunteer4571
+  starts_at: "2012-03-26 20:00:00"
+  ends_at: "2012-03-26 20:15:00
+"
+session272:
+  shop: shop687
+  volunteer: volunteer4646
+  starts_at: "2012-03-26 20:00:00"
+  ends_at: "2012-03-26 21:00:00
+"
+session273:
+  shop: shop687
+  volunteer: volunteer4542
+  starts_at: "2012-03-26 20:00:00"
+  ends_at: "2012-03-26 22:00:00
+"
+session274:
+  shop: shop687
+  volunteer: volunteer4534
+  starts_at: "2012-03-26 21:00:00"
+  ends_at: "2012-03-26 22:19:54
+"
+session275:
+  shop: shop688
+  volunteer: volunteer4628
+  starts_at: "2012-03-28 17:37:27"
+  ends_at: "2012-03-28 20:56:52
+"
+session276:
+  shop: shop688
+  volunteer: volunteer4542
+  starts_at: "2012-03-28 17:58:47"
+  ends_at: "2012-03-28 20:56:56
+"
+session277:
+  shop: shop689
+  volunteer: volunteer4574
+  starts_at: "2012-03-31 14:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session278:
+  shop: shop689
+  volunteer: volunteer4659
+  starts_at: "2012-03-31 14:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session279:
+  shop: shop689
+  volunteer: volunteer4660
+  starts_at: "2012-03-31 15:00:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session280:
+  shop: shop689
+  volunteer: volunteer4661
+  starts_at: "2012-03-31 15:15:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session281:
+  shop: shop689
+  volunteer: volunteer4665
+  starts_at: "2012-03-31 15:51:32"
+  ends_at: "0000-00-00 00:00:00
+"
+session282:
+  shop: shop689
+  volunteer: volunteer4576
+  starts_at: "2012-03-31 15:15:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session283:
+  shop: shop689
+  volunteer: volunteer4534
+  starts_at: "2012-03-31 13:30:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session284:
+  shop: shop690
+  volunteer: volunteer4571
+  starts_at: "2012-04-04 17:16:02"
+  ends_at: "2012-04-04 18:30:00
+"
+session285:
+  shop: shop690
+  volunteer: volunteer4542
+  starts_at: "2012-04-04 19:57:35"
+  ends_at: "2012-04-04 21:50:59
+"
+session286:
+  shop: shop690
+  volunteer: volunteer4637
+  starts_at: "2012-04-04 19:30:00"
+  ends_at: "2012-04-04 21:50:58
+"
+session287:
+  shop: shop691
+  volunteer: volunteer4571
+  starts_at: "2012-04-11 17:14:57"
+  ends_at: "2012-04-11 18:30:00
+"
+session288:
+  shop: shop691
+  volunteer: volunteer4666
+  starts_at: "2012-04-11 17:00:00"
+  ends_at: "2012-04-11 21:00:00
+"
+session289:
+  shop: shop691
+  volunteer: volunteer4542
+  starts_at: "2012-04-11 18:00:00"
+  ends_at: "2012-04-11 21:22:58
+"
+session290:
+  shop: shop691
+  volunteer: volunteer4667
+  starts_at: "2012-04-11 19:45:00"
+  ends_at: "2012-04-11 21:00:00
+"
+session291:
+  shop: shop691
+  volunteer: volunteer4646
+  starts_at: "2012-04-11 19:00:00"
+  ends_at: "2012-04-11 21:22:57
+"
+session292:
+  shop: shop692
+  volunteer: volunteer4553
+  starts_at: "2012-04-14 13:15:00"
+  ends_at: "2012-04-14 18:00:32
+"
+session293:
+  shop: shop692
+  volunteer: volunteer4666
+  starts_at: "2012-04-14 14:00:00"
+  ends_at: "2012-04-14 17:45:00
+"
+session294:
+  shop: shop692
+  volunteer: volunteer4667
+  starts_at: "2012-04-14 12:45:00"
+  ends_at: "2012-04-14 18:00:35
+"
+session295:
+  shop: shop692
+  volunteer: volunteer4609
+  starts_at: "2012-04-14 14:45:00"
+  ends_at: "2012-04-14 18:00:00
+"
+session296:
+  shop: shop692
+  volunteer: volunteer4668
+  starts_at: "2012-04-14 15:00:00"
+  ends_at: "2012-04-14 18:00:24
+"
+session297:
+  shop: shop692
+  volunteer: volunteer4576
+  starts_at: "2012-04-14 15:09:41"
+  ends_at: "2012-04-14 16:44:34
+"
+session298:
+  shop: shop692
+  volunteer: volunteer4635
+  starts_at: "2012-04-14 15:10:34"
+  ends_at: "2012-04-14 16:44:32
+"
+session299:
+  shop: shop692
+  volunteer: volunteer4669
+  starts_at: "2012-04-14 15:15:00"
+  ends_at: "2012-04-14 16:00:00
+"
+session300:
+  shop: shop692
+  volunteer: volunteer4646
+  starts_at: "2012-04-14 14:00:00"
+  ends_at: "2012-04-14 15:22:56
+"
+session301:
+  shop: shop692
+  volunteer: volunteer4665
+  starts_at: "2012-04-14 15:14:37"
+  ends_at: "2012-04-14 18:00:23
+"
+session302:
+  shop: shop692
+  volunteer: volunteer4672
+  starts_at: "2012-04-14 16:00:00"
+  ends_at: "2012-04-14 17:41:23
+"
+session303:
+  shop: shop692
+  volunteer: volunteer4552
+  starts_at: "2012-04-14 16:38:30"
+  ends_at: "2012-04-14 18:00:22
+"
+session304:
+  shop: shop692
+  volunteer: volunteer4562
+  starts_at: "2012-04-14 16:15:00"
+  ends_at: "2012-04-14 17:41:00
+"
+session305:
+  shop: shop693
+  volunteer: volunteer4628
+  starts_at: "2012-04-16 19:59:27"
+  ends_at: "2012-04-16 21:00:00
+"
+session306:
+  shop: shop693
+  volunteer: volunteer4571
+  starts_at: "2012-04-16 19:59:51"
+  ends_at: "2012-04-16 21:00:00
+"
+session307:
+  shop: shop693
+  volunteer: volunteer4542
+  starts_at: "2012-04-16 20:00:01"
+  ends_at: "2012-04-16 22:32:37
+"
+session308:
+  shop: shop693
+  volunteer: volunteer4570
+  starts_at: "2012-04-16 20:00:09"
+  ends_at: "2012-04-16 22:32:36
+"
+session309:
+  shop: shop694
+  volunteer: volunteer4628
+  starts_at: "2012-04-18 18:01:47"
+  ends_at: "2012-04-18 19:00:00
+"
+session310:
+  shop: shop694
+  volunteer: volunteer4542
+  starts_at: "2012-04-18 18:01:55"
+  ends_at: "2012-04-18 21:31:18
+"
+session311:
+  shop: shop694
+  volunteer: volunteer4562
+  starts_at: "2012-04-18 18:15:00"
+  ends_at: "2012-04-18 18:30:00
+"
+session312:
+  shop: shop694
+  volunteer: volunteer4666
+  starts_at: "2012-04-18 17:30:00"
+  ends_at: "2012-04-18 21:30:00
+"
+session313:
+  shop: shop694
+  volunteer: volunteer4590
+  starts_at: "2012-04-18 18:19:24"
+  ends_at: "2012-04-18 18:44:53
+"
+session314:
+  shop: shop694
+  volunteer: volunteer4591
+  starts_at: "2012-04-18 18:19:38"
+  ends_at: "2012-04-18 18:44:51
+"
+session315:
+  shop: shop694
+  volunteer: volunteer4646
+  starts_at: "2012-04-18 18:34:54"
+  ends_at: "2012-04-18 21:14:40
+"
+session316:
+  shop: shop694
+  volunteer: volunteer4665
+  starts_at: "2012-04-18 18:35:16"
+  ends_at: "2012-04-18 21:31:15
+"
+session317:
+  shop: shop694
+  volunteer: volunteer4676
+  starts_at: "2012-04-18 19:41:23"
+  ends_at: "2012-04-18 19:41:31
+"
+session318:
+  shop: shop694
+  volunteer: volunteer4534
+  starts_at: "2012-04-18 19:15:00"
+  ends_at: "2012-04-18 20:45:00
+"
+session319:
+  shop: shop695
+  volunteer: volunteer4534
+  starts_at: "2012-04-19 18:30:00"
+  ends_at: "2012-04-19 20:56:41
+"
+session320:
+  shop: shop696
+  volunteer: volunteer4542
+  starts_at: "2012-04-21 13:44:14"
+  ends_at: "2012-04-21 17:32:40
+"
+session321:
+  shop: shop696
+  volunteer: volunteer4570
+  starts_at: "2012-04-21 14:00:00"
+  ends_at: "2012-04-21 17:18:47
+"
+session322:
+  shop: shop696
+  volunteer: volunteer4677
+  starts_at: "2012-04-21 14:00:00"
+  ends_at: "2012-04-21 15:55:40
+"
+session323:
+  shop: shop696
+  volunteer: volunteer4646
+  starts_at: "2012-04-21 14:23:10"
+  ends_at: "2012-04-21 15:30:20
+"
+session324:
+  shop: shop696
+  volunteer: volunteer4574
+  starts_at: "2012-04-21 14:15:00"
+  ends_at: "2012-04-21 17:26:42
+"
+session325:
+  shop: shop696
+  volunteer: volunteer4680
+  starts_at: "2012-04-21 14:30:00"
+  ends_at: "2012-04-21 17:32:39
+"
+session326:
+  shop: shop696
+  volunteer: volunteer4562
+  starts_at: "2012-04-21 14:45:00"
+  ends_at: "2012-04-21 15:00:00
+"
+session327:
+  shop: shop696
+  volunteer: volunteer4638
+  starts_at: "2012-04-21 14:30:00"
+  ends_at: "2012-04-21 17:30:40
+"
+session328:
+  shop: shop696
+  volunteer: volunteer4681
+  starts_at: "2012-04-21 15:00:00"
+  ends_at: "2012-04-21 17:30:26
+"
+session329:
+  shop: shop696
+  volunteer: volunteer4665
+  starts_at: "2012-04-21 15:13:55"
+  ends_at: "2012-04-21 17:19:19
+"
+session330:
+  shop: shop696
+  volunteer: volunteer4552
+  starts_at: "2012-04-21 16:45:00"
+  ends_at: "2012-04-21 17:32:37
+"
+session331:
+  shop: shop696
+  volunteer: volunteer4682
+  starts_at: "2012-04-21 16:45:00"
+  ends_at: "2012-04-21 17:32:37
+"
+session332:
+  shop: shop697
+  volunteer: volunteer4542
+  starts_at: "2012-04-25 17:19:34"
+  ends_at: "2012-04-25 21:42:23
+"
+session333:
+  shop: shop697
+  volunteer: volunteer4579
+  starts_at: "2012-04-25 17:30:00"
+  ends_at: "2012-04-25 19:20:23
+"
+session334:
+  shop: shop697
+  volunteer: volunteer4666
+  starts_at: "2012-04-25 18:30:00"
+  ends_at: "2012-04-25 21:42:21
+"
+session335:
+  shop: shop697
+  volunteer: volunteer4646
+  starts_at: "2012-04-25 18:59:35"
+  ends_at: "2012-04-25 20:23:04
+"
+session336:
+  shop: shop697
+  volunteer: volunteer4680
+  starts_at: "2012-04-25 19:35:15"
+  ends_at: "2012-04-25 21:22:46
+"
+session337:
+  shop: shop697
+  volunteer: volunteer4683
+  starts_at: "2012-04-25 20:00:00"
+  ends_at: "2012-04-25 20:23:07
+"
+session338:
+  shop: shop698
+  volunteer: volunteer4534
+  starts_at: "2012-04-28 14:03:41"
+  ends_at: "2012-04-28 18:30:00
+"
+session339:
+  shop: shop698
+  volunteer: volunteer4666
+  starts_at: "2012-04-28 14:00:00"
+  ends_at: "2012-04-28 18:30:00
+"
+session340:
+  shop: shop698
+  volunteer: volunteer4684
+  starts_at: "2012-04-28 14:06:19"
+  ends_at: "2012-04-28 14:56:20
+"
+session341:
+  shop: shop698
+  volunteer: volunteer4680
+  starts_at: "2012-04-28 14:45:00"
+  ends_at: "2012-04-28 17:27:06
+"
+session342:
+  shop: shop698
+  volunteer: volunteer4686
+  starts_at: "2012-04-28 15:00:00"
+  ends_at: "2012-04-28 17:00:00
+"
+session343:
+  shop: shop698
+  volunteer: volunteer4562
+  starts_at: "2012-04-28 16:00:00"
+  ends_at: "2012-04-28 17:07:15
+"
+session344:
+  shop: shop698
+  volunteer: volunteer4687
+  starts_at: "2012-04-28 16:00:00"
+  ends_at: "2012-04-28 17:37:49
+"
+session345:
+  shop: shop699
+  volunteer: volunteer4666
+  starts_at: "2012-05-02 17:15:00"
+  ends_at: "2012-05-02 20:17:53
+"
+session346:
+  shop: shop699
+  volunteer: volunteer4542
+  starts_at: "2012-05-02 17:51:03"
+  ends_at: "2012-05-02 20:17:55
+"
+session347:
+  shop: shop699
+  volunteer: volunteer4689
+  starts_at: "2012-05-02 17:15:00"
+  ends_at: "2012-05-02 20:17:54
+"
+session348:
+  shop: shop699
+  volunteer: volunteer4562
+  starts_at: "2012-05-02 18:30:00"
+  ends_at: "2012-05-02 19:45:00
+"
+session349:
+  shop: shop700
+  volunteer: volunteer4542
+  starts_at: "2012-05-05 14:32:48"
+  ends_at: "2012-05-05 15:45:00
+"
+session350:
+  shop: shop700
+  volunteer: volunteer4680
+  starts_at: "2012-05-05 14:34:03"
+  ends_at: "2012-05-05 15:48:16
+"
+session351:
+  shop: shop700
+  volunteer: volunteer4690
+  starts_at: "2012-05-05 14:36:15"
+  ends_at: "2012-05-05 15:58:25
+"
+session352:
+  shop: shop700
+  volunteer: volunteer4642
+  starts_at: "2012-05-05 15:00:00"
+  ends_at: "2012-05-05 16:57:05
+"
+session353:
+  shop: shop701
+  volunteer: volunteer4542
+  starts_at: "2012-05-09 17:21:11"
+  ends_at: "2012-05-09 21:15:11
+"
+session354:
+  shop: shop701
+  volunteer: volunteer4687
+  starts_at: "2012-05-09 18:19:31"
+  ends_at: "2012-05-09 20:54:17
+"
+session355:
+  shop: shop701
+  volunteer: volunteer4692
+  starts_at: "2012-05-09 17:30:00"
+  ends_at: "2012-05-09 19:13:06
+"
+session356:
+  shop: shop701
+  volunteer: volunteer4693
+  starts_at: "2012-05-09 18:00:00"
+  ends_at: "2012-05-09 20:45:00
+"
+session357:
+  shop: shop701
+  volunteer: volunteer4609
+  starts_at: "2012-05-09 18:15:00"
+  ends_at: "2012-05-09 20:30:00
+"
+session358:
+  shop: shop701
+  volunteer: volunteer4693
+  starts_at: "2012-05-09 20:16:22"
+  ends_at: "2012-05-09 21:05:48
+"
+session359:
+  shop: shop702
+  volunteer: volunteer4553
+  starts_at: "2012-05-12 09:45:00"
+  ends_at: "2012-05-12 17:28:23
+"
+session360:
+  shop: shop702
+  volunteer: volunteer4694
+  starts_at: "2012-05-12 14:06:37"
+  ends_at: "2012-05-12 14:28:01
+"
+session361:
+  shop: shop702
+  volunteer: volunteer4609
+  starts_at: "2012-05-12 14:30:00"
+  ends_at: "2012-05-12 16:56:16
+"
+session362:
+  shop: shop702
+  volunteer: volunteer4693
+  starts_at: "2012-05-12 14:40:20"
+  ends_at: "2012-05-12 17:28:22
+"
+session363:
+  shop: shop702
+  volunteer: volunteer4666
+  starts_at: "2012-05-12 14:30:00"
+  ends_at: "2012-05-12 17:28:23
+"
+session364:
+  shop: shop702
+  volunteer: volunteer4695
+  starts_at: "2012-05-12 13:30:00"
+  ends_at: "2012-05-12 15:18:11
+"
+session365:
+  shop: shop702
+  volunteer: volunteer4696
+  starts_at: "2012-05-12 14:53:52"
+  ends_at: "2012-05-12 17:11:28
+"
+session366:
+  shop: shop702
+  volunteer: volunteer4687
+  starts_at: "2012-05-12 14:56:02"
+  ends_at: "2012-05-12 17:11:23
+"
+session367:
+  shop: shop702
+  volunteer: volunteer4646
+  starts_at: "2012-05-12 15:03:31"
+  ends_at: "2012-05-12 16:21:05
+"
+session368:
+  shop: shop702
+  volunteer: volunteer4552
+  starts_at: "2012-05-12 15:54:01"
+  ends_at: "2012-05-12 17:28:22
+"
+session369:
+  shop: shop702
+  volunteer: volunteer4576
+  starts_at: "2012-05-12 15:55:42"
+  ends_at: "2012-05-12 17:04:30
+"
+session370:
+  shop: shop702
+  volunteer: volunteer4698
+  starts_at: "2012-05-12 16:10:47"
+  ends_at: "2012-05-12 16:45:53
+"
+session371:
+  shop: shop702
+  volunteer: volunteer4699
+  starts_at: "2012-05-12 16:15:00"
+  ends_at: "2012-05-12 16:45:00
+"
+session372:
+  shop: shop703
+  volunteer: volunteer4666
+  starts_at: "2012-05-16 18:00:00"
+  ends_at: "2012-05-16 20:56:57
+"
+session373:
+  shop: shop703
+  volunteer: volunteer4693
+  starts_at: "2012-05-16 18:19:07"
+  ends_at: "2012-05-16 18:43:07
+"
+session374:
+  shop: shop703
+  volunteer: volunteer4609
+  starts_at: "2012-05-16 17:15:00"
+  ends_at: "2012-05-16 19:00:00
+"
+session375:
+  shop: shop703
+  volunteer: volunteer4628
+  starts_at: "2012-05-16 17:00:00"
+  ends_at: "2012-05-16 20:26:01
+"
+session376:
+  shop: shop703
+  volunteer: volunteer4534
+  starts_at: "2012-05-16 18:00:00"
+  ends_at: "2012-05-16 20:50:52
+"
+session377:
+  shop: shop703
+  volunteer: volunteer4534
+  starts_at: "2012-05-16 18:15:00"
+  ends_at: "2012-05-16 20:25:59
+"
+session378:
+  shop: shop703
+  volunteer: volunteer4701
+  starts_at: "2012-05-16 18:45:00"
+  ends_at: "2012-05-16 19:11:50
+"
+session379:
+  shop: shop703
+  volunteer: volunteer4542
+  starts_at: "2012-05-16 18:45:00"
+  ends_at: "2012-05-16 20:56:55
+"
+session380:
+  shop: shop704
+  volunteer: volunteer4553
+  starts_at: "2012-05-19 14:15:00"
+  ends_at: "2012-05-19 17:14:02
+"
+session381:
+  shop: shop704
+  volunteer: volunteer4702
+  starts_at: "2012-05-19 14:45:00"
+  ends_at: "2012-05-19 17:51:41
+"
+session382:
+  shop: shop704
+  volunteer: volunteer4669
+  starts_at: "2012-05-19 15:30:00"
+  ends_at: "2012-05-19 17:15:00
+"
+session383:
+  shop: shop704
+  volunteer: volunteer4666
+  starts_at: "2012-05-19 14:00:00"
+  ends_at: "2012-05-19 17:15:00
+"
+session384:
+  shop: shop704
+  volunteer: volunteer4534
+  starts_at: "2012-05-19 15:15:00"
+  ends_at: "2012-05-19 17:51:38
+"
+session385:
+  shop: shop704
+  volunteer: volunteer4703
+  starts_at: "2012-05-19 15:45:00"
+  ends_at: "2012-05-19 17:00:00
+"
+session386:
+  shop: shop705
+  volunteer: volunteer4591
+  starts_at: "2012-05-23 17:56:06"
+  ends_at: "2012-05-23 19:24:02
+"
+session387:
+  shop: shop705
+  volunteer: volunteer4705
+  starts_at: "2012-05-23 17:58:13"
+  ends_at: "2012-05-23 19:52:42
+"
+session388:
+  shop: shop705
+  volunteer: volunteer4646
+  starts_at: "2012-05-23 18:01:56"
+  ends_at: "2012-05-23 20:59:16
+"
+session389:
+  shop: shop705
+  volunteer: volunteer4542
+  starts_at: "2012-05-23 18:36:01"
+  ends_at: "2012-05-23 20:59:14
+"
+session390:
+  shop: shop705
+  volunteer: volunteer4666
+  starts_at: "2012-05-23 19:00:00"
+  ends_at: "2012-05-23 20:59:13
+"
+session391:
+  shop: shop705
+  volunteer: volunteer4693
+  starts_at: "2012-05-23 18:45:00"
+  ends_at: "2012-05-23 20:03:13
+"
+session392:
+  shop: shop705
+  volunteer: volunteer4689
+  starts_at: "2012-05-23 17:45:00"
+  ends_at: "2012-05-23 20:17:55
+"
+session393:
+  shop: shop706
+  volunteer: volunteer4534
+  starts_at: "2012-05-28 18:28:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session394:
+  shop: shop708
+  volunteer: volunteer4591
+  starts_at: "2012-06-02 15:58:06"
+  ends_at: "2012-06-02 16:50:35
+"
+session395:
+  shop: shop709
+  volunteer: volunteer4576
+  starts_at: "2012-06-09 15:04:31"
+  ends_at: "2012-06-09 17:00:00
+"
+session396:
+  shop: shop709
+  volunteer: volunteer4666
+  starts_at: "2012-06-09 15:08:37"
+  ends_at: "2012-06-09 17:30:30
+"
+session397:
+  shop: shop709
+  volunteer: volunteer4709
+  starts_at: "2012-06-09 15:00:00"
+  ends_at: "2012-06-09 16:57:57
+"
+session398:
+  shop: shop709
+  volunteer: volunteer4553
+  starts_at: "2012-06-09 14:15:00"
+  ends_at: "2012-06-09 17:30:26
+"
+session399:
+  shop: shop709
+  volunteer: volunteer4711
+  starts_at: "2012-06-09 16:15:00"
+  ends_at: "2012-06-09 17:57:43
+"
+session400:
+  shop: shop709
+  volunteer: volunteer4534
+  starts_at: "2012-06-09 13:45:00"
+  ends_at: "2012-06-09 17:30:23
+"
+session401:
+  shop: shop709
+  volunteer: volunteer4699
+  starts_at: "2012-06-09 16:30:00"
+  ends_at: "2012-06-09 16:45:00
+"
+session402:
+  shop: shop710
+  volunteer: volunteer4666
+  starts_at: "2012-06-23 14:00:00"
+  ends_at: "2012-06-23 17:16:17
+"
+session403:
+  shop: shop710
+  volunteer: volunteer4713
+  starts_at: "2012-06-23 14:15:00"
+  ends_at: "2012-06-23 17:00:27
+"
+session404:
+  shop: shop710
+  volunteer: volunteer4620
+  starts_at: "2012-06-23 15:15:00"
+  ends_at: "2012-06-23 15:11:20
+"
+session405:
+  shop: shop710
+  volunteer: volunteer4706
+  starts_at: "2012-06-23 14:28:24"
+  ends_at: "2012-06-23 17:16:17
+"
+session406:
+  shop: shop710
+  volunteer: volunteer4677
+  starts_at: "2012-06-23 14:45:00"
+  ends_at: "2012-06-23 16:15:10
+"
+session407:
+  shop: shop710
+  volunteer: volunteer4708
+  starts_at: "2012-06-23 15:00:00"
+  ends_at: "2012-06-23 17:16:20
+"
+session408:
+  shop: shop710
+  volunteer: volunteer4646
+  starts_at: "2012-06-23 16:19:39"
+  ends_at: "2012-06-23 17:16:16
+"
+session409:
+  shop: shop710
+  volunteer: volunteer4714
+  starts_at: "2012-06-23 17:05:18"
+  ends_at: "2012-06-23 17:06:30
+"
+session410:
+  shop: shop711
+  volunteer: volunteer4542
+  starts_at: "2012-06-30 15:30:59"
+  ends_at: "2012-06-30 16:15:00
+"
+session411:
+  shop: shop711
+  volunteer: volunteer4646
+  starts_at: "2012-06-30 16:24:43"
+  ends_at: "2012-06-30 18:01:02
+"
+session412:
+  shop: shop711
+  volunteer: volunteer4715
+  starts_at: "2012-06-30 15:45:00"
+  ends_at: "2012-06-30 16:59:07
+"
+session413:
+  shop: shop711
+  volunteer: volunteer4713
+  starts_at: "2012-06-30 14:45:00"
+  ends_at: "2012-06-30 17:32:56
+"
+session414:
+  shop: shop711
+  volunteer: volunteer4534
+  starts_at: "2012-06-30 14:30:00"
+  ends_at: "2012-06-30 18:01:24
+"
+session415:
+  shop: shop712
+  volunteer: volunteer4666
+  starts_at: "2012-07-07 14:30:00"
+  ends_at: "2012-07-07 17:15:02
+"
+session416:
+  shop: shop712
+  volunteer: volunteer4716
+  starts_at: "2012-07-07 14:30:00"
+  ends_at: "2012-07-07 17:15:04
+"
+session417:
+  shop: shop712
+  volunteer: volunteer4562
+  starts_at: "2012-07-07 15:30:00"
+  ends_at: "2012-07-07 16:51:21
+"
+session418:
+  shop: shop712
+  volunteer: volunteer4713
+  starts_at: "2012-07-07 15:42:22"
+  ends_at: "2012-07-07 17:15:11
+"
+session419:
+  shop: shop712
+  volunteer: volunteer4576
+  starts_at: "2012-07-07 14:45:00"
+  ends_at: "2012-07-07 17:17:33
+"
+session420:
+  shop: shop715
+  volunteer: volunteer4542
+  starts_at: "2012-07-14 15:21:01"
+  ends_at: "2012-07-14 17:16:18
+"
+session421:
+  shop: shop715
+  volunteer: volunteer4669
+  starts_at: "2012-07-14 16:41:08"
+  ends_at: "2012-07-14 16:44:39
+"
+session422:
+  shop: shop716
+  volunteer: volunteer4553
+  starts_at: "2012-07-21 13:45:00"
+  ends_at: "2012-07-21 17:37:54
+"
+session423:
+  shop: shop716
+  volunteer: volunteer4719
+  starts_at: "2012-07-21 14:15:00"
+  ends_at: "2012-07-21 17:33:14
+"
+session424:
+  shop: shop716
+  volunteer: volunteer4720
+  starts_at: "2012-07-21 14:30:00"
+  ends_at: "2012-07-21 17:38:42
+"
+session425:
+  shop: shop716
+  volunteer: volunteer4542
+  starts_at: "2012-07-21 14:26:37"
+  ends_at: "2012-07-21 17:38:45
+"
+session426:
+  shop: shop716
+  volunteer: volunteer4549
+  starts_at: "2012-07-21 14:41:44"
+  ends_at: "2012-07-21 14:52:51
+"
+session427:
+  shop: shop716
+  volunteer: volunteer4721
+  starts_at: "2012-07-21 14:15:00"
+  ends_at: "2012-07-21 14:57:39
+"
+session428:
+  shop: shop716
+  volunteer: volunteer4713
+  starts_at: "2012-07-21 14:00:00"
+  ends_at: "2012-07-21 16:41:35
+"
+session429:
+  shop: shop716
+  volunteer: volunteer4562
+  starts_at: "2012-07-21 15:45:00"
+  ends_at: "2012-07-21 17:38:39
+"
+session430:
+  shop: shop716
+  volunteer: volunteer4666
+  starts_at: "2012-07-21 14:00:00"
+  ends_at: "2012-07-21 16:04:12
+"
+session431:
+  shop: shop716
+  volunteer: volunteer4722
+  starts_at: "2012-07-21 16:02:07"
+  ends_at: "2012-07-21 16:23:51
+"
+session432:
+  shop: shop716
+  volunteer: volunteer4723
+  starts_at: "2012-07-21 16:03:55"
+  ends_at: "2012-07-21 16:23:49
+"
+session433:
+  shop: shop716
+  volunteer: volunteer4554
+  starts_at: "2012-07-21 16:05:11"
+  ends_at: "2012-07-21 17:38:34
+"
+session434:
+  shop: shop716
+  volunteer: volunteer4724
+  starts_at: "2012-07-21 16:35:18"
+  ends_at: "2012-07-21 16:36:54
+"
+session435:
+  shop: shop716
+  volunteer: volunteer4646
+  starts_at: "2012-07-21 16:46:40"
+  ends_at: "2012-07-21 17:38:29
+"
+session436:
+  shop: shop716
+  volunteer: volunteer4726
+  starts_at: "2012-07-21 13:45:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session437:
+  shop: shop717
+  volunteer: volunteer4646
+  starts_at: "2012-07-23 20:17:55"
+  ends_at: "0000-00-00 00:00:00
+"
+session438:
+  shop: shop717
+  volunteer: volunteer4542
+  starts_at: "2012-07-23 20:18:02"
+  ends_at: "0000-00-00 00:00:00
+"
+session439:
+  shop: shop718
+  volunteer: volunteer4553
+  starts_at: "2012-07-28 14:15:00"
+  ends_at: "0000-00-00 00:00:00
+"
+session440:
+  shop: shop718
+  volunteer: volunteer4666
+  starts_at: "2012-07-28 14:23:08"
+  ends_at: "0000-00-00 00:00:00
+"
+session441:
+  shop: shop718
+  volunteer: volunteer4713
+  starts_at: "2012-07-28 14:30:00"
+  ends_at: "2012-07-28 16:19:42
+"
+session442:
+  shop: shop719
+  volunteer: volunteer4553
+  starts_at: "2012-08-11 13:45:00"
+  ends_at: "2012-08-11 17:16:05
+"
+session443:
+  shop: shop719
+  volunteer: volunteer4709
+  starts_at: "2012-08-11 14:38:15"
+  ends_at: "2012-08-11 16:44:40
+"
+session444:
+  shop: shop719
+  volunteer: volunteer4570
+  starts_at: "2012-08-11 13:00:00"
+  ends_at: "2012-08-11 17:14:13
+"
+session445:
+  shop: shop719
+  volunteer: volunteer4542
+  starts_at: "2012-08-11 15:00:00"
+  ends_at: "2012-08-11 17:16:00
+"
+session446:
+  shop: shop719
+  volunteer: volunteer4732
+  starts_at: "2012-08-11 15:00:00"
+  ends_at: "2012-08-11 17:16:03
+"
+session447:
+  shop: shop719
+  volunteer: volunteer4562
+  starts_at: "2012-08-11 15:45:00"
+  ends_at: "2012-08-11 17:15:56
+"
+session448:
+  shop: shop719
+  volunteer: volunteer4665
+  starts_at: "2012-08-11 17:10:33"
+  ends_at: "2012-08-11 17:15:54"
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: 
-  volunteer: adam
-  shop: one
-  starts_at: 2012-10-13 14:30:00
-  ends_at: 2012-10-13 16:30:00
-# column: value
-#
-# two: {}
-#  column: value
+
+session721:
+  volunteer_id: volunteer4740
+  shop_id: shop720
+  starts_at: '2012-09-29 14:15:00'
+  ends_at: '2012-09-29 15:30:00'
+  reason_for_visit: flat
+  notes: 03:30:00 PM
+session722:
+  volunteer_id: volunteer4741
+  shop_id: shop720
+  starts_at: '2012-09-29 14:15:00'
+  ends_at: '2012-09-29 15:30:00'
+  reason_for_visit: cables and brakes
+  notes: 03:30:00 PM
+session723:
+  volunteer_id: volunteer4670
+  shop_id: shop720
+  starts_at: '2012-09-29 15:40:00'
+  ends_at: '2012-09-29 12:00:00'
+  reason_for_visit: New bike
+  notes: ''
+session724:
+  volunteer_id: volunteer4743
+  shop_id: shop720
+  starts_at: '2012-09-29 14:30:00'
+  ends_at: '2012-09-29 17:00:00'
+  reason_for_visit: polo bike brakes/headset
+  notes: 05:00:00 PM
+session728:
+  volunteer_id: volunteer4741
+  shop_id: shop727
+  starts_at: '2012-10-06 14:15:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: flat tires
+  notes: ''
+session729:
+  volunteer_id: volunteer4740
+  shop_id: shop727
+  starts_at: '2012-10-06 14:15:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: flat tires
+  notes: ''
+session730:
+  volunteer_id: volunteer4701
+  shop_id: shop727
+  starts_at: '2012-10-06 15:35:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: flat front tire
+  notes: ''
+session731:
+  volunteer_id: volunteer4750
+  shop_id: shop727
+  starts_at: '2012-10-06 15:36:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: flat back tire/rusted gears
+  notes: ''
+session732:
+  volunteer_id: volunteer4743
+  shop_id: shop727
+  starts_at: '2012-10-06 12:00:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: stuff
+  notes: ''
+session733:
+  volunteer_id: volunteer4752
+  shop_id: shop727
+  starts_at: '2012-10-06 03:40:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: maint
+  notes: ''
+session734:
+  volunteer_id: volunteer4666
+  shop_id: shop727
+  starts_at: '2012-10-06 14:15:00'
+  ends_at: '2012-10-06 12:00:00'
+  reason_for_visit: coordinator
+  notes: ''
+session736:
+  volunteer_id: volunteer4605
+  shop_id: shop735
+  starts_at: '2012-10-13 14:00:00'
+  ends_at: '2012-10-13 17:00:00'
+  reason_for_visit: volunteer
+  notes: 05:00:00 PM
+session737:
+  volunteer_id: volunteer4757
+  shop_id: shop735
+  starts_at: '2012-10-13 14:00:00'
+  ends_at: '2012-10-13 16:00:00'
+  reason_for_visit: switching out cassette
+  notes: 04:00:00 PM
+session738:
+  volunteer_id: volunteer4666
+  shop_id: shop735
+  starts_at: '2012-10-13 14:00:00'
+  ends_at: '2012-10-13 12:00:00'
+  reason_for_visit: coordinator
+  notes: ''
+session739:
+  volunteer_id: volunteer4759
+  shop_id: shop735
+  starts_at: '2012-10-13 15:04:00'
+  ends_at: '2012-10-13 12:00:00'
+  reason_for_visit: volunteer
+  notes: ''
+session740:
+  volunteer_id: volunteer4736
+  shop_id: shop735
+  starts_at: '2012-10-13 15:28:00'
+  ends_at: '2012-10-13 12:00:00'
+  reason_for_visit: swith out drivetrain
+  notes: ''
+session741:
+  volunteer_id: volunteer4761
+  shop_id: shop735
+  starts_at: '1969-12-31 18:00:00'
+  ends_at: '2012-10-13 16:59:00'
+  reason_for_visit: bottom brace of crank squeaking
+  notes: 04:59:00 PM
+session743:
+  volunteer_id: volunteer4666
+  shop_id: shop742
+  starts_at: '2012-10-17 18:00:00'
+  ends_at: '2012-10-17 12:00:00'
+  reason_for_visit: coordinator
+  notes: ''
+session744:
+  volunteer_id: volunteer4605
+  shop_id: shop742
+  starts_at: '2012-10-17 18:00:00'
+  ends_at: '2012-10-17 12:00:00'
+  reason_for_visit: volunteer
+  notes: ''
+session745:
+  volunteer_id: volunteer4562
+  shop_id: shop742
+  starts_at: '1969-12-31 18:00:00'
+  ends_at: '2012-10-17 12:00:00'
+  reason_for_visit: volunteer
+  notes: ''
+session752:
+  volunteer_id: volunteer4777
+  shop_id: shop751
+  starts_at: '2012-10-20 14:10:00'
+  ends_at: '2012-10-20 16:55:00'
+  reason_for_visit: volunteer
+  notes: 04:55:00 PM
+session753:
+  volunteer_id: volunteer4757
+  shop_id: shop751
+  starts_at: '2012-10-20 14:30:00'
+  ends_at: '2012-10-20 17:00:00'
+  reason_for_visit: ''
+  notes: 05:00:00 PM
+session754:
+  volunteer_id: volunteer4779
+  shop_id: shop751
+  starts_at: '2012-10-20 14:35:00'
+  ends_at: '2012-10-20 17:00:00'
+  reason_for_visit: brakes
+  notes: 05:00:00 PM
+session755:
+  volunteer_id: volunteer4761
+  shop_id: shop751
+  starts_at: '2012-10-20 15:29:00'
+  ends_at: '2012-10-20 17:50:00'
+  reason_for_visit: '"back wheel'
+  notes: ' cones ?"'
+session756:
+  volunteer_id: volunteer4562
+  shop_id: shop751
+  starts_at: '2012-10-20 04:00:00'
+  ends_at: '2012-10-20 17:50:00'
+  reason_for_visit: volunteer
+  notes: 05:50:00 PM
+session757:
+  volunteer_id: volunteer4743
+  shop_id: shop751
+  starts_at: '2012-10-20 03:00:00'
+  ends_at: '2012-10-20 17:30:00'
+  reason_for_visit: chain
+  notes: 05:30:00 PM
+session758:
+  volunteer_id: volunteer4783
+  shop_id: shop751
+  starts_at: '2012-10-20 14:30:00'
+  ends_at: '2012-10-20 17:30:00'
+  reason_for_visit: freewheel replacement
+  notes: 05:30:00 PM
+session759:
+  volunteer_id: volunteer4784
+  shop_id: shop751
+  starts_at: '2012-10-20 14:30:00'
+  ends_at: '2012-10-20 17:30:00'
+  reason_for_visit: brake adjustment
+  notes: 05:30:00 PM
+session760:
+  volunteer_id: volunteer4785
+  shop_id: shop751
+  starts_at: '2012-10-20 04:30:00'
+  ends_at: '2012-10-20 17:51:00'
+  reason_for_visit: brakes
+  notes: 05:51:00 PM
+session761:
+  volunteer_id: volunteer4786
+  shop_id: shop751
+  starts_at: '2012-10-20 16:30:00'
+  ends_at: '2012-10-20 17:30:00'
+  reason_for_visit: brakes
+  notes: 05:30:00 PM
+session762:
+  volunteer_id: volunteer4605
+  shop_id: shop751
+  starts_at: '2012-10-20 14:00:00'
+  ends_at: '2012-10-20 17:40:00'
+  reason_for_visit: volunteer
+  notes: 05:40:00 PM
+session764:
+  volunteer_id: volunteer4726
+  shop_id: shop763
+  starts_at: '2012-12-08 10:00:00'
+  ends_at: '2012-12-08 12:00:00'
+  reason_for_visit: coordinator
+  notes: ''
+session766:
+  volunteer_id: volunteer4666
+  shop_id: shop763
+  starts_at: '2012-12-08 13:30:00'
+  ends_at: '2012-12-08 12:00:00'
+  reason_for_visit: mechanic extraordinaire
+  notes: ''
+session769:
+  volunteer_id: volunteer4794
+  shop_id: shop763
+  starts_at: '2012-12-08 14:00:00'
+  ends_at: '2012-12-08 17:00:00'
+  reason_for_visit: greeter
+  notes: 05:00:00 PM
+session770:
+  volunteer_id: volunteer4795
+  shop_id: shop763
+  starts_at: '2012-12-08 14:11:00'
+  ends_at: '2012-12-08 16:19:00'
+  reason_for_visit: coordinator
+  notes: 04:19:00 PM
+session772:
+  volunteer_id: volunteer4797
+  shop_id: shop763
+  starts_at: '2012-12-08 14:36:00'
+  ends_at: '2012-12-08 14:42:00'
+  reason_for_visit: bike donation
+  notes: 02:42:00 PM
+session773:
+  volunteer_id: volunteer4605
+  shop_id: shop763
+  starts_at: '2012-12-08 14:44:00'
+  ends_at: '2012-12-08 17:45:00'
+  reason_for_visit: volunteer
+  notes: 05:45:00 PM
+session774:
+  volunteer_id: volunteer4799
+  shop_id: shop763
+  starts_at: '2012-12-08 14:50:00'
+  ends_at: '2012-12-08 15:46:00'
+  reason_for_visit: fixing flat tire
+  notes: 03:46:00 PM
+session775:
+  volunteer_id: volunteer4800
+  shop_id: shop763
+  starts_at: '2012-12-08 15:13:00'
+  ends_at: '2012-12-08 17:00:00'
+  reason_for_visit: '"bent seat'
+  notes: ' new grips"'
+session776:
+  volunteer_id: volunteer4801
+  shop_id: shop763
+  starts_at: '2012-12-08 15:15:00'
+  ends_at: '2012-12-08 17:00:00'
+  reason_for_visit: helping son with bike
+  notes: 05:00:00 PM
+session777:
+  volunteer_id: volunteer4802
+  shop_id: shop763
+  starts_at: '2012-12-08 15:27:00'
+  ends_at: '2012-12-08 16:06:00'
+  reason_for_visit: buying frame
+  notes: 04:06:00 PM
+session778:
+  volunteer_id: volunteer4803
+  shop_id: shop763
+  starts_at: '2012-12-08 15:27:00'
+  ends_at: '2012-12-08 16:06:00'
+  reason_for_visit: buying frame
+  notes: 04:06:00 PM
+session779:
+  volunteer_id: volunteer4804
+  shop_id: shop763
+  starts_at: '2012-12-08 15:43:00'
+  ends_at: '2012-12-08 16:19:00'
+  reason_for_visit: volunteer
+  notes: 04:19:00 PM
+session780:
+  volunteer_id: volunteer4562
+  shop_id: shop763
+  starts_at: '2012-12-08 15:48:00'
+  ends_at: '2012-12-08 17:10:00'
+  reason_for_visit: volunteer
+  notes: 05:10:00 PM
+session781:
+  volunteer_id: volunteer4674
+  shop_id: shop763
+  starts_at: '2012-12-08 16:03:00'
+  ends_at: '2012-12-08 17:10:00'
+  reason_for_visit: changing out crank
+  notes: 05:10:00 PM
+session782:
+  volunteer_id: volunteer4807
+  shop_id: shop763
+  starts_at: '2012-12-08 16:09:00'
+  ends_at: '2012-12-08 16:42:00'
+  reason_for_visit: bearings fixed
+  notes: 04:42:00 PM
+session785:
+  volunteer_id: volunteer4586
+  shop_id: shop784
+  starts_at: '2012-12-15 14:14:00'
+  ends_at: '2012-12-15 15:15:00'
+  reason_for_visit: looking at bikes in shop
+  notes: 03:15:00 PM
+session786:
+  volunteer_id: volunteer4812
+  shop_id: shop784
+  starts_at: '2012-12-15 14:12:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: checking out shop
+  notes: 07:00:00 PM
+session787:
+  volunteer_id: volunteer4795
+  shop_id: shop784
+  starts_at: '2012-12-15 14:00:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer coordinator
+  notes: 07:00:00 PM
+session788:
+  volunteer_id: volunteer4726
+  shop_id: shop784
+  starts_at: '2012-12-15 14:00:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: shop manager
+  notes: 07:00:00 PM
+session789:
+  volunteer_id: volunteer4794
+  shop_id: shop784
+  starts_at: '2012-12-15 14:10:00'
+  ends_at: '2012-12-15 17:00:00'
+  reason_for_visit: greeter
+  notes: 05:00:00 PM
+session790:
+  volunteer_id: volunteer4799
+  shop_id: shop784
+  starts_at: '2012-12-15 14:20:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: trade
+  notes: 07:00:00 PM
+session791:
+  volunteer_id: volunteer4579
+  shop_id: shop784
+  starts_at: '2012-12-15 14:10:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer/work on bike
+  notes: 07:00:00 PM
+session792:
+  volunteer_id: volunteer4562
+  shop_id: shop784
+  starts_at: '2012-12-15 14:29:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer
+  notes: 07:00:00 PM
+session795:
+  volunteer_id: volunteer4743
+  shop_id: shop784
+  starts_at: '2012-12-15 14:44:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer/building up bike
+  notes: 07:00:00 PM
+session797:
+  volunteer_id: volunteer4823
+  shop_id: shop784
+  starts_at: '2012-12-15 15:00:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer coordinator
+  notes: 07:00:00 PM
+session798:
+  volunteer_id: volunteer4824
+  shop_id: shop784
+  starts_at: '2012-12-15 15:26:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer
+  notes: 07:00:00 PM
+session799:
+  volunteer_id: volunteer4825
+  shop_id: shop784
+  starts_at: '2012-12-15 15:30:00'
+  ends_at: '2012-12-15 15:45:00'
+  reason_for_visit: spring or derailer
+  notes: 03:45:00 PM
+session800:
+  volunteer_id: volunteer4605
+  shop_id: shop784
+  starts_at: '2012-12-15 15:36:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer
+  notes: 07:00:00 PM
+session801:
+  volunteer_id: volunteer4827
+  shop_id: shop784
+  starts_at: '2012-12-15 15:36:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: volunteer
+  notes: 07:00:00 PM
+session802:
+  volunteer_id: volunteer4828
+  shop_id: shop784
+  starts_at: '2012-12-15 16:48:00'
+  ends_at: '2012-12-15 16:49:00'
+  reason_for_visit: volunteer
+  notes: 04:49:00 PM
+session803:
+  volunteer_id: volunteer4829
+  shop_id: shop784
+  starts_at: '2012-12-15 16:50:00'
+  ends_at: '2012-12-15 19:00:00'
+  reason_for_visit: 'pedals '
+  notes: 07:00:00 PM
+session804:
+  volunteer_id: volunteer4724
+  shop_id: shop784
+  starts_at: '2012-12-15 16:56:00'
+  ends_at: '2012-12-15 16:59:00'
+  reason_for_visit: looking for bike
+  notes: 04:59:00 PM
+session806:
+  volunteer_id: volunteer4834
+  shop_id: shop805
+  starts_at: '2012-12-22 14:00:00'
+  ends_at: '2012-12-22 12:00:00'
+  reason_for_visit: tightening bottom bracket
+  notes: ''
+session807:
+  volunteer_id: volunteer4757
+  shop_id: shop805
+  starts_at: '2012-12-22 14:00:00'
+  ends_at: '2012-12-22 12:00:00'
+  reason_for_visit: tightening bottom bracket
+  notes: ''
+session808:
+  volunteer_id: volunteer4836
+  shop_id: shop805
+  starts_at: '2012-12-22 02:30:00'
+  ends_at: '2012-12-22 15:00:00'
+  reason_for_visit: tire tube installation
+  notes: 03:00:00 PM
+session809:
+  volunteer_id: volunteer4837
+  shop_id: shop805
+  starts_at: '2012-12-22 12:00:00'
+  ends_at: '2012-12-22 12:00:00'
+  reason_for_visit: slow leak in recent purchase bike
+  notes: ''
+session810:
+  volunteer_id: volunteer4824
+  shop_id: shop805
+  starts_at: '2012-12-22 15:30:00'
+  ends_at: '2012-12-22 18:30:00'
+  reason_for_visit: volunteer
+  notes: 06:30:00 PM
+session811:
+  volunteer_id: volunteer4839
+  shop_id: shop805
+  starts_at: '2012-12-22 16:16:00'
+  ends_at: '2012-12-22 16:45:00'
+  reason_for_visit: adusting gears issue
+  notes: 04:45:00 PM
+session812:
+  volunteer_id: volunteer4605
+  shop_id: shop805
+  starts_at: '2012-12-22 15:00:00'
+  ends_at: '2012-12-22 17:50:00'
+  reason_for_visit: volunteer
+  notes: 05:50:00 PM
+session813:
+  volunteer_id: volunteer4827
+  shop_id: shop805
+  starts_at: '2012-12-22 15:00:00'
+  ends_at: '2012-12-22 17:50:00'
+  reason_for_visit: volunteer
+  notes: 05:50:00 PM
+session814:
+  volunteer_id: volunteer4842
+  shop_id: shop805
+  starts_at: '2012-12-22 14:00:00'
+  ends_at: '2012-12-22 18:30:00'
+  reason_for_visit: coordinator
+  notes: 06:30:00 PM
+session815:
+  volunteer_id: volunteer4553
+  shop_id: shop805
+  starts_at: '2012-12-22 12:45:00'
+  ends_at: '2012-12-22 18:30:00'
+  reason_for_visit: coordinator
+  notes: 06:30:00 PM
+session816:
+  volunteer_id: volunteer4726
+  shop_id: shop805
+  starts_at: '2012-12-22 12:00:00'
+  ends_at: '2012-12-22 18:30:00'
+  reason_for_visit: shop manager
+  notes: 06:30:00 PM

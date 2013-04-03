@@ -1,36 +1,314 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+shop645:
+  location: RGRS
+  starts_at: 2011-08-20 16:00:42
+  ends_at: 2011-08-20 16:30:00
+shop647:
+  location: RGRS
+  starts_at: 2011-09-03 14:45:00
+  ends_at: 2011-09-03 17:30:00
+shop648:
+  location: RGRS
+  starts_at: 2011-09-10 18:47:58
+  ends_at: 2011-09-10 20:17:49
+shop649:
+  location: RGRS
+  starts_at: 2011-09-14 18:00:00
+  ends_at: 2011-09-14 20:15:00
+shop650:
+  location: RGRS
+  starts_at: 2011-09-24 15:08:36
+  ends_at: 2011-09-24 17:15:19
+shop651:
+  location: RGRS
+  starts_at: 2011-09-28 18:03:33
+  ends_at: 2011-09-28 19:50:35
+shop652:
+  location: RGRS
+  starts_at: 2011-10-01 14:45:00
+  ends_at: 2011-10-01 17:37:09
+shop653:
+  location: RGRS
+  starts_at: 2011-10-05 18:00:00
+  ends_at: 2011-10-05 20:25:31
+shop654:
+  location: RGRS
+  starts_at: 2011-10-08 15:00:16
+  ends_at: 2011-10-08 17:08:33
+shop655:
+  location: RGRS
+  starts_at: 2011-10-12 17:45:00
+  ends_at: 2011-10-12 20:17:08
+shop656:
+  location: RGRS
+  starts_at: 2011-10-15 15:00:00
+  ends_at: 2011-10-15 17:26:36
+shop657:
+  location: RGRS
+  starts_at: 2011-10-19 17:45:00
+  ends_at: 2011-10-19 20:08:32
+shop658:
+  location: RGRS
+  starts_at: 2011-10-22 13:00:00
+  ends_at: 2011-10-22 17:56:56
+shop659:
+  location: RGRS
+  starts_at: 2011-10-26 18:03:48
+  ends_at: 2011-10-26 20:17:35
+shop660:
+  location: RGRS
+  starts_at: 2011-10-29 15:00:33
+  ends_at: 2011-10-29 18:02:11
+shop661:
+  location: RGRS
+  starts_at: 2011-11-05 14:00:00
+  ends_at: 2011-11-05 17:28:55
+shop662:
+  location: RGRS
+  starts_at: 2011-11-09 17:32:44
+  ends_at: 2011-11-09 20:55:01
+shop663:
+  location: RGRS
+  starts_at: 2011-11-12 15:01:27
+  ends_at: 2011-11-12 17:12:36
+shop664:
+  location: RGRS
+  starts_at: 2011-11-16 17:55:10
+  ends_at: 2011-11-16 20:05:25
+shop665:
+  location: RGRS
+  starts_at: 2011-11-19 12:19:00
+  ends_at: 2011-11-19 17:18:11
+shop666:
+  location: RGRS
+  starts_at: 2011-11-26 15:00:00
+  ends_at: 2011-11-26 16:30:00
+shop667:
+  location: RGRS
+  starts_at: 2011-11-30 18:00:00
+  ends_at: 2011-11-30 20:12:44
+shop668:
+  location: RGRS
+  starts_at: 2011-11-23 18:00:00
+  ends_at: 2011-11-23 19:45:00
+shop669:
+  location: RGRS
+  starts_at: 2011-12-07 18:00:00
+  ends_at: 2011-12-07 19:56:02
+shop670:
+  location: RGRS
+  starts_at: 2011-12-10 13:05:53
+  ends_at: 2011-12-10 17:10:22
+shop671:
+  location: RGRS
+  starts_at: 2011-12-17 14:30:00
+  ends_at: 2011-12-17 16:00:00
+shop672:
+  location: RGRS
+  starts_at: 2012-01-11 17:30:00
+  ends_at: 2012-01-12 02:30:00
+shop673:
+  location: RGRS
+  starts_at: 2012-01-14 15:00:00
+  ends_at: 2012-01-14 19:45:00
+shop674:
+  location: RGRS
+  starts_at: 2012-01-08 13:00:00
+  ends_at: 2012-01-08 19:00:00
+shop675:
+  location: RGRS
+  starts_at: 2012-01-18 17:00:00
+  ends_at: 2012-01-18 20:02:17
+shop676:
+  location: RGRS
+  starts_at: 2012-01-21 13:00:00
+  ends_at: 2012-01-21 18:15:26
+shop677:
+  location: RGRS
+  starts_at: 2012-01-25 17:30:00
+  ends_at: 2012-01-25 21:09:18
+shop678:
+  location: RGRS
+  starts_at: 2012-02-01 18:00:00
+  ends_at: 2012-02-01 18:00:00
+shop679:
+  location: RGRS
+  starts_at: 2012-02-04 13:46:58
+  ends_at: 2012-02-04 18:25:50
+shop680:
+  location: RGRS
+  starts_at: 2012-02-11 14:00:00
+  ends_at: 2012-02-11 16:30:00
+shop681:
+  location: RGRS
+  starts_at: 2012-02-22 17:14:22
+  ends_at: 2012-02-22 19:45:00
+shop682:
+  location: RGRS
+  starts_at: 2012-02-25 14:00:00
+  ends_at: 2012-02-25 18:19:47
+shop683:
+  location: RGRS
+  starts_at: 2012-02-29 16:52:46
+  ends_at: 2012-02-29 20:00:00
+shop684:
+  location: RGRS
+  starts_at: 2012-03-03 14:00:00
+  ends_at: 2012-03-03 17:39:45
+shop685:
+  location: RGRS
+  starts_at: 2012-03-17 14:00:00
+  ends_at: 2012-03-17 17:37:15
+shop686:
+  location: RGRS
+  starts_at: 2012-03-21 17:43:29
+  ends_at: 2012-03-21 20:08:07
+shop687:
+  location: RGRS
+  starts_at: 2012-03-26 20:00:00
+  ends_at: 2012-03-26 22:19:54
+shop688:
+  location: Cedar
+  starts_at: 2012-03-28 17:37:27
+  ends_at: 2012-03-28 20:56:56
+shop689:
+  location: Cedar
+  starts_at: 2012-03-31 13:30:00
+  ends_at: 2012-03-31 15:51:32
+shop690:
+  location: Cedar
+  starts_at: 2012-04-04 17:16:02
+  ends_at: 2012-04-04 21:50:59
+shop691:
+  location: Cedar
+  starts_at: 2012-04-11 17:00:00
+  ends_at: 2012-04-11 21:22:58
+shop692:
+  location: Cedar
+  starts_at: 2012-04-14 12:45:00
+  ends_at: 2012-04-14 18:00:35
+shop693:
+  location: Cedar
+  starts_at: 2012-04-16 19:59:27
+  ends_at: 2012-04-16 22:32:37
+shop694:
+  location: Cedar
+  starts_at: 2012-04-18 17:30:00
+  ends_at: 2012-04-18 21:31:18
+shop695:
+  location: Cedar
+  starts_at: 2012-04-19 18:30:00
+  ends_at: 2012-04-19 20:56:41
+shop696:
+  location: Cedar
+  starts_at: 2012-04-21 13:44:14
+  ends_at: 2012-04-21 17:32:40
+shop697:
+  location: Cedar
+  starts_at: 2012-04-25 17:19:34
+  ends_at: 2012-04-25 21:42:23
+shop698:
+  location: Cedar
+  starts_at: 2012-04-28 14:00:00
+  ends_at: 2012-04-28 18:30:00
+shop699:
+  location: Cedar
+  starts_at: 2012-05-02 17:15:00
+  ends_at: 2012-05-02 20:17:55
+shop700:
+  location: Cedar
+  starts_at: 2012-05-05 14:32:48
+  ends_at: 2012-05-05 16:57:05
+shop701:
+  location: Cedar
+  starts_at: 2012-05-09 17:21:11
+  ends_at: 2012-05-09 21:15:11
+shop702:
+  location: Cedar
+  starts_at: 2012-05-12 09:45:00
+  ends_at: 2012-05-12 17:28:23
+shop703:
+  location: Cedar
+  starts_at: 2012-05-16 17:00:00
+  ends_at: 2012-05-16 20:56:57
+shop704:
+  location: Cedar
+  starts_at: 2012-05-19 14:00:00
+  ends_at: 2012-05-19 17:51:41
+shop705:
+  location: Cedar
+  starts_at: 2012-05-23 17:45:00
+  ends_at: 2012-05-23 20:59:16
+shop708:
+  location: Cedar
+  starts_at: 2012-06-02 15:58:06
+  ends_at: 2012-06-02 16:50:35
+shop709:
+  location: Cedar
+  starts_at: 2012-06-09 13:45:00
+  ends_at: 2012-06-09 17:57:43
+shop710:
+  location: Cedar
+  starts_at: 2012-06-23 14:00:00
+  ends_at: 2012-06-23 17:16:20
+shop711:
+  location: Cedar
+  starts_at: 2012-06-30 14:30:00
+  ends_at: 2012-06-30 18:01:24
+shop712:
+  location: Cedar
+  starts_at: 2012-07-07 14:30:00
+  ends_at: 2012-07-07 17:17:33
+shop715:
+  location: Cedar
+  starts_at: 2012-07-14 15:21:01
+  ends_at: 2012-07-14 17:16:18
+shop716:
+  location: Cedar
+  starts_at: 2012-07-21 13:45:00
+  ends_at: 2012-07-21 17:38:45
+shop717:
+  location: Cedar
+  starts_at: 2012-07-23 20:17:55
+  ends_at: 2012-07-23 20:18:02
+shop718:
+  location: Cedar
+  starts_at: 2012-07-28 14:15:00
+  ends_at: 2012-07-28 16:19:42
+shop719:
+  location: Cedar
+  starts_at: 2012-08-11 13:00:00
+  ends_at: 2012-08-11 17:16:05
 
-one:
-  starts_at: 2012-10-13 14:00:00
-  ends_at: 2012-10-13 17:00:00
+shop720:
   location: 215 West Oak Street
+  starts_at: '2012-09-29 14:15:00'
+  ends_at: '2012-09-29 16:30:00'
+shop727:
+  location: 215 West Oak Street
+  starts_at: '2012-10-06 03:40:00'
+  ends_at: '2012-10-06 15:36:00'
+shop735:
+  location: 215 West Oak Street
+  starts_at: '1969-12-31 18:00:00'
+  ends_at: '2012-10-13 15:28:00'
+shop742:
+  location: 215 West Oak Street
+  starts_at: '1969-12-31 18:00:00'
+  ends_at: '2012-10-17 18:00:00'
+shop751:
+  location: 215 West Oak Street
+  starts_at: '2012-10-20 03:00:00'
+  ends_at: '2012-10-20 16:30:00'
+shop763:
+  location: 215 West Oak Street
+  starts_at: '2012-12-08 01:50:00'
+  ends_at: '2012-12-08 16:33:00'
+shop784:
+  location: 215 West Oak Street
+  starts_at: '2012-12-15 14:00:00'
+  ends_at: '2012-12-15 16:56:00'
+shop805:
+  location: 215 West Oak Street
+  starts_at: '2012-12-22 02:30:00'
+  ends_at: '2012-12-22 16:16:00'
 
-two:
-  starts_at: 2012-10-20 14:00:00
-  ends_at: 2012-10-20 17:00:00
-  location: 215 West Oak Street
-
-three:
-  starts_at: 2012-10-27 14:00:00
-  ends_at: 2012-10-27 17:00:00
-  location: 215 West Oak Street
-
-five:
-  starts_at: 2012-11-03 14:00:00
-  ends_at: 2012-11-03 17:00:00
-  location: 215 West Oak Street
-
-six:
-  starts_at: 2012-11-10 14:00:00
-  ends_at: 2012-11-10 17:00:00
-  location: 215 West Oak Street
-
-seven:
-  starts_at: 2012-11-17 14:00:00
-  ends_at: 2012-11-17 17:00:00
-  location: 215 West Oak Street
-
-eight:
-  starts_at: 2012-11-24 14:00:00
-  ends_at: 2012-11-24 17:00:00
-  location: 215 West Oak Street
