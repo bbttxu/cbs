@@ -52,6 +52,7 @@
 
 class Shop
   include MongoMapper::Document
+  plugin MongoMapper::Plugins::IdentityMap
 
   many :sessions
   many :volunteers

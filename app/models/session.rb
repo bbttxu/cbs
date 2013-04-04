@@ -25,6 +25,8 @@
 
 class Session
   include MongoMapper::Document
+  plugin MongoMapper::Plugins::IdentityMap
+
   belongs_to :shop
   belongs_to :volunteer
 

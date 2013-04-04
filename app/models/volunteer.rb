@@ -47,6 +47,8 @@
 
 class Volunteer
   include MongoMapper::Document
+  plugin MongoMapper::Plugins::IdentityMap
+
 
   key :first_name, String
   key :last_name, String
