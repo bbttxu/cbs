@@ -1,7 +1,7 @@
 .row.volunteers.alphabet
 	.twelve.columns.show-for-large-up
 		%h1 Listing volunteers
-	.one.columns.mobile-one#scrollbar2.push-three-mobile	
+	.one.columns.mobile-one#scrollbar2.push-three-mobile
 		%dl.index
 			- @volunteers.each do |letter, volunteers|
 				%dd= link_to "#{letter}", "\##{letter.downcase}", :id => "index_#{letter.downcase}"
@@ -15,9 +15,9 @@
 					%li.volunteer
 						%span.name= link_to( volunteer.name, volunteer)
 						%span.shops
-							= "#{pluralize(volunteer.shops.count, 'shop')}"
-						%span.hours
-							= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+							= "#{pluralize(volunteer.sessions.count, 'shop')}"
+						/ %span.hours
+						/	=  "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
 			%hr
 	.four.columns.mobile-four
 		.panel

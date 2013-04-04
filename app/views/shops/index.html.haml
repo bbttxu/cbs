@@ -14,8 +14,8 @@
         - month_shops.each do |shop|
           %li.shop
             %span.name= link_to( shop_date(shop), shop)
-            %span.hours= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
-            %span.shops= "#{pluralize(shop.sessions.count, 'volunteer')}, "
+            / %span.hours= # "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
+            %span.shops= "#{pluralize(shop.sessions.count, 'volunteer')}"
 
   .four.columns.mobile-four
     .panel
