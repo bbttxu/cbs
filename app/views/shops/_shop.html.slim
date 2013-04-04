@@ -25,7 +25,7 @@
 
 
 		h4
-			= "#{pluralize(shop.volunteers.uniq.count, 'volunteer')}, "
+			= "#{pluralize(shop.sessions.count, 'volunteer')}, "
 			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
 		- if shop.sessions.count > 0
 			table( width="100%" )

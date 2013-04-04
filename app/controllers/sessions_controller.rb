@@ -52,9 +52,12 @@ class SessionsController < ApplicationController
 
     @volunteer = Volunteer.find_by_id( params[:session][:volunteer_id] )
 
+
+
     redirect_to new_volunteer_path, :notice => 'You must sign in to add an item to your cart.' and return if @volunteer == nil
 
-    @volunteer.open_sessions.each do |session|
+    @sessions = Session.where({:volunteer_id => params[:session][:volunteer_id], :ends_at => nil})
+    @sessions.each do |session|
       session.update_attributes :ends_at => Time.now
     end
 
