@@ -5,11 +5,13 @@
 // the compiled file.
 //
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery-ui
-//= require turbolinks
+//= require jquery.turbolinks
 //= require foundation
 //= require app
 //= require shops
 //= require volunteers
+
+//= require turbolinks
+
