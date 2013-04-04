@@ -32,6 +32,9 @@ GEM
       multi_json (~> 1.0)
     ansi (1.4.3)
     arel (2.2.3)
+    bson (1.8.4)
+    bson_ext (1.8.4)
+      bson (~> 1.8.4)
     builder (3.0.4)
     capistrano (2.14.2)
       highline
@@ -128,6 +131,12 @@ GEM
       compass (>= 0.12.1)
       sass (>= 3.2.0)
       sassy-math (>= 1.5)
+    mongo (1.8.4)
+      bson (~> 1.8.4)
+    mongo_mapper (0.12.0)
+      activemodel (~> 3.0)
+      activesupport (~> 3.0)
+      plucky (~> 0.5.2)
     multi_json (1.6.1)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
@@ -138,6 +147,8 @@ GEM
       net-ssh (>= 2.6.5)
     newrelic_rpm (3.5.8.70)
     nokogiri (1.5.6)
+    plucky (0.5.2)
+      mongo (~> 1.5)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -250,6 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_link_to
+  bson_ext
   capistrano
   chronic
   coffee-rails (~> 3.1.1)
@@ -267,6 +279,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   jquery-ui-rails
+  mongo_mapper
   newrelic_rpm
   rails (~> 3.1)
   rb-fsevent
