@@ -114,6 +114,8 @@ GEM
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-turbolinks (0.2.1)
+      rails (>= 3.1.0)
     jquery-ui-rails (4.0.1)
       jquery-rails
       railties (>= 3.1.0)
@@ -241,6 +243,8 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
+    turbolinks (0.6.1)
+      coffee-rails
     turn (0.8.2)
       ansi (>= 1.2.2)
     tzinfo (0.3.35)
@@ -278,6 +282,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
+  jquery-turbolinks
   jquery-ui-rails
   mongo_mapper
   newrelic_rpm
@@ -293,6 +298,7 @@ DEPENDENCIES
   sqlite3
   therubyracer
   thin
+  turbolinks
   turn (= 0.8.2)
   uglifier (>= 1.0.3)
   zurb-foundation (~> 3.2)

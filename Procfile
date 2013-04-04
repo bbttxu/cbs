@@ -1,2 +1,2 @@
 # Procfile
-web: bundle exec rails server
+web: bundle exec rails server thin -p $PORT
