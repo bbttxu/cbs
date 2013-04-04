@@ -27,9 +27,7 @@ after "deploy:restart", "deploy:cleanup"
 after 'deploy:update', 'bundle:install'
 after 'deploy:update', 'foreman:export'
 after 'deploy:update', 'foreman:restart'
-
-after "deploy:update_code", "deploy:migrate"
-
+# after "deploy:update_code", "deploy:migrate"
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
