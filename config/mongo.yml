@@ -12,7 +12,10 @@ test:
 
 # set these environment variables on your prod server
 production:
-  <<: *defaults
+  host: 10.178.129.158
+  port: 27017
   database: cbs
-  username: <%= ENV['MONGO_USERNAME'] %>
-  password: <%= ENV['MONGO_PASSWORD'] %>
+  slaves:
+    - host: 10.178.128.161
+    - host: 10.178.129.153
+    - host: 10.178.128.160
