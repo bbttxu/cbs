@@ -16,8 +16,8 @@
 						%span.name= link_to( volunteer.name, volunteer)
 						%span.shops
 							= "#{pluralize(volunteer.sessions.count, 'shop')}"
-						/ %span.hours
-						/	=  "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+						-# %span.hours
+						-#	= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
 			%hr
 	.four.columns.mobile-four
 		.panel

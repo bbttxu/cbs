@@ -1,34 +1,34 @@
-/ current.html.haml
+-# current.html.haml
 .row
-	/ .twelve.columns
-	/ 	= render "sessions/login", :locals => { :shops => @shops }
+	-# .twelve.columns
+	-# 	= render "sessions/login", :locals => { :shops => @shops }
 
-	/ %hr
+	-# %hr
 	- if @shops.empty?
 		.four.columns.push-eight
 			.panel
 				%p No shops found.
 				%p
 					= link_to 'Start a new shop', new_shop_path, :class => "button"
-				/ = form_for @new_shop do |shop|
-				/ 	= hidden_field :shop, :starts_at, :value => "now"
-				/ 	= shop.submit "Start a new shop", :class => :button
+				-# = form_for @new_shop do |shop|
+				-# 	= hidden_field :shop, :starts_at, :value => "now"
+				-# 	= shop.submit "Start a new shop", :class => :button
 
 
-		/ 	- else
-		/ 		%h1= "#{pluralize( @shops.count, 'shop' )}"
+		-# 	- else
+		-# 		%h1= "#{pluralize( @shops.count, 'shop' )}"
 
-		/ 		- @shops.each do |shop|
-		/ 			%p
-		/ 				Shop is scheduled to run from
-		/ 				= shop.starts_at
-		/ 				to
-		/ 				= "#{shop.ends_at}."
-		/ 			%p
-		/ 				= link_to "Join this shop", shop
+		-# 		- @shops.each do |shop|
+		-# 			%p
+		-# 				Shop is scheduled to run from
+		-# 				= shop.starts_at
+		-# 				to
+		-# 				= "#{shop.ends_at}."
+		-# 			%p
+		-# 				= link_to "Join this shop", shop
 
-		/ .panel
-		/ 	%h4 We'll teach you to...
+		-# .panel
+		-# 	%h4 We'll teach you to...
 	- else
 		.twelve.columns
 			%dl.tabs

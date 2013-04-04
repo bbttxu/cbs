@@ -6,20 +6,20 @@
 	/[if (gte IE 9)|!(IE)] <html lang="en">
 	%head
 		%meta{ :charset => "utf-8" }
-		/ Uncomment to make IE8 render like IE7
-		/ <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+		-# Uncomment to make IE8 render like IE7
+		-# <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 
-		/ Set the viewport width to device width for mobile
+		-# Set the viewport width to device width for mobile
 		%meta( name="viewport" content="width=device-width, initial-scale=1.0")
 
 		%title= content_for?(:title) ? yield(:title) : "QCBS | Querencia Community Bike Shop"
 		%link( rel='stylesheet' id='droid sans-css'  href='http://fonts.googleapis.com/css?family=Droid+Sans%3A400&#038;ver=3.5-alpha-21989' type='text/css' media='all')
 		%link( rel='stylesheet' id='droid serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400&#038;ver=3.5-alpha-21989' type='text/css' media='all' )
 
-		/ Included CSS Files
+		-# Included CSS Files
 		= stylesheet_link_tag "application"
 
-		/ Included JS Files
+		-# Included JS Files
 		= javascript_include_tag "application"
 
 		= csrf_meta_tags

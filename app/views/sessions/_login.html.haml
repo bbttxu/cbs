@@ -1,12 +1,3 @@
-/ _login.html.haml
-
-/ :class => 'search-query ui-autocomplete-input', :placeholder => 'Search', data: {autocomplete_source: @volunteers.map(&:name)}
-
-
-/ %pre= debug shop_id
-
-
-
 .row
 	= form_for @new_session, :html => { :id => "#{('a'..'z').to_a.shuffle[0,8].join}" } do |sess|
 		.twelve.columns.panel
@@ -14,7 +5,7 @@
 			= label :email, "Volunteer Login"
 			= text_field :volunteer, :search, :class => 'search-query ui-autocomplete-input', :placeholder => 'Type name or email', data: {autocomplete_source:  @volunteers.collect{|x| { :value => x.id, :label => ["#{x.first_name} #{x.last_name}","#{x.email}"].reject{|x|x == ""}.join(", ") } }}
 
-			/ .alert-box.success
+			-# .alert-box.success
 			%p
 				%b Shop time:
 				= this_shop.shop_date
