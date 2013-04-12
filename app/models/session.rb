@@ -35,6 +35,7 @@ class Session
   key :reason_for_visit, String
   key :notes, String
   key :migration_key, String
+  key :is_visitor, Boolean
   timestamps!
 
 	scope :current, where( "ends_at" => nil)
