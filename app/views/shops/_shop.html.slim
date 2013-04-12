@@ -37,28 +37,26 @@
 					th Actions
 				- shop.sessions.each do |sesh|
 					tr
+						td= sesh.is_volunteer ? "yes" : "no"
+
 						td
 							= link_to sesh.volunteer.name, sesh.volunteer
-						td= Time.zone.at(sesh.starts_at).strftime("%I:%M")
+						td= Time.at(sesh.starts_at).strftime("%I:%M")
 						td
-							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
 						- if sesh.ends_at.nil?
 							td= "started #{time_ago_in_words sesh.starts_at} ago"
-							td
-								= form_for sesh do |sess|
-									= sess.hidden_field :starts_at, :value => sesh.starts_at
-									= sess.hidden_field :ends_at, :value => "now"
-									= submit_tag "logout", :class => "small radius alert button"
-
+							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
 						- else
 							td
 								= pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )
-
-							td
-								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
-		- else
-			p no volunteers
-
+						td
+							= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+						- if sesh.ends_at.nil?
+								td
+									= form_for sesh do |sess|
+										= sess.hidden_field :starts_at, :value => sesh.starts_at
+										= sess.hidden_field :ends_at, :value => "now"
+										= submit_tag "logout", :class => "small radius alert button"
 
 		- if has_open_sessions
 			p

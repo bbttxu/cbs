@@ -16,6 +16,9 @@
 	.ends_at
 		= f.label :ends_at
 		= f.text_field :ends_at, :value => ( @session.ends_at ? standard_datetime(@session.ends_at) : "" )
+	.is_volunteer
+		= f.label :is_volunteer
+		= f.check_box :is_volunteer
 	.actions
 		= f.submit 'Save'
 		&nbsp;

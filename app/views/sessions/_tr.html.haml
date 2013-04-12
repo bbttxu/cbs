@@ -6,6 +6,7 @@
 
 	- if sesh.ends_at.nil?
 		%td= "started #{time_ago_in_words sesh.starts_at} ago"
+		%td= sesh.is_volunteer? "yes" : "no"
 		%td
 			= form_for sesh do |sess|
 				= sess.hidden_field :starts_at, :value => sesh.starts_at
@@ -18,5 +19,7 @@
 			hours,
 			= Time.at(sesh.shop.starts_at).strftime("%Y %b %-d")
 
-		%td
-			= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+	%td
+		= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+	%td
+		/ %pre= debug sesh

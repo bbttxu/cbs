@@ -35,11 +35,13 @@ class Session
   key :reason_for_visit, String
   key :notes, String
   key :migration_key, String
-  key :is_visitor, Boolean
+  key :is_volunteer, Boolean
   timestamps!
 
 	scope :current, where( "ends_at" => nil)
 	scope :open, :current
+
+  scope :default, order("ends_at DESC")
 
 
 	def hours_worked
