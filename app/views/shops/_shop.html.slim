@@ -28,35 +28,40 @@
 			= "#{pluralize(shop.sessions.count, 'volunteer')}, "
 			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
 		- if shop.sessions.count > 0
-			table( width="100%" )
+			table.sessions( width="100%" )
 				tr
 					th Volunteer
-					th Start
-					th End
+					/ th Start
+					/ th End
 					th Work time
 					th Actions
-				- shop.sessions.each do |sesh|
+				- shop.sessions.order('is_volunteer DESC, ends_at, starts_at').each do |sesh|
 					tr
-						td= sesh.is_volunteer ? "yes" : "no"
+						td
+							- if sesh.is_volunteer
+								i.icon-wrench
+							= link_to "#{sesh.volunteer.name}", sesh.volunteer
 
-						td
-							= link_to sesh.volunteer.name, sesh.volunteer
-						td= Time.at(sesh.starts_at).strftime("%I:%M")
-						td
 						- if sesh.ends_at.nil?
 							td= "started #{time_ago_in_words sesh.starts_at} ago"
 							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
 						- else
 							td
 								= pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )
-						td
-							= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
 						- if sesh.ends_at.nil?
-								td
-									= form_for sesh do |sess|
-										= sess.hidden_field :starts_at, :value => sesh.starts_at
-										= sess.hidden_field :ends_at, :value => "now"
-										= submit_tag "logout", :class => "small radius alert button"
+							td
+								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+							td
+								= form_for sesh do |sess|
+									= sess.hidden_field :starts_at, :value => sesh.starts_at
+									= sess.hidden_field :ends_at, :value => "now"
+									= sess.submit 'signout', :confirm => 'Are you sure?', :class => "small radius alert button"
+
+
+						- else
+							td.modify(colspan=2)
+								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+
 
 		- if has_open_sessions
 			p

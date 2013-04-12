@@ -9,8 +9,10 @@
 			%p
 				%b Shop time:
 				= this_shop.shop_date
-			= sess.label :is_volunteer
-			= sess.check_box :is_volunteer
+
+			%p
+				= sess.label :is_volunteer
+				= sess.check_box :is_volunteer
 			/ = sess.checkbox :is_volunteer
 
 			= sess.hidden_field :volunteer_id, :value => 0, :class => 'volunteer-id'
