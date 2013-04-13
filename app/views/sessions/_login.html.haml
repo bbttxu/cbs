@@ -1,18 +1,15 @@
 .row
 	= form_for @new_session, :html => { :id => "#{('a'..'z').to_a.shuffle[0,8].join}" } do |sess|
 		.twelve.columns.panel
-
-			= label :email, "Volunteer Login"
+			= label :email, "Volunteer Login for #{this_shop.shop_date}"
 			= text_field :volunteer, :search, :class => 'search-query ui-autocomplete-input', :placeholder => 'Type name or email', data: {autocomplete_source:  @volunteers.collect{|x| { :value => x.id, :label => ["#{x.first_name} #{x.last_name}","#{x.email}"].reject{|x|x == ""}.join(", ") } }}
 
 			-# .alert-box.success
-			%p
-				%b Shop time:
-				= this_shop.shop_date
 
 			%p
-				= sess.label :is_volunteer
-				= sess.check_box :is_volunteer
+				= sess.label :is_volunteer do
+					= sess.check_box :is_volunteer
+					Volunteering?
 			/ = sess.checkbox :is_volunteer
 
 			= sess.hidden_field :volunteer_id, :value => 0, :class => 'volunteer-id'

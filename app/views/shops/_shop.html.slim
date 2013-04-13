@@ -35,19 +35,21 @@
 					/ th End
 					th Work time
 					th Actions
-				- shop.sessions.order('is_volunteer DESC, ends_at, starts_at').each do |sesh|
+				- shop.sessions.order('starts_at, ends_at').each do |sesh| # is_volunteer DESC, ends_at DESC, starts_at
 					tr
 						td
 							- if sesh.is_volunteer
 								i.icon-wrench
 							= link_to "#{sesh.volunteer.name}", sesh.volunteer
 
-						- if sesh.ends_at.nil?
-							td= "started #{time_ago_in_words sesh.starts_at} ago"
-							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
-						- else
-							td
-								= pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )
+						td
+							= [sesh.starts_at, sesh.ends_at].reject{|x| x.nil? }.collect{|x|x.strftime("%l:%M%p")}.join("—")
+							- if sesh.ends_at.nil?
+								br
+								span.small= "started #{time_ago_in_words sesh.starts_at} ago"
+							- else
+								br
+								span.small= "#{pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )}"
 						- if sesh.ends_at.nil?
 							td
 								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
