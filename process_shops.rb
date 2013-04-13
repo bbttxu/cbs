@@ -27,5 +27,5 @@ shop_times.each do |day, times|
 end
 
 file.each do |line|
-
+  puts line[1]
 end
