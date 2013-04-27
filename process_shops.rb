@@ -1,4 +1,5 @@
 # process.rb
+
 file = []
 skipped = []
 
@@ -15,7 +16,12 @@ file.collect do |line|
 end
 
 shops = Hash.new { |hash, key| hash[key] = [] }
+
+puts shop_times.to_yaml
+
 shop_times.each do |day, times|
+  # puts day
+  # puts times
   shop = Shop.find_by_starts_at_and_ends_at( times.min(), times.max())
   unless shop
     shop = Shop.new
