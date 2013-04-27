@@ -40,3 +40,7 @@
 					%li{ :id => "shop_#{shop.id}Tab", "class" => ( index == 0 ? "active" : "")}= render shop
 
 
+			/ = "#{pluralize(shop.sessions.are_volunteer.count, 'volunteer')}, "
+			/ = "#{pluralize(number_with_precision(shop.sessions.are_volunteer.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
+			/ = "#{pluralize(shop.sessions.are_visitor.count, 'visitor')}, "
+			/ = "#{pluralize(number_with_precision(shop.sessions.are_visitor.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"

@@ -8,6 +8,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require jquery.turbolinks
+//= require jquery.sparkline
 //= require foundation
 //= require app
 //= require shops

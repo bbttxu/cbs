@@ -22,4 +22,8 @@ module ApplicationHelper
 	def standard_datetime( data )
 		data.strftime('%Y-%m-%d %H:%M')
 	end
+
+	def uniq_id
+		('a'..'z').to_a.shuffle[0,8].join
+	end
 end

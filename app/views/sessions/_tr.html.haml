@@ -2,11 +2,13 @@
 -# %pre= debug sesh
 %tr
 	%td
-		= link_to sesh.volunteer.name, sesh.volunteer
+		- if sesh.is_volunteer
+			i.icon-wrench
+		= link_to sesh.volunteer.name, sesh.volunteer if sesh.volunteer
 
 	- if sesh.ends_at.nil?
 		%td= "started #{time_ago_in_words sesh.starts_at} ago"
-		%td= sesh.is_volunteer? "yes" : "no"
+
 		%td
 			= form_for sesh do |sess|
 				= sess.hidden_field :starts_at, :value => sesh.starts_at

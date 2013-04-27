@@ -27,21 +27,22 @@ class Session
   include MongoMapper::Document
   plugin MongoMapper::Plugins::IdentityMap
 
-  belongs_to :shop
-  belongs_to :volunteer
+  belongs_to :shop, :required => true
+  belongs_to :volunteer, :required => true
 
   key :starts_at, Time
   key :ends_at, Time
   key :reason_for_visit, String
   key :notes, String
   key :migration_key, String
-  key :is_volunteer, Boolean
+  key :is_volunteer, Boolean, :default => false
   timestamps!
 
 	scope :current, where( "ends_at" => nil)
 	scope :open, :current
 
-  scope :default, order("ends_at DESC")
+  scope :are_volunteer, where({is_volunteer: true})
+  scope :are_visitor, where({is_volunteer: false})
 
 
 	def hours_worked
