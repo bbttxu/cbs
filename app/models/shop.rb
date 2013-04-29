@@ -79,7 +79,7 @@ class Shop
 			time_start_components = "%I:%M%p"
 		end
 
-		if self.ends_at.nil?
+		unless self.ends_at.nil?
 			time_end_components = "%I%p"
 			unless self.ends_at.min == 0
 				time_end_components = "%I:%M%p"

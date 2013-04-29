@@ -7,6 +7,10 @@ class ShopsController < ApplicationController
 
     @volunteers = Volunteer.all
 
+    # @sessions = Session.all
+    @volunteer_sessions = Session.are_volunteer
+    @visitor_sessions = Session.are_visitor
+
     # @new_volunteer = Volunteer.new
     @new_session = Session.new
     @new_session.shop_id = @new_shop.id

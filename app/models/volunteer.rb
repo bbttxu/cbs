@@ -67,4 +67,8 @@ class Volunteer
 		sessions.open
 	end
 
+  def last_name_initial
+    self.last_name == "" ? "?" : self.last_name[0].upcase
+  end
+
 end

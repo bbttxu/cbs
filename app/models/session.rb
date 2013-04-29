@@ -43,7 +43,7 @@ class Session
 
   scope :are_volunteer, where({is_volunteer: true})
   scope :are_visitor, where({is_volunteer: false})
-
+  scope :last_year,  lambda { where(:ends_at.gte => Time.zone.now - 1.year) }
 
 	def hours_worked
 		ending_time = self.ends_at ? self.ends_at : Time.now

@@ -5,5 +5,3 @@
 
 # $ = jQuery
 
-# $.getJSON "/volunteers.json", (data)->
-# 	console.log data
