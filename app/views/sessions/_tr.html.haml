@@ -3,7 +3,7 @@
 %tr
 	%td
 		- if sesh.is_volunteer
-			i.icon-wrench
+			%i.icon-wrench
 		= link_to sesh.volunteer.name, sesh.volunteer if sesh.volunteer
 
 	- if sesh.ends_at.nil?
@@ -17,11 +17,12 @@
 
 	- else
 		%td
-			= number_with_precision sesh.hours_worked, :precision => 1
-			hours,
+			= "#{distance_of_time_in_words sesh.starts_at, sesh.ends_at, true},"
 			= Time.at(sesh.shop.starts_at).strftime("%Y %b %-d")
+			%br
+			%span.small= sesh.reason_for_visit
 
 	%td
 		= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
-	%td
-		/ %pre= debug sesh
+	/ %td
+	/ 	%pre= debug sesh

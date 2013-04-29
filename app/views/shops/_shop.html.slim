@@ -43,8 +43,9 @@
 							- if sesh.is_volunteer
 								i.icon-wrench
 							= link_to "#{sesh.volunteer.name}", sesh.volunteer
-							br
-							span.small= sesh.reason_for_visit
+							- if sesh.reason_for_visit
+								br
+								span.small= sesh.reason_for_visit
 
 						td
 							= [sesh.starts_at, sesh.ends_at].reject{|x| x.nil? }.collect{|x|x.strftime("%l:%M%p")}.join("—")

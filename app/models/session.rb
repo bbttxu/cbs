@@ -30,8 +30,8 @@ class Session
   belongs_to :shop, :required => true
   belongs_to :volunteer, :required => true
 
-  key :starts_at, Time
-  key :ends_at, Time
+  key :starts_at, Time, :default => Time.now()
+  key :ends_at, Time, :default => nil
   key :reason_for_visit, String
   key :notes, String
   key :migration_key, String

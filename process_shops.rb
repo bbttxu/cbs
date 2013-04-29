@@ -17,7 +17,7 @@ end
 
 shops = Hash.new { |hash, key| hash[key] = [] }
 
-puts shop_times.to_yaml
+# puts shop_times.to_yaml
 
 shop_times.each do |day, times|
   # puts day
@@ -47,6 +47,7 @@ file.each do |line|
       unless volunteer.save
         puts "skipping volunteer #{line}"
         skipped << line
+        next
       end
     end
 
@@ -55,19 +56,29 @@ file.each do |line|
       session = Session.new
       session.volunteer_id = volunteer.id
       session.shop_id = shops[line[0]] if line[1]
-      session.starts_at = line[3]
-      session.ends_at = line[4]
+      session.starts_at =  Chronic.parse("#{line[0]} #{line[3]}").to_time.iso8601
+      session.ends_at = nil
+      session.ends_at = Chronic.parse("#{line[0]} #{line[4]}").to_time.iso8601 if line[4]
+      unless line[4]
+        puts "skipping session #{line}"
+        skipped << line
+        next
+      end
+      # puts session.starts_at
+      # puts session.ends_at
+      # session.ends_at = line[3] unless line[4]
       session.reason_for_visit = line[2]
       session.is_volunteer = false
-      session.is_volunteer = true if line[2].match("volunteer")
+      session.is_volunteer = true if line[2].match(/(coordinator|manager|volunteer|greeter)/i)
       unless session.save
-        puts "skipping #{line}"
+        puts "skipping #{parts}"
         skipped << line
       end
     end
 
   rescue Exception => e
     skipped << line
+    puts "X #{line}"
   end
 
 end

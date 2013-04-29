@@ -84,3 +84,5 @@ gem 'bson_ext'
 
 gem 'turbolinks'
 gem 'jquery-turbolinks'
+
+gem "dotiw"

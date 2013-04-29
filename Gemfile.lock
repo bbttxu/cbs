@@ -79,6 +79,8 @@ GEM
     daemons (1.1.9)
     database_cleaner (0.9.1)
     diff-lcs (1.2.1)
+    dotiw (1.1.1)
+      actionpack (~> 3)
     erubis (2.7.0)
     eventmachine (1.0.1)
     execjs (1.4.0)
@@ -274,6 +276,7 @@ DEPENDENCIES
   cucumber
   cucumber-rails
   database_cleaner
+  dotiw
   execjs
   foreman
   growl

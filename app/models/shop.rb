@@ -57,8 +57,8 @@ class Shop
   many :sessions
   many :volunteers
 
-  key :starts_at, Time
-  key :ends_at, Time
+  key :starts_at, Time, :default => Time.now()
+  key :ends_at, Time, :default => nil
   key :location, String
   key :migration_key, String
   timestamps!
@@ -79,7 +79,7 @@ class Shop
 			time_start_components = "%I:%M%p"
 		end
 
-		if self.ends_at
+		if self.ends_at.nil?
 			time_end_components = "%I%p"
 			unless self.ends_at.min == 0
 				time_end_components = "%I:%M%p"
