@@ -9,7 +9,7 @@
 				p#notice= notice
 
 	.columns.four.push-eight
-		/ = render :partial => "sessions/login", :locals => { :this_shop => shop }
+		= render :partial => "sessions/login", :locals => { :this_shop => shop }
 
 
 	.columns.eight.pull-four
@@ -54,7 +54,7 @@
 								span.small= "started #{time_ago_in_words sesh.starts_at} ago"
 							- else
 								br
-								span.small= "#{pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )}"
+								span.small= "#{distance_of_time_in_words sesh.starts_at, sesh.ends_at, false}"
 						- if sesh.ends_at.nil?
 							td
 								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"

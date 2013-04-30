@@ -7,7 +7,7 @@ class ShopsController < ApplicationController
 
     @volunteers = Volunteer.all
 
-    # @sessions = Session.all
+    @sessions = Session.all
     @volunteer_sessions = Session.are_volunteer
     @visitor_sessions = Session.are_visitor
 

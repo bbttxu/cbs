@@ -47,15 +47,23 @@
 			/ = "#{pluralize(number_with_precision(shop.sessions.are_visitor.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
 
 	.eight.columns.pull-four
-		%h3
-			= pluralize @volunteer_sessions.last_year.group_by{|x| x.volunteer}.count, 'person'
-			volunteered in the last year
-			%small
-				=  "+#{@volunteer_sessions.group_by{|x| x.volunteer}.count} total"
+		%h3 In the last year, QCBS has seen
+		%ul
+			%li
+				%h4
+					= pluralize @volunteer_sessions.last_year.group_by{|x| x.volunteer}.count, 'volunteer'
+					%small
+						= "+#{@volunteer_sessions.group_by{|x| x.volunteer}.count} overall"
 
-		%h3
-			= pluralize @visitor_sessions.last_year.group_by{|x| x.volunteer}.count, 'person'
-			visited in the last year
-			%small
-				=  "+#{@visitor_sessions.group_by{|x| x.volunteer}.count} total"
+			%li
+				%h4
+					= pluralize @visitor_sessions.last_year.group_by{|x| x.volunteer}.count, 'visitor'
+					%small
+						=  "+#{@visitor_sessions.group_by{|x| x.volunteer}.count} overall"
 
+			%li
+				%h4
+					- hours = @sessions.collect{|x|x.hours_worked.to_f}.inject{|y,z| y+z}
+					= pluralize hours, 'hour'
+					%small
+						= " #{@sessions.count}"
