@@ -52,3 +52,10 @@ class Session
 	end
 
 end
+
+Session.ensure_index(:is_volunteer)
+Session.ensure_index(:starts_at)
+Session.ensure_index(:ends_at)
+Session.ensure_index(:volunteer_id)
+Session.ensure_index(:shop_id)
+

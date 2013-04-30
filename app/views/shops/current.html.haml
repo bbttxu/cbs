@@ -51,19 +51,16 @@
 		%ul
 			%li
 				%h4
-					= pluralize @volunteer_sessions.last_year.group_by{|x| x.volunteer}.count, 'volunteer'
-					%small
-						= "+#{@volunteer_sessions.group_by{|x| x.volunteer}.count} overall"
-
-			%li
-				%h4
 					= pluralize @visitor_sessions.last_year.group_by{|x| x.volunteer}.count, 'visitor'
 					%small
 						=  "+#{@visitor_sessions.group_by{|x| x.volunteer}.count} overall"
-
 			%li
 				%h4
-					- hours = @sessions.collect{|x|x.hours_worked.to_f}.inject{|y,z| y+z}
-					= pluralize hours, 'hour'
+					= pluralize @volunteer_sessions.last_year.group_by{|x| x.volunteer}.count, 'volunteer'
 					%small
-						= " #{@sessions.count}"
+						= "+#{@volunteer_sessions.group_by{|x| x.volunteer}.count} overall"
+			%li
+				%h4
+					= pluralize Shop.last_year.count, 'shop'
+					%small
+						=  "+#{pluralize Shop.all.count, 'shop'} overall"

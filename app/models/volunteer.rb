@@ -70,5 +70,6 @@ class Volunteer
   def last_name_initial
     self.last_name == "" ? "?" : self.last_name[0].upcase
   end
-
 end
+
+Volunteer.ensure_index(:last_name)

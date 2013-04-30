@@ -64,6 +64,7 @@ class Shop
   timestamps!
 
 	scope :current, lambda { where(:starts_at.lte => Time.zone.now,:ends_at.gte => Time.zone.now) }
+  scope :last_year, lambda { where(:ends_at.gte => Time.zone.now - 1.year) }
 
 	def shop_date
 		date_components = ["%b %-d"]
@@ -97,3 +98,6 @@ class Shop
 	end
 
 end
+
+Shop.ensure_index :starts_at
+Shop.ensure_index :ends_at
