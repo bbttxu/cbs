@@ -81,7 +81,7 @@ gem 'newrelic_rpm'
 
 gem 'mongo_mapper'
 gem 'bson_ext'
-
+gem 'sprockets'
 # gem 'turbolinks'
 # gem 'jquery-turbolinks'
 
