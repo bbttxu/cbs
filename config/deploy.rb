@@ -17,9 +17,9 @@ set :user, :deploy
 set :deploy_to, "/home/deploy/#{application}"
 set :use_sudo, false
 
-role :web, "50.56.247.244"                          # Your HTTP server, Apache/etc
-role :app, "50.56.247.244"                          # This may be the same as your `Web` server
-role :db,  "50.56.247.244", :primary => true # This is where Rails migrations will run
+role :web, "166.78.154.7"                          # Your HTTP server, Apache/etc
+role :app, "166.78.154.7"                          # This may be the same as your `Web` server
+role :db,  "166.78.154.7", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
