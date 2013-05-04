@@ -52,5 +52,7 @@ module Cbs
     config.generators do |g|
       g.orm :mongo_mapper
     end
+
+    config.assets.initialize_on_precompile = false
   end
 end
