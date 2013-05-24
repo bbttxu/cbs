@@ -13,8 +13,8 @@ test:
 # set these environment variables on your prod server
 production:
   <<: *defaults
-  # host: 10.178.128.161
-  # port: 27017
+  host: 198.199.90.247
+  port: 27017
   database: cbs
   # slaves:
   #   - host: 10.178.129.158
