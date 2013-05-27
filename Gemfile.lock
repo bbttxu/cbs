@@ -36,6 +36,8 @@ GEM
     bson_ext (1.8.5)
       bson (~> 1.8.5)
     builder (3.0.4)
+    cane (2.5.2)
+      parallel
     capistrano (2.15.4)
       highline
       net-scp (>= 1.0.0)
@@ -153,6 +155,7 @@ GEM
       net-ssh (>= 2.6.5)
     newrelic_rpm (3.6.1.88)
     nokogiri (1.5.9)
+    parallel (0.6.4)
     plucky (0.5.2)
       mongo (~> 1.5)
     polyglot (0.3.3)
@@ -264,6 +267,7 @@ PLATFORMS
 DEPENDENCIES
   active_link_to
   bson_ext
+  cane
   capistrano
   chronic
   coffee-rails (~> 3.1.1)

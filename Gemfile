@@ -86,3 +86,4 @@ gem 'sprockets'
 # gem 'jquery-turbolinks'
 
 gem "dotiw"
+gem "cane"
