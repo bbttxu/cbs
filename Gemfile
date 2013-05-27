@@ -10,39 +10,33 @@ gem 'sqlite3'
 gem "haml"
 gem "haml-rails"
 
-gem "compass"
-
-gem 'sass'
-gem 'sass-rails', '~> 3.1.5'
 
 gem "slim"
 gem "slim-rails"
 
 
-gem 'execjs'
-gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
   gem 'jquery-ui-rails'
+  gem 'zurb-foundation'
+  gem 'jquery-rails'
 end
-gem 'compass-rails', '~> 1.0'
-gem 'zurb-foundation', '~> 3.2'
 
 gem "active_link_to"
 
-gem 'jquery-rails'
 
 gem 'chronic'
 
 gem 'capistrano'
+gem 'capistrano-rbenv'
 gem 'foreman'
 
-gem 'execjs'
-gem 'therubyracer'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -86,4 +80,9 @@ gem 'sprockets'
 # gem 'jquery-turbolinks'
 
 gem "dotiw"
-gem 'capistrano-rbenv'
+gem "cane"
+
+group :production do
+  gem 'execjs'
+  gem 'therubyracer'
+end
