@@ -22,9 +22,10 @@ group :assets do
   gem 'sass'
   gem 'sass-rails'
   gem 'coffee-rails'
+  gem 'compass-rails'
   gem 'uglifier'
   gem 'jquery-ui-rails'
-  gem 'zurb-foundation'
+  gem 'zurb-foundation', '~> 3.2'
   gem 'jquery-rails'
 end
 
