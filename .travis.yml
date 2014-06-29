@@ -5,5 +5,7 @@ rvm:
 before_script:
   - sleep 15
 
+script: bundle exec rake rspec
+
 services:
   - mongodb
