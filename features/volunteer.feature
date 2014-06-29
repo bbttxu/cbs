@@ -10,9 +10,3 @@ Feature: Handle volunteer actions
       And they enter their email address
       And click "login"
       Then they will see "Welcome new volunteer!"
-    
-    
-      
-    
-  
-  

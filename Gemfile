@@ -66,8 +66,7 @@ group :test do
   gem 'rspec-rails'
   gem 'guard-rspec', '0.5.2'
   gem 'cucumber'
-  gem 'guard-cucumber', '0.7.3'
-  gem 'database_cleaner'
+  gem 'guard-cucumber', '0.8'
   gem 'rb-fsevent'
   gem 'growl'
 end
@@ -87,3 +86,5 @@ group :production do
   gem 'execjs'
   gem 'therubyracer'
 end
+
+gem 'coveralls', require: false
