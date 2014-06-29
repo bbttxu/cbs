@@ -152,6 +152,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
+    minitest (4.7.5)
     modular-scale (1.0.6)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
@@ -272,8 +273,9 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    turn (0.8.2)
-      ansi (>= 1.2.2)
+    turn (0.9.7)
+      ansi
+      minitest (~> 4)
     tzinfo (0.3.37)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
@@ -329,6 +331,6 @@ DEPENDENCIES
   sqlite3
   therubyracer
   thin
-  turn (= 0.8.2)
+  turn (~> 0.8)
   uglifier
   zurb-foundation (~> 3.2)

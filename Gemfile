@@ -55,7 +55,7 @@ gem 'thin'
 
 group :test do
   # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
+  gem 'turn', '~> 0.8', :require => false
 
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
