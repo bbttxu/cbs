@@ -113,9 +113,14 @@ GEM
       lumberjack (>= 1.0.2)
       pry (>= 0.9.10)
       thor (>= 0.14.6)
+    guard-bundler (1.0.0)
+      bundler (~> 1.0)
+      guard (~> 1.1)
     guard-cucumber (0.8.0)
       cucumber (>= 1.2.0)
       guard (>= 0.8.3)
+    guard-rails (0.4.7)
+      guard (>= 0.2.2)
     guard-rspec (0.5.2)
       guard (>= 0.8.4)
     haml (4.0.3)
@@ -301,7 +306,9 @@ DEPENDENCIES
   execjs
   foreman
   growl
+  guard-bundler
   guard-cucumber (= 0.8)
+  guard-rails
   guard-rspec (= 0.5.2)
   haml
   haml-rails

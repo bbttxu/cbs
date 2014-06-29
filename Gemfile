@@ -88,3 +88,6 @@ group :production do
 end
 
 gem 'coveralls', require: false
+
+gem 'guard-rails'
+gem 'guard-bundler'
