@@ -91,3 +91,7 @@ gem 'coveralls', require: false
 
 gem 'guard-rails'
 gem 'guard-bundler'
+
+group :development, :test do
+  gem 'factory_girl_rails'
+end

@@ -1,8 +1,10 @@
 require 'spec_helper'
 
-describe "volunteer" do
-    it "takes three parameters and returns a Book object" do
-    #     @book.should be_an_instance_of Book
-    end
+describe 'volunteers' do |variable|
+	describe 'validations' do
+		it 'should make a full name' do
+			volunteer = FactoryGirl.build 'volunteer', first_name: 'Tim', last_name: 'Howard'
+			volunteer.name.should match("Tim Howard")
+		end
+	end
 end
-    

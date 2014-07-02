@@ -98,6 +98,11 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (2.6.4)
+      activesupport (>= 2.3.9)
+    factory_girl_rails (1.7.0)
+      factory_girl (~> 2.6.0)
+      railties (>= 3.0.0)
     ffi (1.8.1)
     foreman (0.63.0)
       dotenv (>= 0.7)
@@ -306,6 +311,7 @@ DEPENDENCIES
   database_cleaner
   dotiw
   execjs
+  factory_girl_rails
   foreman
   growl
   guard-bundler
