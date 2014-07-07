@@ -35,7 +35,7 @@ class ShopsController < ApplicationController
   # GET /shops
   # GET /shops.json
   def index
-    @shops = Shop.all.group_by{ |u| Time.at(u.starts_at).strftime("%Y-%m") }.sort.reverse
+    @shops = Shop.all.group_by{ |u| Time.at(u.starts_at.to_i).strftime("%Y-%m") }.sort.reverse
 
 
     respond_to do |format|

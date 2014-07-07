@@ -13,7 +13,7 @@
           %a( name="#{letter.downcase}" )= letter
         - month_shops.sort_by{|x| x.starts_at}.reverse.each do |shop|
           %li.shop
-            %span.name= link_to( shop_date(shop), shop)
+            %span.name= link_to( shop.shop_date, shop)
             -# %span.hours= # "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
             - chart = uniq_id()
             %span.chart(id=chart)

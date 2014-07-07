@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20130403175755) do
     t.integer  "shop_id"
     t.datetime "starts_at"
     t.datetime "ends_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.string   "reason_for_visit"
     t.string   "notes"
   end
@@ -28,16 +28,16 @@ ActiveRecord::Schema.define(:version => 20130403175755) do
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.string   "location"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "volunteers", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.string   "phone_number"
   end
 
