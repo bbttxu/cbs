@@ -1,8 +1,11 @@
 require 'spec_helper'
 
+include AuthHelper
+
 describe VolunteersController, :type => :controller do
+
   before(:each) do
-    @request.env["HTTP_AUTHORIZATION"] = "Basic " + Base64::encode64("qcbs:qcbs")
+    http_login
     @volunteer = FactoryGirl.create "volunteer"
   end
 
