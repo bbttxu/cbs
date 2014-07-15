@@ -6,7 +6,7 @@ describe VolunteersController, :type => :controller do
 
   before(:each) do
     http_login
-    @volunteer = FactoryGirl.create "volunteer"
+    @volunteer = FactoryGirl.build "volunteer"
   end
 
   describe "index" do
@@ -23,10 +23,49 @@ describe VolunteersController, :type => :controller do
     end
   end
 
+  describe "create" do
+    it "should add a volunteer" do
+      assert_difference('Volunteer.count') do
+        post :create, volunteer: @volunteer.attributes
+      end
+
+      assert_redirected_to volunteer_path(assigns(:volunteer))
+    end
+  end
+
   describe "show" do
     it "should show volunteers" do
+      @volunteer.save!
       get :show, id: @volunteer
       response.should be_success
+    end
+  end
+
+  describe "edit" do
+    it "should edit" do
+      @volunteer.save!
+      get :edit, id: @volunteer.attributes
+      assert_response :success
+    end
+  end
+
+  describe "update" do
+    it "should update volunteer" do
+      @volunteer.save
+      put :update, id: @volunteer.to_param, volunteer: @volunteer.attributes
+      assert_redirected_to volunteer_path(assigns(:volunteer))
+    end
+  end
+
+  describe "destroy" do
+    it "should remove a volunteer" do
+      @volunteer.save
+      # volunteer = FactoryGirl.create :volunteer
+      assert_difference('Volunteer.count', -1) do
+        delete :destroy, id: @volunteer.to_param
+      end
+
+      assert_redirected_to volunteers_path
     end
   end
 end
