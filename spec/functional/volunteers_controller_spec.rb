@@ -1,17 +1,29 @@
 require 'spec_helper'
 
-
-
 describe VolunteersController, :type => :controller do
   before(:each) do
+    @request.env["HTTP_AUTHORIZATION"] = "Basic " + Base64::encode64("qcbs:qcbs")
     @volunteer = FactoryGirl.create "volunteer"
   end
 
   describe "index" do
     it "should show volunteers" do
       get :index
-      response.should == 1
-      # response.should be_success
+      response.should be_success
+    end
+  end
+
+  describe "new" do
+    it "should show volunteers" do
+      get :new
+      response.should be_success
+    end
+  end
+
+  describe "show" do
+    it "should show volunteers" do
+      get :show, id: @volunteer
+      response.should be_success
     end
   end
 end
