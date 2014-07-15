@@ -4,6 +4,10 @@ rvm:
   - 2.0.0
   - 2.1.0
 
+env:
+	ADMIN_USER: test_admin_user
+	ADMIN_PASSWORD: test_admin_password
+
 before_script:
   - echo 'America/Chicago' | sudo tee /etc/timezone
   - sudo dpkg-reconfigure --frontend noninteractive tzdata
