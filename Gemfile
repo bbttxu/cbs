@@ -97,4 +97,5 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 
+gem 'assert_difference'
 gem 'figaro'
