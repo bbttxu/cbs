@@ -66,9 +66,10 @@ group :test do
   gem 'rspec-rails'
   gem 'guard-rspec', '0.5.2'
   gem 'cucumber'
-  gem 'guard-cucumber', '0.8'
+  gem 'guard-cucumber'
   gem 'rb-fsevent'
   gem 'growl'
+  gem 'assert_difference'
 end
 
 gem 'newrelic_rpm'
@@ -95,3 +96,5 @@ gem 'guard-bundler'
 group :development, :test do
   gem 'factory_girl_rails'
 end
+
+gem 'figaro'

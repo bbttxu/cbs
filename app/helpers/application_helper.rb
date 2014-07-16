@@ -1,9 +1,6 @@
 require 'haml'
 
 module ApplicationHelper
-
-
-
 	def li_active_link_to(text, url)
 		if is_active_link?(url, :exclusive)
 			content_tag :li, :class => "active" do
