@@ -1,6 +1,13 @@
 require 'spec_helper'
 
 describe 'volunteers' do |variable|
+	describe "modle" do
+		it "should be valid" do
+			volunteer = FactoryGirl.build 'volunteer'
+			volunteer.should be_valid
+		end
+	end
+
 	describe 'data transformations' do
 		it 'should make a full name' do
 			volunteer = FactoryGirl.build 'volunteer', first_name: 'Tim', last_name: 'Howard'

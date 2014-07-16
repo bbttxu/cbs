@@ -32,3 +32,6 @@ pickle-email-*.html
 *.sublime-*
 
 test/fixtures/volunteers.yml
+
+# Ignore application configuration
+/config/application.yml

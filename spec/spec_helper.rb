@@ -41,4 +41,19 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.include AssertDifference
+
+  config.before(:suite) do
+    DatabaseCleaner[:mongo_mapper].strategy = :truncation
+  end
+
+  config.before(:each) do
+    DatabaseCleaner[:mongo_mapper].start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner[:mongo_mapper].clean
+  end
+
 end
