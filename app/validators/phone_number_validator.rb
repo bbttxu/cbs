@@ -12,6 +12,6 @@ class PhoneNumberValidator < ActiveModel::EachValidator
 			return true if phone_number.match( format )
 		end
 
-		record.errors[attribute] << (options[:message] || "Phone format isn't recognized")
+		record.errors[attribute] << (options[:message] || "Phone format, #{phone_number}, isn't recognized")
 	end
 end
