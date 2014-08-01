@@ -33,6 +33,14 @@ describe ShopsController, :type => :controller do
     end
   end
 
+  describe "close" do
+    it "should close a shop" do
+      @openshop = FactoryGirl.create :shop, ends_at: ""
+      put :close, id: @openshop
+      assert_redirected_to shop_path(assigns(:shop))
+    end
+  end
+
   describe "show" do
     it "should show shops" do
       @shop.save!
