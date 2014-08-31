@@ -5,6 +5,7 @@ class VolunteersController < ApplicationController
     @volunteers = Volunteer.all.group_by{ |u| u.last_name_initial.upcase }.sort
     @volunteer = Volunteer.new
 
+    @emails = Volunteer.where(:can_email => true, :email.exists => true).collect{|x|x.email}
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @volunteers }

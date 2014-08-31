@@ -22,7 +22,12 @@
             -#  = "#{pluralize(volunteer.sessions.count, 'shop')}"
             -# %span.hours
             -#  = "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
-      %hr
+    %hr
+
+    %h3 Emails
+    %ul.tabs-contents.disc
+      = @emails.join(",")
+
   .four.columns.mobile-four
     .panel
       %h3 QCBS Volunters
