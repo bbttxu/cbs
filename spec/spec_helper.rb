@@ -7,7 +7,7 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 
 require 'rspec/rails'
-require 'rspec/autorun'
+# require 'rspec/autorun'
 
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -41,6 +41,10 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.expect_with :rspec do |c|
+    c.syntax = :should
+  end
 
   config.include AssertDifference
 

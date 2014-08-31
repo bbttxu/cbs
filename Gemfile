@@ -67,6 +67,7 @@ group :test do
   gem 'spork', '0.9.0rc9'
   gem 'rspec'
   gem 'rspec-rails'
+  gem 'rspec-legacy_formatters'
   gem 'guard-rspec', '0.5.2'
   gem 'cucumber'
   gem 'guard-cucumber'
