@@ -18,5 +18,10 @@ describe 'volunteers' do |variable|
 			volunteer = FactoryGirl.build 'volunteer', last_name: 'Howard'
 			volunteer.last_name_initial.should match("H")
 		end
+
+    it 'should be possible to be on a mailing list' do
+      volunteer = FactoryGirl.build 'volunteer', can_email: true
+      volunteer.can_email.should be_true
+    end
 	end
 end
