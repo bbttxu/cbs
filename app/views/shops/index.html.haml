@@ -11,11 +11,31 @@
       - @shops.each do |letter, month_shops|
         %li.divider( id="#{letter.downcase}" id="#{letter.downcase}" )
           %a( name="#{letter.downcase}" )= letter
-        - month_shops.each do |shop|
+        - month_shops.sort_by{|x| x.starts_at}.reverse.each do |shop|
           %li.shop
-            %span.name= link_to( shop_date(shop), shop)
+            %span.name= link_to( shop.shop_date, shop)
             -# %span.hours= # "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
-            %span.shops= "#{pluralize(shop.sessions.count, 'volunteer')}"
+            - chart = uniq_id()
+            %span.chart(id=chart)
+            %span.visitors
+              = shop.sessions.are_visitor.count
+              %i.icon-user
+            %span.volunteers
+              = shop.sessions.are_volunteer.count
+              %i.icon-wrench
+            :coffee
+              volunteer_count = #{shop.sessions.are_volunteer.count}
+              visitor_count = #{shop.sessions.are_visitor.count}
+              jQuery(document).ready ()->
+                $.throttle(
+                  jQuery("##{chart}").piechart
+                    volunteer: volunteer_count
+                    visitor: visitor_count
+                    type: 'pie'
+                    sliceColors: ['#a9ceb0','yellow']
+                  )
+
+
 
   .four.columns.mobile-four
     .panel

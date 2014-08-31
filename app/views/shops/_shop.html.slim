@@ -25,39 +25,49 @@
 
 
 		h4
-			= "#{pluralize(shop.sessions.count, 'volunteer')}, "
-			= "#{pluralize(number_with_precision(shop.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
+			= "#{pluralize(shop.sessions.are_volunteer.count, 'volunteer')}, "
+			= "#{pluralize(number_with_precision(shop.sessions.are_volunteer.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
+			= "#{pluralize(shop.sessions.are_visitor.count, 'visitor')}, "
+			= "#{pluralize(number_with_precision(shop.sessions.are_visitor.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 2), 'hour')} worked"
 		- if shop.sessions.count > 0
-			table( width="100%" )
+			table.sessions( width="100%" )
 				tr
 					th Volunteer
-					th Start
-					th End
+					/ th Start
+					/ th End
 					th Work time
 					th Actions
-				- shop.sessions.each do |sesh|
+				- shop.sessions.order('starts_at, ends_at').each do |sesh| # is_volunteer DESC, ends_at DESC, starts_at
 					tr
 						td
-							= link_to sesh.volunteer.name, sesh.volunteer
-						td= Time.zone.at(sesh.starts_at).strftime("%I:%M")
+							- if sesh.is_volunteer
+								i.icon-wrench
+							= link_to "#{sesh.volunteer.name}", sesh.volunteer
+							- if sesh.reason_for_visit
+								br
+								span.small= sesh.reason_for_visit
+
 						td
-							= Time.zone.at(sesh.ends_at).strftime("%I:%M") if sesh.ends_at
+							= [sesh.starts_at, sesh.ends_at].reject{|x| x.nil? }.collect{|x|x.strftime("%l:%M%p")}.join("—")
+							- if sesh.ends_at.nil?
+								br
+								span.small= "started #{time_ago_in_words sesh.starts_at} ago"
+							- else
+								br
+								span.small= "#{distance_of_time_in_words sesh.starts_at, sesh.ends_at, false}"
 						- if sesh.ends_at.nil?
-							td= "started #{time_ago_in_words sesh.starts_at} ago"
+							td
+								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
 							td
 								= form_for sesh do |sess|
 									= sess.hidden_field :starts_at, :value => sesh.starts_at
 									= sess.hidden_field :ends_at, :value => "now"
-									= submit_tag "logout", :class => "small radius alert button"
+									= sess.submit 'signout', :confirm => 'Are you sure?', :class => "small radius alert button"
+
 
 						- else
-							td
-								= pluralize(number_with_precision( sesh.hours_worked, :precision => 1 ), 'hour' )
-
-							td
+							td.modify(colspan=2)
 								= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
-		- else
-			p no volunteers
 
 
 		- if has_open_sessions

@@ -1,0 +1,8 @@
+# Add application configuration variables here, as shown below.
+
+admin_user: 'qcbs-dev'
+admin_password: 'qcbs-dev'
+
+test:
+  admin_user: 'qcbs-test'
+  admin_password: 'qcbs-test'

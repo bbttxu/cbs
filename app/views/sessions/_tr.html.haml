@@ -1,22 +1,27 @@
 -# _tr.html.haml
 -# %pre= debug sesh
 %tr
-	%td
-		= link_to sesh.volunteer.name, sesh.volunteer
+  %td
+    - if sesh.is_volunteer
+      %i.icon-wrench
+    = link_to sesh.volunteer.name, sesh.volunteer if sesh.volunteer
 
-	- if sesh.ends_at.nil?
-		%td= "started #{time_ago_in_words sesh.starts_at} ago"
-		%td
-			= form_for sesh do |sess|
-				= sess.hidden_field :starts_at, :value => sesh.starts_at
-				= sess.hidden_field :ends_at, :value => "now"
-				= submit_tag "logout", :class => "small radius alert button"
+  - if sesh.ends_at.nil?
+    %td= "started #{time_ago_in_words sesh.starts_at} ago"
 
-	- else
-		%td
-			= number_with_precision sesh.hours_worked, :precision => 1
-			hours,
-			= Time.at(sesh.shop.starts_at).strftime("%Y %b %-d")
+    %td
+      = form_for sesh do |sess|
+        = sess.hidden_field :starts_at, :value => sesh.starts_at
+        = sess.hidden_field :ends_at, :value => "now"
+        = submit_tag "logout", :class => "small radius alert button"
 
-		%td
-			= link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+  - else
+    %td
+      = [ "#{distance_of_time_in_words sesh.starts_at, sesh.ends_at, true}", sesh.shop.starts_at.strftime("%Y %b %-d") ].join(", ")
+      %br
+      %span.small= sesh.reason_for_visit
+
+  %td
+    = link_to 'modify', edit_session_path(sesh), :class => "small radius secondary button"
+  / %td
+  /   %pre= debug sesh

@@ -7,11 +7,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require jquery.turbolinks
+//= require jquery.sparkline
+//= require jquery.throttle
+//= require jquery.piechart
 //= require foundation
 //= require app
 //= require shops
 //= require volunteers
-
-//= require turbolinks
-
