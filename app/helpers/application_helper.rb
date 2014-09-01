@@ -1,4 +1,5 @@
 require 'haml'
+require 'chronic'
 
 module ApplicationHelper
 	def li_active_link_to(text, url)
@@ -12,8 +13,6 @@ module ApplicationHelper
 			end
 		end
 	end
-
-	# content_tag
 
 	# chronic will parse this no problem
 	def standard_datetime( data )

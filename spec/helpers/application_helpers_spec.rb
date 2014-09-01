@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe ApplicationHelper do
+describe ApplicationHelper, :type => :helper do
 	describe "uniq id" do
 		it "should be relatively unique" do
 			ids = []
