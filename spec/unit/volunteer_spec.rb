@@ -21,7 +21,7 @@ describe 'volunteers' do |variable|
 
     it 'should be possible to be on a mailing list' do
       volunteer = FactoryGirl.build 'volunteer', can_email: true
-      volunteer.can_email.should be_true
+      volunteer.can_email.should be(true)
     end
 	end
 end
