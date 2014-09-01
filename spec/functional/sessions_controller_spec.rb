@@ -36,7 +36,9 @@ describe SessionsController, :type => :controller do
       # end
 
       # assert_redirected_to shop_path(@shop)
-      pending "further investigation"
+      pending("further investigation")
+
+      assert false
 
     end
   end
