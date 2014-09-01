@@ -1,32 +1,37 @@
 / _form.html.slim
 .row
-	.twelve.columns
-		= form_for(@volunteer) do |f|
-			- if @volunteer.errors.any?
-				#error_explanation.alert-box.alert
-					p= "#{pluralize(@volunteer.errors.count, "error")} prohibited this volunteer from being saved:"
+  .twelve.columns
+    = form_for(@volunteer) do |f|
+      - if @volunteer.errors.any?
+        #error_explanation.alert-box.alert
+          p= "#{pluralize(@volunteer.errors.count, "error")} prohibited this volunteer from being saved:"
 
-					ul
-						- @volunteer.errors.full_messages.each do |msg|
-							li= msg
-			br
-			.field.three.columns.mobile-one
-				= f.label :first_name, :class => [ :right, :inline ]
-			.field.seven.columns.mobile-three
-				= f.text_field :first_name, :placeholder => "first name"
-			.field.three.columns.mobile-one
-				= f.label :last_name, :class => [ :right, :inline, :required ]
-			.field.seven.columns.mobile-three
-				= f.text_field :last_name, :placeholder => "last name"
-			.field.three.columns.mobile-one
-				= f.label :email, :class => [ :right, :inline ]
-			.field.seven.columns.mobile-three
-				= f.text_field :email, :placeholder => "optional"
-			.field.three.columns.mobile-one
-				= f.label :phone_number, :class => [ :right, :inline ]
-			.field.seven.columns.mobile-three
-				= f.text_field :phone_number, :placeholder => "optional"
-			.actions.nine.columns
-				= f.submit
-				== "&nbsp;"
-				= link_to "Cancel", @volunteer, :class => "button alert small"
+          ul
+            - @volunteer.errors.full_messages.each do |msg|
+              li= msg
+      br
+      .field.three.columns.mobile-one
+        = f.label :first_name, :class => [ :right, :inline ]
+      .field.seven.columns.mobile-three
+        = f.text_field :first_name, :placeholder => "first name"
+      .field.three.columns.mobile-one
+        = f.label :last_name, :class => [ :right, :inline, :required ]
+      .field.seven.columns.mobile-three
+        = f.text_field :last_name, :placeholder => "last name"
+      .field.three.columns.mobile-one
+        = f.label :email, :class => [ :right, :inline ]
+      .field.seven.columns.mobile-three
+        = f.text_field :email, :placeholder => "optional"
+      .field.three.columns.mobile-one
+        = f.check_box :can_email, :class => [ :right, :inline ]
+      .field.seven.columns.mobile-three
+        = f.label :can_email?
+        p.small it's okay to have this person on the email list. requires email to work!
+      .field.three.columns.mobile-one
+        = f.label :phone_number, :class => [ :right, :inline ]
+      .field.seven.columns.mobile-three
+        = f.text_field :phone_number, :placeholder => "optional"
+      .actions.nine.columns
+        = f.submit
+        == "&nbsp;"
+        = link_to "Cancel", @volunteer, :class => "button alert small"

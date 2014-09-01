@@ -1,31 +1,40 @@
 .row.volunteers.alphabet
-	.twelve.columns.show-for-large-up
-		%h1 Listing volunteers
-	.one.columns.mobile-one#scrollbar2.push-three-mobile
-		%dl.index
-			- @volunteers.each do |letter, volunteers|
-				%dd= link_to "#{letter}", "\##{letter.downcase}", :id => "index_#{letter.downcase}"
+  .twelve.columns.show-for-large-up
+    %h1 Listing volunteers
+  .one.columns.mobile-one#scrollbar2.push-three-mobile
+    %dl.index
+      - @volunteers.each do |letter, volunteers|
+        %dd= link_to "#{letter}", "\##{letter.downcase}", :id => "index_#{letter.downcase}"
 
-	.seven.columns.mobile-three.pull-one-mobile#scrollbar1
-		%ul.tabs-contents.disc
-			- @volunteers.each do |letter, volunteers|
-				%li.divider( id="#{letter.downcase}" id="#{letter.downcase}" )
-					%a( name="#{letter.downcase}" )= letter
-				- volunteers.each do |volunteer|
-					%li.volunteer
-						%span.name= link_to( volunteer.name, volunteer)
-						-# %span.shops
-						-# 	= "#{pluralize(volunteer.sessions.count, 'shop')}"
-						-# %span.hours
-						-#	= "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
-			%hr
-	.four.columns.mobile-four
-		.panel
-			%h3 QCBS Volunters
-			%p
-				qcbs is an
-				%b all-volunteer
-				community bike shop. We depend on your help to keep the shop running and contributing back to the vibrant community.
+  .seven.columns.mobile-three.pull-one-mobile#scrollbar1
+    %ul.tabs-contents.disc
+      - @volunteers.each do |letter, volunteers|
+        %li.divider( id="#{letter.downcase}" id="#{letter.downcase}" )
+          %a( name="#{letter.downcase}" )= letter
+        - volunteers.each do |volunteer|
+          %li.volunteer
+            %span.name= link_to( volunteer.name, volunteer)
+            - if volunteer.can_email?
+              %i.icon-envelope
+              %i.icon-thumbs-up
 
-			%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            -# %span.shops
+            -#  = "#{pluralize(volunteer.sessions.count, 'shop')}"
+            -# %span.hours
+            -#  = "#{pluralize(number_with_precision(volunteer.sessions.collect{|x| x.hours_worked}.inject{|sum,x| sum + x }, :precision => 1), 'hour')}"
+    %hr
+
+    %h3 Emails
+    %ul.tabs-contents.disc
+      = @emails.join(",")
+
+  .four.columns.mobile-four
+    .panel
+      %h3 QCBS Volunters
+      %p
+        qcbs is an
+        %b all-volunteer
+        community bike shop. We depend on your help to keep the shop running and contributing back to the vibrant community.
+
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

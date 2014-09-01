@@ -5,6 +5,7 @@ class Volunteer
   key :first_name, String, :required => true
   key :last_name, String, :required => true
   key :email, String, :uniqueness => true, :allow_blank => true, :email => true
+  key :can_email, Boolean
   key :phone_number, String, :allow_blank => true, :phone_number => true
   key :migration_key, String
   timestamps!
