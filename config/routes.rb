@@ -1,11 +1,19 @@
 Cbs::Application.routes.draw do
 
-
   resources :sessions
 
-  match 'shops/current' => 'shops#current'
-  match 'shops/:id/close' => 'shops#close'
-  resources :shops
+  # match 'shops/email' =>'shops#current'
+  # match 'shops/current' => 'shops#current'
+  # match 'shops/:id/close' => 'shops#close'
+  resources :shops do
+    member do
+      get 'close' => 'shops#close'
+    end
+
+    collection do
+      get 'current' => 'shops#current'
+    end
+  end
 
   resources :volunteers
 
