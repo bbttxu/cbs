@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '1.9.3'
+# ruby '1.9.3'
 
 gem 'rails', '~> 3.1'
 
@@ -65,7 +65,7 @@ group :test do
   gem 'database_cleaner'
 
   gem 'spork', '0.9.0rc9'
-  gem 'rspec'
+  gem 'rspec', '~> 3.0'
   gem 'rspec-rails'
   gem 'rspec-legacy_formatters'
   gem 'guard-rspec', '0.5.2'

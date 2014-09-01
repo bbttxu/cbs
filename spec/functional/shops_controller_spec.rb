@@ -12,7 +12,7 @@ describe ShopsController, :type => :controller do
   describe "index" do
     it "should show shops" do
       get :index
-      response.should be_success
+      expect(response).to be(200)
     end
   end
 

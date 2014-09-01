@@ -13,12 +13,16 @@ class Shop
   timestamps!
 
 	scope :current, lambda { where(:starts_at.lte => Time.zone.now,:ends_at.gte => Time.zone.now) }
-  scope :last_year, lambda { where(:ends_at.gte => Time.zone.now - 1.year) }
+  scope :last_year, lambda { where(:ends_at.gte => Time.zone.now - 1.years) }
 
 	def shop_date
 		date_components = ["%b %-d"]
 
-		unless Time.now.year == self.starts_at.year
+
+    puts Time.now.year
+    puts starts_at.year
+
+    unless Time.now.year == self.starts_at.year
 			date_components << "%Y"
 		end
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ShopsController do
+describe ShopsController, :type => :controller do
 
   describe "GET current shops" do
     it "assigns @shops" do
