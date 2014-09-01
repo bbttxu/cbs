@@ -22,4 +22,16 @@ describe ApplicationHelper, :type => :helper do
 			standard_datetime(date).should eq "1918-07-29 17:00"
 		end
 	end
+
+  describe "active_link" do
+    it "should should an active link if active" do
+      pending "write test"
+      assert false
+    end
+
+    it "should show regular link when not active" do
+      pending "write test"
+      assert false
+    end
+  end
 end
