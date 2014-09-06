@@ -1,25 +1,26 @@
 = form_for @session do |f|
-	- if @session.errors.any?
-		#error_explanation
-			%h2= "#{pluralize(@session.errors.count, "error")} prohibited this session from being saved:"
-			%ul
-				- @session.errors.full_messages.each do |msg|
-					%li= msg
+  - if @session.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@session.errors.count, "error")} prohibited this session from being saved:"
+      %ul
+        - @session.errors.full_messages.each do |msg|
+          %li= msg
 
-	.volunteers
-		= collection_select :session, :volunteer_id, Volunteer.all, :id, :name
-	.shops
-		= collection_select :session, :shop_id, Shop.all, :id, :shop_date
-	.starts_at
-		= f.label :starts_at
-		= f.text_field :starts_at, :value => ( @session.starts_at ? standard_datetime(@session.starts_at) : "now" )
-	.ends_at
-		= f.label :ends_at
-		= f.text_field :ends_at, :value => ( @session.ends_at ? standard_datetime(@session.ends_at) : "" )
-	.is_volunteer
-		= f.label :is_volunteer
-		= f.check_box :is_volunteer
-	.actions
-		= f.submit 'Save'
-		&nbsp;
-		= link_to "Cancel", shop_url(@session.shop), :class => "button alert small"
+  .volunteers
+    %h2
+      = @session.volunteer.name
+      %small= @session.shop.shop_date
+
+  .starts_at
+    = f.label :starts_at
+    = f.text_field :starts_at, :value => ( @session.starts_at ? standard_datetime(@session.starts_at) : "now" )
+  .ends_at
+    = f.label :ends_at
+    = f.text_field :ends_at, :value => ( @session.ends_at ? standard_datetime(@session.ends_at) : "" )
+  .is_volunteer
+    = f.label :is_volunteer
+    = f.check_box :is_volunteer
+  .actions
+    = f.submit 'Save'
+    &nbsp;
+    = link_to "Cancel", shop_url(@session.shop), :class => "button alert small"
