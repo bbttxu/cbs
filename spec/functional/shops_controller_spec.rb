@@ -9,6 +9,13 @@ describe ShopsController, :type => :controller do
     @shop = FactoryGirl.build "shop"
   end
 
+  describe "current" do
+    it "should current shops" do
+      get :current
+      response.should be_success
+    end
+  end
+
   describe "index" do
     it "should show shops" do
       get :index
