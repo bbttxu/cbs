@@ -43,7 +43,8 @@ describe SessionsController, :type => :controller do
       end
 
       # assert_redirected_to shop_path(@shop)
-      pending("further investigation on the redirect")
+      # TODO
+      # pending("further investigation on the redirect")
 
     end
   end
