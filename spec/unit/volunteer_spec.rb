@@ -38,7 +38,8 @@ describe 'volunteers' do |variable|
       # shop = FactoryGirl.build 'shop', starts_at: Chronic.parse("Jul 1, 1978, 3pm")
       session = FactoryGirl.create 'session', starts_at: date
       volunteer.sessions << session
-      volunteer.last_active.should be(date)
+
+      volunteer.last_active.to_i.should be(date.to_i)
     end
 	end
 end

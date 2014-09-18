@@ -28,14 +28,18 @@ describe SessionsController, :type => :controller do
 
   describe "create" do
     it "should add a session" do
-      # @newsession = FactoryGirl.build :session
-      # @shop.sessions << @newsession
+      @newsession = FactoryGirl.create :session
+      @shop.sessions << @newsession
 
-      # assert_difference('Session.count') do
-      #   post :create, session: @newsession.attributes
-      # end
+      @shop.save
 
-      # assert_redirected_to shop_path(@shop)
+
+
+      assert_difference('Session.count') do
+        post :create, session: @newsession.attributes
+      end
+
+      assert_redirected_to shop_path(@shop)
       pending("further investigation")
 
       assert false
