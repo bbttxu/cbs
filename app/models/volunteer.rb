@@ -25,17 +25,13 @@ class Volunteer
     self.last_name == "" ? "?" : self.last_name[0].upcase
   end
 
-  def last_active
+  def last_active(since = nil)
     latest = sessions.latest.limit(1).all
 
+    latest.reject!{|session| session['starts_at'] < since} if since
+
     return nil if latest.count == 0
-
     latest[0]['starts_at']
-    # latest ? latest[:ends_at] : latest[:ends_at]
-
-    # [latest.ends_at, latest.starts_at].reject{|x|x == nil}[0]
-
-    # latest
   end
 end
 
