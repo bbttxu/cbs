@@ -32,23 +32,6 @@ class VolunteersController < ApplicationController
     end
   end
 
-
-  # GET /volunteers/mailing
-  # GET /volunteers/mailing.json
-  def mailing
-
-    last_active = params['last_active'] || Chronic.parse("90 days ago")
-    @volunteers = Volunteer.where(:can_email => true, :email.exists => true)
-
-    @volunteers = @volunteers.collect{|x|x.email if x.last_active(last_active)}
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @volunteers }
-    end
-  end
-
-
   # GET /volunteers/1
   # GET /volunteers/1.json
   def show

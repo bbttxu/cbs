@@ -16,13 +16,6 @@ describe VolunteersController, :type => :controller do
     end
   end
 
-  # describe "mailing" do
-  #   it "should show volunteers for mailing list" do
-  #     get :mailing
-  #     response.should be_success
-  #   end
-  # end
-
   describe "new" do
     it "should show volunteers" do
       get :new
