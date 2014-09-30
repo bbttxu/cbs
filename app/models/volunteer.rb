@@ -30,8 +30,6 @@ class Volunteer
 
     latest.reject!{|session| session['starts_at'] < since} if since
 
-    puts latest
-
     return false if latest.count == 0
     latest[0]['starts_at']
   end

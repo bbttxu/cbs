@@ -4,9 +4,6 @@ class VolunteersController < ApplicationController
   def index
     @last_active = params['last_active'] || nil
 
-    puts @last_active
-
-    # @volunteers = Volunteer.all.group_by{ |u| u.last_name_initial.upcase }.sort
     @volunteer = Volunteer.new
 
     @volunteers = Volunteer.all
@@ -19,10 +16,6 @@ class VolunteersController < ApplicationController
     puts @volunteers.count
 
     @volunteers = @volunteers.group_by{ |u| u.last_name_initial.upcase }.sort
-
-
-    # @emails = Volunteer.where(:can_email => true, :email.exists => true).collect{|x|x.email}
-
 
     @emails = Volunteer.where(:can_email => true, :email.exists => true).all
 
