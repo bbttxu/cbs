@@ -14,7 +14,7 @@ describe VolunteersController, :type => :controller do
       get :index
       response.should be_success
     end
-  endgs
+  end
 
   # describe "mailing" do
   #   it "should show volunteers for mailing list" do
