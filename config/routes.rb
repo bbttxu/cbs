@@ -15,11 +15,7 @@ Cbs::Application.routes.draw do
     end
   end
 
-  resources :volunteers do
-    collection do
-      get 'mailing' => 'volunteers#mailing'
-    end
-  end
+  resources :volunteers
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
