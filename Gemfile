@@ -102,5 +102,3 @@ group :development, :test do
 end
 
 gem 'figaro'
-
-gem 'dotiw'
