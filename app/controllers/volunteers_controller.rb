@@ -2,15 +2,52 @@ class VolunteersController < ApplicationController
   # GET /volunteers
   # GET /volunteers.json
   def index
-    @volunteers = Volunteer.all.group_by{ |u| u.last_name_initial.upcase }.sort
+    @last_active = params['last_active'] || nil
+
     @volunteer = Volunteer.new
 
-    @emails = Volunteer.where(:can_email => true, :email.exists => true).collect{|x|x.email}
+    @volunteers = Volunteer.all
+
+    if @last_active
+      @volunteers = @volunteers.collect{|x|x if x.last_active(@last_active)}
+      @volunteers.reject!{|x|x == nil}
+      # puts @volunteers, "hi"
+    end
+    puts @volunteers.count
+
+    @volunteers = @volunteers.group_by{ |u| u.last_name_initial.upcase }.sort
+
+    @emails = Volunteer.where(:can_email => true, :email.exists => true).all
+
+    if @last_active
+      @emails = @emails.collect{|x| x if x.last_active(@last_active)}
+    end
+
+    @emails = @emails.collect{|x|x.email}
+
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @volunteers }
     end
   end
+
+
+  # GET /volunteers/mailing
+  # GET /volunteers/mailing.json
+  def mailing
+
+    last_active = params['last_active'] || Chronic.parse("90 days ago")
+    @volunteers = Volunteer.where(:can_email => true, :email.exists => true)
+
+    @volunteers = @volunteers.collect{|x|x.email if x.last_active(last_active)}
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @volunteers }
+    end
+  end
+
 
   # GET /volunteers/1
   # GET /volunteers/1.json

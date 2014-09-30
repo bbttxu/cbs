@@ -28,7 +28,7 @@ describe 'volunteers' do |variable|
   describe 'last date of activity' do
     it 'should be zero if volunteer has worked zero shops' do
       volunteer = FactoryGirl.build 'volunteer'
-      volunteer.last_active().should be(nil)
+      volunteer.last_active().should be(false)
     end
 
     it 'should provide date of last activity' do
@@ -46,7 +46,7 @@ describe 'volunteers' do |variable|
       volunteer = FactoryGirl.create 'volunteer'
       session = FactoryGirl.create 'session', starts_at: date
       volunteer.sessions << session
-      volunteer.last_active(since).should be(nil)
+      volunteer.last_active(since).should be(false)
     end
 
 	end
