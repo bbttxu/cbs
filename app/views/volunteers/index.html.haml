@@ -1,6 +1,19 @@
 .row.volunteers.alphabet
-  .twelve.columns.show-for-large-up
-    %h1 Listing volunteers
+  .twelve.columns.show-for-lardge-up
+    %h1
+      Volunteers
+      - if @last_active
+        / %small last
+
+        %small.since= distance_of_time_in_words(Time.now, @last_active,false, :accumulate_on => :days, :highest_measure_only => true)
+        / %small.since= @last_active
+
+  .twelve.columns.show-for-large-upf
+    %ul
+      - ['30 days ago', '90 days ago', 'One year ago'].each do |timeframe|
+        %li= link_to timeframe, volunteers_path(:last_active => Chronic.parse(timeframe).to_date)
+
+
   .one.columns.mobile-one#scrollbar2.push-three-mobile
     %dl.index
       - @volunteers.each do |letter, volunteers|
@@ -25,6 +38,7 @@
     %hr
 
     %h3 Emails
+
     %ul.tabs-contents.disc
       = @emails.join(",")
 
